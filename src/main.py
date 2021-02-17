@@ -5,6 +5,7 @@ import math
 import matplotlib.pyplot as plt
 import re
 from datetime import datetime
+from helper-n import replace_taiwan, convert_age_range, convert_date_range, trim_strings, fill_province-province
 
 categorical_columns = ['sex', 'province', 'country']
 
@@ -27,79 +28,6 @@ locations.columns = ['province', 'country', 'latitude', 'longitude',
 # Perform data cleaning steps, mainly on the age column. Reduce different formats (ex. 20-29, 25-, 13 months), to a standard format (ex. 25)
 # For all attributes with missing values, discuss why and how (if applicable) you impute missing values. Apply your imputation strategy to your datasets.
 
-# train[train['province'] == "Taiwan"]['country'] = "China"
-
-def replace_taiwan(row):
-    if row['province'] == "Taiwan":
-        return "China"
-    else:
-        return row['country']
-
-train['country'] = train.apply(lambda row: replace_taiwan(row), axis=1)
-print(train[train['province'] == "Taiwan"])
-
-def trim_strings(x): return x.strip() if isinstance(x, str) else x
-
-
-def convert_age_range(ages):
-    if "-" in ages:
-        # if ages.find("-") != -1:
-        beg, end = ages.split("-")
-        if beg == '':
-            return int(end)
-        elif end == '':
-            return int(beg)
-        else:
-            avg = int(end) + int(beg) // 2
-            return int(avg)
-    if "+" in ages:
-        beg, end = ages.split("+")
-        if beg == '':
-            return int(end)
-        elif end == '':
-            return int(beg)
-    if "." in ages:
-        beg, end = ages.split(".")
-        return int(beg)
-    if match := re.search('([0-9]+) \w', ages, re.IGNORECASE):
-        # print(ages)
-        return int(round(int(match.group(1)) / 12, 0))
-    else:
-        return int(ages)
-
-
-def convert_date_range(dates):
-    if "-" in dates:
-        beg, _ = dates.split("-")
-        return beg.strip()
-    else:
-        return dates
-
-# def fill_gender_data(train):
-#     # Sex Attribute
-#     attr = categorical_columns[0]
-
-#     # Get the mode for each of the class labels
-#     nonhospitalized_mode = train[(train['outcome'] == 'nonhospitalized') & pd.notna(train[attr])][attr].mode()[
-#         0]
-
-#     hospitalized_mode = train[(train['outcome'] == 'hospitalized') & pd.notna(train[attr])][attr].mode()[
-#         0]
-
-#     recovered_mode = train[(train['outcome'] ==
-#                             'recovered') & pd.notna(train[attr])][attr].mode()[0]
-#     deceased_mode = train[(train['outcome'] ==
-#                            'deceased') & pd.notna(train[attr])][attr].mode()[0]
-
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'nonhospitalized')),
-#               attr] = nonhospitalized_mode
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'hospitalized')),
-#               attr] = hospitalized_mode
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'recovered')),
-#               attr] = recovered_mode
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'deceased')),
-#               attr] = deceased_mode
-    # print(train['sex'].head(50))
 
 
 train['sex'].fillna(value="Not specified", inplace=True)
@@ -121,19 +49,9 @@ train['date_confirmation'] = pd.to_datetime(
 # print(train[pd.isna(train['province']) & pd.isna(train['country'])])
 
 
-# for places with no province but have a country
-def fill_province(row):
-    if pd.isna(row['province']):
-        mode = train[train['country'] == row['country']]['province'].mode()
-        if len(mode) != 0:
-            row['province'] = mode[0]
-            return mode[0]
-    else:
-        return row['province']
+
 
 # train['province'] = train.apply(lambda x: fill_province(x), axis=1)
-
-# nan_provinces = train[pd.isna(train['province'])]
 
 provinces = []
 for i, row in train.iterrows():
