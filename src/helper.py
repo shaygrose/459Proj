@@ -80,7 +80,7 @@ def convert_date_range(dates):
         return dates
 
 # for places with no province but have a country
-def fill_province(data, row):
+def fill_province(row, data):
     if pd.isna(row['province']):
         mode = data[data['country'] == row['country']]['province'].mode()
         if len(mode) != 0:
@@ -88,3 +88,10 @@ def fill_province(data, row):
             return mode[0]
     else:
         return row['province']
+
+# for combining provinces and country into a single column
+def combine_keys(row):
+    if (pd.notna(row['province'])):
+        return row['province'] + ", " + row['country']
+    else:
+        return row['country']
