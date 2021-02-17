@@ -18,10 +18,10 @@ locations = pd.read_csv("../data/location.csv")
 train.drop(columns=['source'], inplace=True)
 test.drop(columns=['source'], inplace=True)
 
-locations.drop(columns=['Last_Update'], inplace = True)
-locations.columns = ['province', 'country', 'latitude', 'longitude', 
-    'confirmed', 'deaths', 'recovered', 'active', 'combined_key', 
-    'incidence_rate', 'fatality_ratio']
+locations.drop(columns=['Last_Update'], inplace=True)
+locations.columns = ['province', 'country', 'latitude', 'longitude',
+                     'confirmed', 'deaths', 'recovered', 'active', 'combined_key',
+                     'incidence_rate', 'fatality_ratio']
 
 
 train['country'] = train.apply(lambda row: replace_taiwan(row), axis=1)
@@ -32,7 +32,6 @@ train['country'] = train.apply(lambda row: replace_taiwan(row), axis=1)
 ''' TASK 1.2 '''  # cases_train.csv & cases_test.csv
 # Perform data cleaning steps, mainly on the age column. Reduce different formats (ex. 20-29, 25-, 13 months), to a standard format (ex. 25)
 # For all attributes with missing values, discuss why and how (if applicable) you impute missing values. Apply your imputation strategy to your datasets.
-
 
 
 train['sex'].fillna(value="Not specified", inplace=True)
@@ -80,7 +79,6 @@ test['date_confirmation'] = pd.to_datetime(
 # print(train[train['date_confirmation'].year < 2019 ])
 
 
-
 ''' TASK 1.4 '''  # locations.csv
 # In the location dataset, transform the information for cases from the US from the country level, used in the location dataset, to the state level, used in the cases dataset. Explain your method of transformation, and why you use a particular type of aggregation on any column.
 
@@ -88,8 +86,10 @@ us = locations[locations['country'] == "US"]
 
 locations = locations[locations['country'] != "US"]
 
-aggregation_functions = {'latitude': 'mean', 'longitude': 'mean', 'confirmed': 'mean', 'deaths': 'mean', 'recovered': 'mean', 'active': 'mean', 'combined_key':'first', 'incidence_rate': 'mean', 'fatality_ratio': 'mean'}
-grouped = us.groupby(['province', 'country']).aggregate(aggregation_functions).reset_index()
+aggregation_functions = {'latitude': 'mean', 'longitude': 'mean', 'confirmed': 'mean', 'deaths': 'mean',
+                         'recovered': 'mean', 'active': 'mean', 'combined_key': 'first', 'incidence_rate': 'mean', 'fatality_ratio': 'mean'}
+grouped = us.groupby(['province', 'country']).aggregate(
+    aggregation_functions).reset_index()
 
 grouped['combined_key'] = grouped['province'] + ", " + grouped['country']
 
@@ -103,19 +103,29 @@ train['combined_key'] = train.apply(combine_keys, axis=1)
 
 merged = pd.merge(train, locations, on="combined_key", how="left")
 
-merged.drop(columns=['province_y','country_y', 'latitude_y', 'longitude_y'], inplace=True)
+merged.drop(columns=['province_y', 'country_y',
+                     'latitude_y', 'longitude_y'], inplace=True)
 
-merged.rename(columns={'province_x':'province', 'country_x':'country', 'longitude_x':'longitude', 'latitude_x': 'latitude'}, inplace=True)
+merged.rename(columns={'province_x': 'province', 'country_x': 'country',
+                       'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
-merged.head(20).to_csv('../data/merged.csv', index=False)
-
-
-def detect_outlier(row):
-
-    z = np.abs(stats.zscore(merged[merged['country'] == row['country']]['fatality_ratio']))
-    if z > 3:
-        print("outlier!")
-        print(row)
+merged.to_csv('../data/merged.csv', index=False)
 
 
-merged.apply(detect_outlier, axis=1)
+# def detect_outlier(row):
+# z = np.abs(stats.zscore(merged[merged['country'] == row['country']]['fatality_ratio']))
+# if z > 3:
+#     print("outlier!")
+#     print(row)
+countries = merged.country.unique()
+fatality_zscores = {}
+for country in countries:
+    temp = merged[merged['country'] == country]
+    zscore = pd.DataFrame(
+        np.abs(stats.zscore(temp['fatality_ratio']))).set_index(temp.index)
+    fatality_zscores[country] = zscore.copy(deep=True)
+
+print(fatality_zscores['Australia'])
+
+
+# merged.apply(detect_outlier, axis=1)
