@@ -5,7 +5,7 @@ import math
 import matplotlib.pyplot as plt
 import re
 from datetime import datetime
-from helper-n import replace_taiwan, convert_age_range, convert_date_range, trim_strings, fill_province-province
+from helper import *
 
 categorical_columns = ['sex', 'province', 'country']
 
@@ -22,6 +22,10 @@ locations.columns = ['province', 'country', 'latitude', 'longitude',
     'confirmed', 'deaths', 'recovered', 'active', 'combined_key', 
     'incidence_rate', 'fatality_ratio']
 
+
+train['country'] = train.apply(lambda row: replace_taiwan(row), axis=1)
+# print(train[train['province'] == "Taiwan"])
+
 # train.reset_index(drop=True, inplace=True)
 
 ''' TASK 1.2 '''  # cases_train.csv & cases_test.csv
@@ -31,16 +35,26 @@ locations.columns = ['province', 'country', 'latitude', 'longitude',
 
 
 train['sex'].fillna(value="Not specified", inplace=True)
+test['sex'].fillna(value="Not specified", inplace=True)
+
 
 train['age'] = train['age'].apply(
+    lambda x: convert_age_range(x) if isinstance(x, str) else x)
+
+test['age'] = test['age'].apply(
     lambda x: convert_age_range(x) if isinstance(x, str) else x)
 
 train['date_confirmation'] = train['date_confirmation'].apply(
     lambda x: convert_date_range(x) if isinstance(x, str) else x)
 
+test['date_confirmation'] = test['date_confirmation'].apply(
+    lambda x: convert_date_range(x) if isinstance(x, str) else x)
+
 train['date_confirmation'] = pd.to_datetime(
     train['date_confirmation'], format='%d.%m.%Y')
 
+test['date_confirmation'] = pd.to_datetime(
+    test['date_confirmation'], format='%d.%m.%Y')
 
 # # if missing at least 4 of age, gender, province, country
 
@@ -55,7 +69,7 @@ train['date_confirmation'] = pd.to_datetime(
 
 provinces = []
 for i, row in train.iterrows():
-    val = fill_province(row)
+    val = fill_province(train, row)
     provinces.append(val)
     # train.iloc[i]['province'] = fill_province(row)
 

@@ -39,8 +39,6 @@ def replace_taiwan(row):
     else:
         return row['country']
 
-train['country'] = train.apply(lambda row: replace_taiwan(row), axis=1)
-print(train[train['province'] == "Taiwan"])
 
 def trim_strings(x): return x.strip() if isinstance(x, str) else x
 
@@ -52,6 +50,8 @@ def convert_age_range(ages):
         if beg == '':
             return int(end)
         elif end == '':
+            return int(beg)
+        elif isinstance(end, str):
             return int(beg)
         else:
             avg = int(end) + int(beg) // 2
@@ -80,9 +80,9 @@ def convert_date_range(dates):
         return dates
 
 # for places with no province but have a country
-def fill_province(row):
+def fill_province(data, row):
     if pd.isna(row['province']):
-        mode = train[train['country'] == row['country']]['province'].mode()
+        mode = data[data['country'] == row['country']]['province'].mode()
         if len(mode) != 0:
             row['province'] = mode[0]
             return mode[0]
