@@ -13,10 +13,30 @@ test = pd.read_csv("../data/cases_test.csv")
 train = pd.read_csv("../data/cases_train.csv")
 locations = pd.read_csv("../data/location.csv")
 
+train.drop(columns=['source'], inplace=True)
+test.drop(columns=['source'], inplace=True)
+
+locations.drop(columns=['Last_Update'], inplace = True)
+locations.columns = ['province', 'country', 'latitude', 'longitude', 
+    'confirmed', 'deaths', 'recovered', 'active', 'combined_key', 
+    'incidence_rate', 'fatality_ratio']
+
+# train.reset_index(drop=True, inplace=True)
+
 ''' TASK 1.2 '''  # cases_train.csv & cases_test.csv
 # Perform data cleaning steps, mainly on the age column. Reduce different formats (ex. 20-29, 25-, 13 months), to a standard format (ex. 25)
 # For all attributes with missing values, discuss why and how (if applicable) you impute missing values. Apply your imputation strategy to your datasets.
 
+# train[train['province'] == "Taiwan"]['country'] = "China"
+
+def replace_taiwan(row):
+    if row['province'] == "Taiwan":
+        return "China"
+    else:
+        return row['country']
+
+train['country'] = train.apply(lambda row: replace_taiwan(row), axis=1)
+print(train[train['province'] == "Taiwan"])
 
 def trim_strings(x): return x.strip() if isinstance(x, str) else x
 
@@ -90,23 +110,49 @@ train['age'] = train['age'].apply(
 train['date_confirmation'] = train['date_confirmation'].apply(
     lambda x: convert_date_range(x) if isinstance(x, str) else x)
 
-# train['date_confirmation'] = datetime.strptime(
-#     train['date_confirmation'], '%d/%m/%Y')
-
-# date = train['date_confirmation'][0]
-# print(date)
-# date_time_obj = datetime.strptime(date, '%d.%m.%Y')
-# print('Date:', date_time_obj.date())
-
-
 train['date_confirmation'] = pd.to_datetime(
     train['date_confirmation'], format='%d.%m.%Y')
 
-print(train['date_confirmation'].head(20))
-print(train['date_confirmation'][0].month)
-# print(train['age'][240093])
-# print(train['age'][194672])
 
+# # if missing at least 4 of age, gender, province, country
+
+# train.dropna(axis=1, how='all', subset=['age', 'gender', 'province', 'country'], inplace = True)
+
+# print(train[pd.isna(train['province']) & pd.isna(train['country'])])
+
+
+# for places with no province but have a country
+def fill_province(row):
+    if pd.isna(row['province']):
+        mode = train[train['country'] == row['country']]['province'].mode()
+        if len(mode) != 0:
+            row['province'] = mode[0]
+            return mode[0]
+    else:
+        return row['province']
+
+# train['province'] = train.apply(lambda x: fill_province(x), axis=1)
+
+# nan_provinces = train[pd.isna(train['province'])]
+
+provinces = []
+for i, row in train.iterrows():
+    val = fill_province(row)
+    provinces.append(val)
+    # train.iloc[i]['province'] = fill_province(row)
+
+train['province'] = provinces
+
+# print(train.head(35))
+
+train.to_csv("../data/yolo.csv", index=False)
+# print(train[['province','country']][142])
+
+# merged = pd.merge(train, locations, on="country", how="outer")
+
+# print(train.head(20))
+
+# merged.head(20).to_csv('../data/merged.csv', index=False)
 
 ''' TASK 1.3 '''  # cases_train.csv
 # Which attributes have outliers? How do you deal with them? Apply your strategy of dealing with outliers to your datasets
