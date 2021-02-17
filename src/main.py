@@ -4,7 +4,9 @@ import csv
 import math
 import matplotlib.pyplot as plt
 import re
+from datetime import datetime
 
+categorical_columns = ['sex', 'province', 'country']
 
 ''' READING IN DATA '''
 test = pd.read_csv("../data/cases_test.csv")
@@ -40,20 +42,70 @@ def convert_age_range(ages):
         beg, end = ages.split(".")
         return int(beg)
     if match := re.search('([0-9]+) \w', ages, re.IGNORECASE):
-        print(ages)
-        return int(match.group(1)) // 12
+        # print(ages)
+        return int(round(int(match.group(1)) / 12, 0))
     else:
         return int(ages)
 
 
+def convert_date_range(dates):
+    if "-" in dates:
+        beg, _ = dates.split("-")
+        return beg.strip()
+    else:
+        return dates
+
+# def fill_gender_data(train):
+#     # Sex Attribute
+#     attr = categorical_columns[0]
+
+#     # Get the mode for each of the class labels
+#     nonhospitalized_mode = train[(train['outcome'] == 'nonhospitalized') & pd.notna(train[attr])][attr].mode()[
+#         0]
+
+#     hospitalized_mode = train[(train['outcome'] == 'hospitalized') & pd.notna(train[attr])][attr].mode()[
+#         0]
+
+#     recovered_mode = train[(train['outcome'] ==
+#                             'recovered') & pd.notna(train[attr])][attr].mode()[0]
+#     deceased_mode = train[(train['outcome'] ==
+#                            'deceased') & pd.notna(train[attr])][attr].mode()[0]
+
+#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'nonhospitalized')),
+#               attr] = nonhospitalized_mode
+#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'hospitalized')),
+#               attr] = hospitalized_mode
+#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'recovered')),
+#               attr] = recovered_mode
+#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'deceased')),
+#               attr] = deceased_mode
+    # print(train['sex'].head(50))
+
+
+train['sex'].fillna(value="Not specified", inplace=True)
+
 train['age'] = train['age'].apply(
-    lambda x: convert_age_range(x) if isinstance(x, str) else "?")
+    lambda x: convert_age_range(x) if isinstance(x, str) else x)
+
+train['date_confirmation'] = train['date_confirmation'].apply(
+    lambda x: convert_date_range(x) if isinstance(x, str) else x)
+
+# train['date_confirmation'] = datetime.strptime(
+#     train['date_confirmation'], '%d/%m/%Y')
+
+# date = train['date_confirmation'][0]
+# print(date)
+# date_time_obj = datetime.strptime(date, '%d.%m.%Y')
+# print('Date:', date_time_obj.date())
 
 
-# train['age'] = train['age'].apply(lambda x : int(x) if isinstance(x, float) else x)
+train['date_confirmation'] = pd.to_datetime(
+    train['date_confirmation'], format='%d.%m.%Y')
 
-print(train['age'].head(50))
-print(train['age'][240093])
+print(train['date_confirmation'].head(20))
+print(train['date_confirmation'][0].month)
+# print(train['age'][240093])
+# print(train['age'][194672])
 
 
 ''' TASK 1.3 '''  # cases_train.csv
