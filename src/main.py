@@ -86,8 +86,8 @@ us = locations[locations['country'] == "US"]
 
 locations = locations[locations['country'] != "US"]
 
-aggregation_functions = {'latitude': 'mean', 'longitude': 'mean', 'confirmed': 'mean', 'deaths': 'mean',
-                         'recovered': 'mean', 'active': 'mean', 'combined_key': 'first', 'incidence_rate': 'mean', 'fatality_ratio': 'mean'}
+aggregation_functions = {'latitude': 'mean', 'longitude': 'mean', 'confirmed': 'sum', 'deaths': 'sum',
+                         'recovered': 'sum', 'active': 'sum', 'combined_key': 'first', 'incidence_rate': 'mean', 'fatality_ratio': 'mean'}
 grouped = us.groupby(['province', 'country']).aggregate(
     aggregation_functions).reset_index()
 
@@ -109,23 +109,20 @@ merged.drop(columns=['province_y', 'country_y',
 merged.rename(columns={'province_x': 'province', 'country_x': 'country',
                        'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
-merged.to_csv('../data/merged.csv', index=False)
 
-
-# def detect_outlier(row):
-# z = np.abs(stats.zscore(merged[merged['country'] == row['country']]['fatality_ratio']))
-# if z > 3:
-#     print("outlier!")
-#     print(row)
 countries = merged.country.unique()
 fatality_zscores = {}
-for country in countries:
-    temp = merged[merged['country'] == country]
-    zscore = pd.DataFrame(
-        np.abs(stats.zscore(temp['fatality_ratio']))).set_index(temp.index)
-    fatality_zscores[country] = zscore.copy(deep=True)
+mean = merged.groupby(['country'])['fatality_ratio'].mean()
+std = merged.groupby(['country'])['fatality_ratio'].std()
 
-print(fatality_zscores['Australia'])
 
+def calc_zscore(row):
+    if mean[row.country] != np.nan and std[row.country] != np.nan:
+        return (row['fatality_ratio'] - mean[row.country]) / std[row.country]
+    return "FUCK YOU NAN"
+
+
+zscores = merged.apply(calc_zscore, axis=1)
+print(zscores)
 
 # merged.apply(detect_outlier, axis=1)
