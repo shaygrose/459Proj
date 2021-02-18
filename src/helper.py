@@ -7,35 +7,9 @@ import re
 from datetime import datetime
 
 
-# def fill_gender_data(train):
-#     # Sex Attribute
-#     attr = categorical_columns[0]
-
-#     # Get the mode for each of the class labels
-#     nonhospitalized_mode = train[(train['outcome'] == 'nonhospitalized') & pd.notna(train[attr])][attr].mode()[
-#         0]
-
-#     hospitalized_mode = train[(train['outcome'] == 'hospitalized') & pd.notna(train[attr])][attr].mode()[
-#         0]
-
-#     recovered_mode = train[(train['outcome'] ==
-#                             'recovered') & pd.notna(train[attr])][attr].mode()[0]
-#     deceased_mode = train[(train['outcome'] ==
-#                            'deceased') & pd.notna(train[attr])][attr].mode()[0]
-
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'nonhospitalized')),
-#               attr] = nonhospitalized_mode
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'hospitalized')),
-#               attr] = hospitalized_mode
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'recovered')),
-#               attr] = recovered_mode
-#     train.loc[((pd.isna(train[attr])) & (train['outcome'] == 'deceased')),
-#               attr] = deceased_mode
-    # print(train['sex'].head(50))
-
 def replace_taiwan(row):
     if row['province'] == "Taiwan":
-        return "China"
+        return "Taiwan*"
     else:
         return row['country']
 
@@ -95,3 +69,20 @@ def combine_keys(row):
         return row['province'] + ", " + row['country']
     else:
         return row['country']
+    
+
+# check if any attributes have impossible values
+def check_valid(data, attribute, lower, upper):
+    bad_values = 0
+    bad_values = bad_values + len(data[data[attribute] < lower])
+    bad_values = bad_values + len(data[data[attribute] > upper])
+    return bad_values
+
+
+def check_valid_date(row):
+    if row['date_confirmation'].month > 12 or row['date_confirmation'].month < 1:
+        print("Bad month detected")
+    if row['date_confirmation'].day > 31 or row['date_confirmation'].month < 1:
+        print("Bad day detected")
+    if row['date_confirmation'].year > 2021 or row['date_confirmation'].year < 2019:
+        print("Bad year detected")
