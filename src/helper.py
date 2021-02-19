@@ -46,6 +46,12 @@ def convert_age_range(ages):
         return int(ages)
 
 
+def impute_age(row, age_means):
+    if pd.isna(row.age):
+        return int(age_means[row.outcome])
+    return row.age
+
+
 def convert_date_range(dates):
     if "-" in dates:
         beg, _ = dates.split("-")
@@ -86,3 +92,34 @@ def check_valid_date(row):
         print("Bad day detected")
     if row['date_confirmation'].year > 2021 or row['date_confirmation'].year < 2019:
         print("Bad year detected")
+
+
+def impute_confirmed(row, confirmed_means):
+    if pd.isna(row['confirmed']):
+        return confirmed_means[row['country']]
+    return row['confirmed']
+
+def impute_deaths(row, deaths_means):
+    if pd.isna(row['deaths']):
+        return deaths_means[row['country']]
+    return row['deaths']
+
+def impute_recovered(row, recovered_means):
+    if pd.isna(row['recovered']):
+        return recovered_means[row['country']]
+    return row['recovered']
+
+def impute_active(row, active_means):
+    if pd.isna(row['active']):
+        return active_means[row['country']]
+    return row['active']
+
+def impute_incidence(row, incidence_means):
+    if pd.isna(row['incidence_rate']):
+        return incidence_means[row['country']]
+    return row['incidence_rate']
+
+def impute_fatality(row, fatality_means):
+    if pd.isna(row['fatality_ratio']):
+        return fatality_means[row['country']]
+    return row['fatality_ratio']

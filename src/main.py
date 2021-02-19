@@ -8,6 +8,9 @@ from datetime import datetime
 from helper import *
 from scipy import stats
 import seaborn as sns
+import reverse_geocoder as rg
+
+pd.set_option('mode.chained_assignment', None)
 
 ''' READING IN DATA '''
 test = pd.read_csv("../data/cases_test.csv")
@@ -15,8 +18,8 @@ train = pd.read_csv("../data/cases_train.csv")
 locations = pd.read_csv("../data/location.csv")
 
 # drop source column since it isn't useful
-train.drop(columns=['source'], inplace=True)
-test.drop(columns=['source'], inplace=True)
+train.drop(columns=['source', 'additional_information'], inplace=True)
+test.drop(columns=['source', 'additional_information'], inplace=True)
 
 # drop last update column since it is the same for every entry
 locations.drop(columns=['Last_Update'], inplace=True)
@@ -42,8 +45,8 @@ train['age'] = train['age'].apply(
 test['age'] = test['age'].apply(
     lambda x: convert_age_range(x) if isinstance(x, str) else x)
 
-age_means = train.groupby(['outcome'])['age'].mean()
-print(age_means)
+age_means = round(train.groupby(['outcome'])['age'].mean())
+train['age'] = train.apply(impute_age, age_means=age_means, axis=1)
 
 # convert date ranges to single date
 train['date_confirmation'] = train['date_confirmation'].apply(
@@ -62,6 +65,9 @@ train.dropna(how='all', subset=['province', 'country', 'longitude', 'latitude'],
 
 
 ''' TASK 1.3 '''  # cases_train.csv
+
+# testy = rg.search((train.latitude[0], train.longitude[0]), mode=1)
+# print(testy[0]['cc'])
 
 # check for impossible values in columns
 outliers = []
@@ -148,34 +154,28 @@ merged_test.rename(columns={'province_x': 'province', 'country_x': 'country',
 'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
 
-# group locations by country and take mean of all values
-# used to assign values to places in cases data that don't have a province match in the locations data
-functions = {'latitude': 'mean', 'longitude': 'mean', 'confirmed': 'mean', 'deaths': 'mean',
-                         'recovered': 'mean', 'active': 'mean', 'combined_key': 'first', 'incidence_rate': 'mean', 'fatality_ratio': 'mean'}
-grouped_locations = locations.groupby(['country']).aggregate(functions)
 
-grouped_locations.drop(columns=['combined_key'])
-
-# print(grouped_locations)
 
 empty = merged_train[pd.isna(merged_train['fatality_ratio'])]
 
-# confirmed,deaths,recovered,active,incidence_rate,fatality_ratio
+confirmed_means = round(merged_train.groupby(['country'])['confirmed'].mean())
+empty['confirmed'] = empty.apply(impute_confirmed, confirmed_means=confirmed_means, axis=1)
 
-for index, row in empty.iterrows():
-    #find a country in locations that matches this rows country
-    matching = grouped_locations[row['country']]
-    # if a match exists
-    if matching:
-        row['confirmed'] = matching['confirmed']
-        row['deaths'] = matching['deaths']
-        row['recovered'] = matching['recovered']
-        row['active'] = matching['active']
-  
-print(empty)
 
-# aggregate column according to different functions
-aggregation_functions = {'latitude': 'mean', 'longitude': 'mean', 'confirmed': 'sum', 'deaths': 'sum',
-                         'recovered': 'sum', 'active': 'sum', 'combined_key': 'first', 'incidence_rate': 'mean', 'fatality_ratio': 'mean'}
-grouped = us.groupby(['province', 'country']).aggregate(
-    aggregation_functions).reset_index()
+deaths_means = round(merged_train.groupby(['country'])['deaths'].mean())
+empty['deaths'] = empty.apply(impute_deaths, deaths_means=deaths_means, axis=1)
+
+active_means = round(merged_train.groupby(['country'])['active'].mean())
+empty['active'] = empty.apply(impute_active, active_means=active_means, axis=1)
+
+recovered_means = round(merged_train.groupby(['country'])['recovered'].mean())
+empty['active'] = empty.apply(impute_recovered, recovered_means=recovered_means, axis=1)
+
+fatality_means = round(merged_train.groupby(['country'])['fatality_ratio'].mean())
+empty['fatality_ratio'] = empty.apply(impute_fatality, fatality_means=fatality_means, axis=1)
+
+incidence_means = round(merged_train.groupby(['country'])['incidence_rate'].mean())
+empty['incidence_rate'] = empty.apply(impute_incidence, incidence_means=incidence_means, axis=1)
+
+
+
