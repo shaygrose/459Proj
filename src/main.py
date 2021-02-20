@@ -33,8 +33,8 @@ locations.columns = ['province', 'country', 'latitude', 'longitude',
 
 ''' TASK 1.2 '''  # cases_train.csv & cases_test.csv
 
-train['country'] = train.apply(lambda row: replace_taiwan(row), axis=1)
-test['country'] = test.apply(lambda row: replace_taiwan(row), axis=1)
+train['country'] = train.apply(lambda row: replace_country_names(row), axis=1)
+test['country'] = test.apply(lambda row: replace_country_names(row), axis=1)
 
 train['sex'].fillna(value="Not specified", inplace=True)
 test['sex'].fillna(value="Not specified", inplace=True)
@@ -47,6 +47,11 @@ test['age'] = test['age'].apply(
 
 age_means = round(train.groupby(['outcome'])['age'].mean())
 train['age'] = train.apply(impute_age, age_means=age_means, axis=1)
+
+test_mean = round(test['age'].mean())
+test['age'] = test.apply(impute_age_test, mean=test_mean, axis=1)
+
+test.to_csv("../data/yolo.csv", index=False)
 
 # convert date ranges to single date
 train['date_confirmation'] = train['date_confirmation'].apply(
@@ -62,6 +67,8 @@ test['date_confirmation'] = pd.to_datetime(
 
 # drop rows that are missing all data that can identify the location, since they are useless
 train.dropna(how='all', subset=['province', 'country', 'longitude', 'latitude'], inplace=True)
+test.dropna(how='all', subset=['province', 'country', 'longitude', 'latitude'], inplace=True)
+
 
 
 ''' TASK 1.3 '''  # cases_train.csv
@@ -155,27 +162,49 @@ merged_test.rename(columns={'province_x': 'province', 'country_x': 'country',
 
 
 
-
-empty = merged_train[pd.isna(merged_train['fatality_ratio'])]
+# empty = merged_train[pd.isna(merged_train['fatality_ratio'])]
 
 confirmed_means = round(merged_train.groupby(['country'])['confirmed'].mean())
-empty['confirmed'] = empty.apply(impute_confirmed, confirmed_means=confirmed_means, axis=1)
-
+merged_train['confirmed'] = merged_train.apply(impute_confirmed, confirmed_means=confirmed_means, axis=1)
 
 deaths_means = round(merged_train.groupby(['country'])['deaths'].mean())
-empty['deaths'] = empty.apply(impute_deaths, deaths_means=deaths_means, axis=1)
+merged_train['deaths'] = merged_train.apply(impute_deaths, deaths_means=deaths_means, axis=1)
 
 active_means = round(merged_train.groupby(['country'])['active'].mean())
-empty['active'] = empty.apply(impute_active, active_means=active_means, axis=1)
+merged_train['active'] = merged_train.apply(impute_active, active_means=active_means, axis=1)
 
 recovered_means = round(merged_train.groupby(['country'])['recovered'].mean())
-empty['active'] = empty.apply(impute_recovered, recovered_means=recovered_means, axis=1)
+merged_train['recovered'] = merged_train.apply(impute_recovered, recovered_means=recovered_means, axis=1)
 
 fatality_means = round(merged_train.groupby(['country'])['fatality_ratio'].mean())
-empty['fatality_ratio'] = empty.apply(impute_fatality, fatality_means=fatality_means, axis=1)
+merged_train['fatality_ratio'] = merged_train.apply(impute_fatality, fatality_means=fatality_means, axis=1)
 
 incidence_means = round(merged_train.groupby(['country'])['incidence_rate'].mean())
-empty['incidence_rate'] = empty.apply(impute_incidence, incidence_means=incidence_means, axis=1)
+merged_train['incidence_rate'] = merged_train.apply(impute_incidence, incidence_means=incidence_means, axis=1)
 
 
 
+confirmed_means = round(merged_test.groupby(['country'])['confirmed'].mean())
+merged_test['confirmed'] = merged_test.apply(impute_confirmed, confirmed_means=confirmed_means, axis=1)
+
+deaths_means = round(merged_test.groupby(['country'])['deaths'].mean())
+merged_test['deaths'] = merged_test.apply(impute_deaths, deaths_means=deaths_means, axis=1)
+
+active_means = round(merged_test.groupby(['country'])['active'].mean())
+merged_test['active'] = merged_test.apply(impute_active, active_means=active_means, axis=1)
+
+recovered_means = round(merged_test.groupby(['country'])['recovered'].mean())
+merged_test['recovered'] = merged_test.apply(impute_recovered, recovered_means=recovered_means, axis=1)
+
+fatality_means = round(merged_test.groupby(['country'])['fatality_ratio'].mean())
+merged_test['fatality_ratio'] = merged_test.apply(impute_fatality, fatality_means=fatality_means, axis=1)
+
+incidence_means = round(merged_test.groupby(['country'])['incidence_rate'].mean())
+merged_test['incidence_rate'] = merged_test.apply(impute_incidence, incidence_means=incidence_means, axis=1)
+
+# empty.to_csv("../data/empty.csv", index=False)
+
+print(len(merged_test[pd.isna(merged_test['fatality_ratio'])]))
+
+merged_test.to_csv("../data/cases_test_processed.csv",index=False)
+merged_train.to_csv("../data/cases_train_processed.csv",index=False)

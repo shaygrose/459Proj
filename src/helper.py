@@ -7,9 +7,15 @@ import re
 from datetime import datetime
 
 
-def replace_taiwan(row):
+def replace_country_names(row):
     if row['province'] == "Taiwan":
         return "Taiwan*"
+    if row['country'] == "United States":
+        return "US"
+    if row['country'] == "Czech Republic":
+        return "Czechia"
+    if row['country'] == "South Korea":
+        return 'Korea, South'
     else:
         return row['country']
 
@@ -49,8 +55,14 @@ def convert_age_range(ages):
 def impute_age(row, age_means):
     if pd.isna(row.age):
         return int(age_means[row.outcome])
-    return row.age
+    else:
+        return row.age
 
+def impute_age_test(row, mean):
+    if pd.isna(row.age):
+        return mean
+    else:
+        return row.age
 
 def convert_date_range(dates):
     if "-" in dates:
