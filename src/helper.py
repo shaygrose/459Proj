@@ -5,6 +5,29 @@ import math
 import matplotlib.pyplot as plt
 import re
 from datetime import datetime
+import reverse_geocoder as rg
+
+
+iso_to_country = pd.read_csv("../data/iso_to_country.csv", index_col='Code')
+iso_to_country_dict = iso_to_country.to_dict('index')
+
+# Changing the Country names to match the ones in cases data (e.g. Russian Federation to Russia)
+iso_to_country_dict['RU'] = {'Name': 'Russia'}
+iso_to_country_dict['KR'] = {'Name': 'South Korea'}
+iso_to_country_dict['IR'] = {'Name': 'Iran'}
+iso_to_country_dict['BO'] = {'Name': 'Bolivia'}
+iso_to_country_dict['VN'] = {'Name': 'Vietnam'}
+iso_to_country_dict['TW'] = {'Name': 'Taiwan*'}
+iso_to_country_dict['CD'] = {'Name': 'Democratic Republic of the Congo'}
+iso_to_country_dict['MD'] = {'Name': 'Moldova'}
+iso_to_country_dict['CV'] = {'Name': 'Cabo Verde'}
+iso_to_country_dict['TZ'] = {'Name': 'Tanzania'}
+iso_to_country_dict['RE'] = {'Name': 'Reunion'}
+iso_to_country_dict['MK'] = {'Name': 'North Macedonia'}
+iso_to_country_dict['XK'] = {'Name': 'Kosova'}
+iso_to_country_dict['NA'] = {'Name': 'Namibia'}
+iso_to_country_dict['MO'] = {'Name': 'Macau'}
+iso_to_country_dict['CI'] = {'Name': 'Cote d\'Ivoire'}
 
 
 def replace_country_names(row):
@@ -72,6 +95,8 @@ def convert_date_range(dates):
         return dates
 
 # for places with no province but have a country
+
+
 def fill_province(row, data):
     if pd.isna(row['province']):
         mode = data[data['country'] == row['country']]['province'].mode()
@@ -82,12 +107,14 @@ def fill_province(row, data):
         return row['province']
 
 # for combining provinces and country into a single column
+
+
 def combine_keys(row):
     if (pd.notna(row['province'])):
         return row['province'] + ", " + row['country']
     else:
         return row['country']
-    
+
 
 # check if any attributes have impossible values
 def check_valid(data, attribute, lower, upper):
@@ -111,27 +138,40 @@ def impute_confirmed(row, confirmed_means):
         return confirmed_means[row['country']]
     return row['confirmed']
 
+
 def impute_deaths(row, deaths_means):
     if pd.isna(row['deaths']):
         return deaths_means[row['country']]
     return row['deaths']
+
 
 def impute_recovered(row, recovered_means):
     if pd.isna(row['recovered']):
         return recovered_means[row['country']]
     return row['recovered']
 
+
 def impute_active(row, active_means):
     if pd.isna(row['active']):
         return active_means[row['country']]
     return row['active']
+
 
 def impute_incidence(row, incidence_means):
     if pd.isna(row['incidence_rate']):
         return incidence_means[row['country']]
     return row['incidence_rate']
 
+
 def impute_fatality(row, fatality_means):
     if pd.isna(row['fatality_ratio']):
         return fatality_means[row['country']]
     return row['fatality_ratio']
+
+
+def get_country_iso(row):
+    return rg.search((row.latitude, row.longitude), mode=1)[0]['cc']
+
+
+def get_country(row):
+    return iso_to_country_dict[row.reverse_country_iso]['Name']

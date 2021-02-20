@@ -29,8 +29,6 @@ locations.columns = ['province', 'country', 'latitude', 'longitude',
                      'incidence_rate', 'fatality_ratio']
 
 
-
-
 ''' TASK 1.2 '''  # cases_train.csv & cases_test.csv
 
 train['country'] = train.apply(lambda row: replace_country_names(row), axis=1)
@@ -66,21 +64,26 @@ test['date_confirmation'] = pd.to_datetime(
     test['date_confirmation'], format='%d.%m.%Y')
 
 # drop rows that are missing all data that can identify the location, since they are useless
-train.dropna(how='all', subset=['province', 'country', 'longitude', 'latitude'], inplace=True)
-test.dropna(how='all', subset=['province', 'country', 'longitude', 'latitude'], inplace=True)
-
+train.dropna(how='all', subset=[
+             'province', 'country', 'longitude', 'latitude'], inplace=True)
+test.dropna(how='all', subset=['province', 'country',
+                               'longitude', 'latitude'], inplace=True)
 
 
 ''' TASK 1.3 '''  # cases_train.csv
 
-# testy = rg.search((train.latitude[0], train.longitude[0]), mode=1)
-# print(testy[0]['cc'])
+# Check if all coordinates are in their respective country
+train['reverse_country_iso'] = train.apply(get_country_iso, axis=1)
+train['reverse_country'] = train.apply(get_country, axis=1)
+train['is_match'] = (train['country'] == train['reverse_country']) | (
+    train['province'] == train['reverse_country'])
+train[train['is_match'] == False].to_csv('mismatched.csv')
 
 # check for impossible values in columns
 outliers = []
 check = [('age', 0, 120), ('latitude', -90, 90), ('longitude', -180, 180)]
 for attr, lower, upper in check:
-    if check_valid(train, attr, lower, upper) !=0:
+    if check_valid(train, attr, lower, upper) != 0:
         # print("Outlier detected")
         outliers.append(attr)
 
@@ -101,7 +104,6 @@ plt.title("Number of records with different ages")
 plt.xlabel("Age")
 plt.ylabel("Number of records")
 plt.savefig("../plots/age_distribution.png")
-
 
 
 ''' TASK 1.4 '''  # locations.csv
@@ -134,7 +136,7 @@ locations['incidence_rate'] = round(locations['incidence_rate'], 2)
 
 ''' TASK 1.5 '''  # cases_train.csv, cases_test.csv & locations.csv
 
-# create combined key column 
+# create combined key column
 train['combined_key'] = train.apply(combine_keys, axis=1)
 
 # merge train with locations on combined key (left join)
@@ -142,11 +144,11 @@ merged_train = pd.merge(train, locations, on="combined_key", how="left")
 
 # rename columns after join
 merged_train.rename(columns={'province_x': 'province', 'country_x': 'country',
-                       'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
+                             'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
-# drop duplicate columns 
+# drop duplicate columns
 merged_train.drop(columns=['province_y', 'country_y',
-                     'latitude_y', 'longitude_y'], inplace=True)
+                           'latitude_y', 'longitude_y'], inplace=True)
 
 
 # repeat on test
@@ -155,56 +157,69 @@ test['combined_key'] = test.apply(combine_keys, axis=1)
 merged_test = pd.merge(test, locations, on="combined_key", how="left")
 
 merged_test.drop(columns=['province_y', 'country_y',
-                     'latitude_y', 'longitude_y'], inplace=True)
+                          'latitude_y', 'longitude_y'], inplace=True)
 
 merged_test.rename(columns={'province_x': 'province', 'country_x': 'country',
-'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
-
-
+                            'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
 # empty = merged_train[pd.isna(merged_train['fatality_ratio'])]
 
 confirmed_means = round(merged_train.groupby(['country'])['confirmed'].mean())
-merged_train['confirmed'] = merged_train.apply(impute_confirmed, confirmed_means=confirmed_means, axis=1)
+merged_train['confirmed'] = merged_train.apply(
+    impute_confirmed, confirmed_means=confirmed_means, axis=1)
 
 deaths_means = round(merged_train.groupby(['country'])['deaths'].mean())
-merged_train['deaths'] = merged_train.apply(impute_deaths, deaths_means=deaths_means, axis=1)
+merged_train['deaths'] = merged_train.apply(
+    impute_deaths, deaths_means=deaths_means, axis=1)
 
 active_means = round(merged_train.groupby(['country'])['active'].mean())
-merged_train['active'] = merged_train.apply(impute_active, active_means=active_means, axis=1)
+merged_train['active'] = merged_train.apply(
+    impute_active, active_means=active_means, axis=1)
 
 recovered_means = round(merged_train.groupby(['country'])['recovered'].mean())
-merged_train['recovered'] = merged_train.apply(impute_recovered, recovered_means=recovered_means, axis=1)
+merged_train['recovered'] = merged_train.apply(
+    impute_recovered, recovered_means=recovered_means, axis=1)
 
-fatality_means = round(merged_train.groupby(['country'])['fatality_ratio'].mean())
-merged_train['fatality_ratio'] = merged_train.apply(impute_fatality, fatality_means=fatality_means, axis=1)
+fatality_means = round(merged_train.groupby(
+    ['country'])['fatality_ratio'].mean())
+merged_train['fatality_ratio'] = merged_train.apply(
+    impute_fatality, fatality_means=fatality_means, axis=1)
 
-incidence_means = round(merged_train.groupby(['country'])['incidence_rate'].mean())
-merged_train['incidence_rate'] = merged_train.apply(impute_incidence, incidence_means=incidence_means, axis=1)
-
+incidence_means = round(merged_train.groupby(
+    ['country'])['incidence_rate'].mean())
+merged_train['incidence_rate'] = merged_train.apply(
+    impute_incidence, incidence_means=incidence_means, axis=1)
 
 
 confirmed_means = round(merged_test.groupby(['country'])['confirmed'].mean())
-merged_test['confirmed'] = merged_test.apply(impute_confirmed, confirmed_means=confirmed_means, axis=1)
+merged_test['confirmed'] = merged_test.apply(
+    impute_confirmed, confirmed_means=confirmed_means, axis=1)
 
 deaths_means = round(merged_test.groupby(['country'])['deaths'].mean())
-merged_test['deaths'] = merged_test.apply(impute_deaths, deaths_means=deaths_means, axis=1)
+merged_test['deaths'] = merged_test.apply(
+    impute_deaths, deaths_means=deaths_means, axis=1)
 
 active_means = round(merged_test.groupby(['country'])['active'].mean())
-merged_test['active'] = merged_test.apply(impute_active, active_means=active_means, axis=1)
+merged_test['active'] = merged_test.apply(
+    impute_active, active_means=active_means, axis=1)
 
 recovered_means = round(merged_test.groupby(['country'])['recovered'].mean())
-merged_test['recovered'] = merged_test.apply(impute_recovered, recovered_means=recovered_means, axis=1)
+merged_test['recovered'] = merged_test.apply(
+    impute_recovered, recovered_means=recovered_means, axis=1)
 
-fatality_means = round(merged_test.groupby(['country'])['fatality_ratio'].mean())
-merged_test['fatality_ratio'] = merged_test.apply(impute_fatality, fatality_means=fatality_means, axis=1)
+fatality_means = round(merged_test.groupby(
+    ['country'])['fatality_ratio'].mean())
+merged_test['fatality_ratio'] = merged_test.apply(
+    impute_fatality, fatality_means=fatality_means, axis=1)
 
-incidence_means = round(merged_test.groupby(['country'])['incidence_rate'].mean())
-merged_test['incidence_rate'] = merged_test.apply(impute_incidence, incidence_means=incidence_means, axis=1)
+incidence_means = round(merged_test.groupby(
+    ['country'])['incidence_rate'].mean())
+merged_test['incidence_rate'] = merged_test.apply(
+    impute_incidence, incidence_means=incidence_means, axis=1)
 
 # empty.to_csv("../data/empty.csv", index=False)
 
 print(len(merged_test[pd.isna(merged_test['fatality_ratio'])]))
 
-merged_test.to_csv("../data/cases_test_processed.csv",index=False)
-merged_train.to_csv("../data/cases_train_processed.csv",index=False)
+merged_test.to_csv("../data/cases_test_processed.csv", index=False)
+merged_train.to_csv("../data/cases_train_processed.csv", index=False)
