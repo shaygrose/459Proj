@@ -13,7 +13,7 @@ iso_to_country_dict = iso_to_country.to_dict('index')
 
 # Changing the Country names to match the ones in cases data (e.g. Russian Federation to Russia)
 iso_to_country_dict['RU'] = {'Name': 'Russia'}
-iso_to_country_dict['KR'] = {'Name': 'South Korea'}
+iso_to_country_dict['KR'] = {'Name': 'Korea, South'}
 iso_to_country_dict['IR'] = {'Name': 'Iran'}
 iso_to_country_dict['BO'] = {'Name': 'Bolivia'}
 iso_to_country_dict['VN'] = {'Name': 'Vietnam'}
@@ -81,11 +81,13 @@ def impute_age(row, age_means):
     else:
         return row.age
 
+
 def impute_age_test(row, mean):
     if pd.isna(row.age):
         return mean
     else:
         return row.age
+
 
 def convert_date_range(dates):
     if "-" in dates:
