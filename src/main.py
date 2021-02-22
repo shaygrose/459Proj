@@ -143,6 +143,8 @@ locations = locations.append(grouped)
 locations['fatality_ratio'] = round(locations['fatality_ratio'], 2)
 locations['incidence_rate'] = round(locations['incidence_rate'], 2)
 
+locations.to_csv("../results/location_transformed.csv", index=False)
+
 
 ''' TASK 1.5 '''  # cases_train.csv, cases_test.csv & locations.csv
 
@@ -189,7 +191,7 @@ for i in cols:
     impute_columns_from_location, mean=test_means, attr=i, axis=1)
 
 
-merged_test.to_csv("../data/cases_test_processed.csv", index=False)
-merged_train.to_csv("../data/cases_train_processed.csv", index=False)
+merged_test.to_csv("../results/cases_test_processed.csv", index=False)
+merged_train.to_csv("../results/cases_train_processed.csv", index=False)
 
 

@@ -5,3 +5,4 @@ geopandas
 descartes
 seaborn
 scikit-learn
+reverse_geocoder
