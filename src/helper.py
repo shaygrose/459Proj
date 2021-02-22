@@ -13,10 +13,17 @@ iso_to_country_dict = iso_to_country.to_dict('index')
 
 # Changing the Country names to match the ones in cases data (e.g. Russian Federation to Russia)
 iso_to_country_dict['RU'] = {'Name': 'Russia'}
+iso_to_country_dict['CZ'] = {'Name': 'Czechia'}
+iso_to_country_dict['US'] = {'Name': 'US'}
+iso_to_country_dict['PS'] = {'Name': 'Israel'}
+iso_to_country_dict['SZ'] = {'Name': 'Eswatini'}
+iso_to_country_dict['AX'] = {'Name': 'Finland'}
 iso_to_country_dict['KR'] = {'Name': 'Korea, South'}
 iso_to_country_dict['IR'] = {'Name': 'Iran'}
 iso_to_country_dict['BO'] = {'Name': 'Bolivia'}
 iso_to_country_dict['VN'] = {'Name': 'Vietnam'}
+iso_to_country_dict['VE'] = {'Name': 'Venezuela'}
+
 iso_to_country_dict['TW'] = {'Name': 'Taiwan*'}
 iso_to_country_dict['CD'] = {'Name': 'Democratic Republic of the Congo'}
 iso_to_country_dict['MD'] = {'Name': 'Moldova'}
@@ -134,42 +141,11 @@ def check_valid_date(row):
     if row['date_confirmation'].year > 2021 or row['date_confirmation'].year < 2019:
         print("Bad year detected")
 
-
-def impute_confirmed(row, confirmed_means):
-    if pd.isna(row['confirmed']):
-        return confirmed_means[row['country']]
-    return row['confirmed']
-
-
-def impute_deaths(row, deaths_means):
-    if pd.isna(row['deaths']):
-        return deaths_means[row['country']]
-    return row['deaths']
-
-
-def impute_recovered(row, recovered_means):
-    if pd.isna(row['recovered']):
-        return recovered_means[row['country']]
-    return row['recovered']
-
-
-def impute_active(row, active_means):
-    if pd.isna(row['active']):
-        return active_means[row['country']]
-    return row['active']
-
-
-def impute_incidence(row, incidence_means):
-    if pd.isna(row['incidence_rate']):
-        return incidence_means[row['country']]
-    return row['incidence_rate']
-
-
-def impute_fatality(row, fatality_means):
-    if pd.isna(row['fatality_ratio']):
-        return fatality_means[row['country']]
-    return row['fatality_ratio']
-
+def impute_columns_from_location(row, attr, mean):
+    if pd.isna(row[attr]):
+        return mean[row['country']]
+    else:
+        return row[attr]
 
 def get_country_iso(row):
     return rg.search((row.latitude, row.longitude), mode=1)[0]['cc']
@@ -177,3 +153,21 @@ def get_country_iso(row):
 
 def get_country(row):
     return iso_to_country_dict[row.reverse_country_iso]['Name']
+
+def replace_latitude(row, locations):
+    matches = locations[locations['country'] == row['country']]
+    # if only one country matching this row
+    if len(matches) == 1:
+        return matches['latitude']
+
+    else:
+        return matches['latitude'].mean()
+
+def replace_longitude(row, locations):
+    matches = locations[locations['country'] == row['country']]
+    # if only one country matching this row
+    if len(matches) == 1:
+        return matches['longitude']
+
+    else:
+        return matches['longitude'].mean()
