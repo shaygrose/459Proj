@@ -74,35 +74,7 @@ test.dropna(how='all', subset=['province', 'country',
 
 print("Doing outlier detection...")
 
-# Check if all coordinates are in their respective country
-train['reverse_country_iso'] = train.apply(get_country_iso, axis=1)
-train['reverse_country'] = train.apply(get_country, axis=1)
-train['is_match'] = (train['country'] == train['reverse_country']) | (
-    train['province'] == train['reverse_country'])
-
-# for all rows that the coordinates and country don't match, replace the coordinates with the ones from locations.csv
-
-train[train['is_match'] == False].to_csv("../data/yolo.csv")
-# train[train['is_match'] == False]['latitude'] = locations[locations['country'] == train['country']]['latitude']
-# train[train['is_match'] == False]['longitude'] = locations[locations['country'] == train['country']]['longitude']
-
-lat = train[train['is_match'] == False].apply(replace_latitude, locations = locations, axis=1)
-lon = train[train['is_match'] == False].apply(replace_longitude, locations = locations, axis=1)
-
-# print(train[train['is_match'] == False])
-
-train[train['is_match'] == False]['latitude'] = lat
-train[train['is_match'] == False]['longitude'] = lon
-
-train['reverse_country_iso'] = train.apply(get_country_iso, axis=1)
-train['reverse_country'] = train.apply(get_country, axis=1)
-train['is_match'] = (train['country'] == train['reverse_country']) | (
-    train['province'] == train['reverse_country'])
-
-train[train['is_match'] == False].to_csv("../data/yolo2.csv")
-
-
-# check for impossible values in columns
+# check for impossible coordinates
 outliers = []
 check = [('age', 0, 120), ('latitude', -90, 90), ('longitude', -180, 180)]
 for attr, lower, upper in check:
@@ -112,6 +84,30 @@ for attr, lower, upper in check:
 
 assert len(outliers) == 0, "An outlier was detected, perform further investigation!"
 
+
+# Check if all coordinates are in their respective country
+train['reverse_country_iso'] = train.apply(get_country_iso, axis=1)
+train['reverse_country'] = train.apply(get_country, axis=1)
+train['is_match'] = (train['country'] == train['reverse_country']) | (
+    train['province'] == train['reverse_country'])
+
+# for all rows that the coordinates and country don't match, replace the coordinates with the ones from locations.csv
+
+train[train['is_match'] == False].to_csv("../data/mismatched_rows.csv")
+# train[train['is_match'] == False]['latitude'] = locations[locations['country'] == train['country']]['latitude']
+# train[train['is_match'] == False]['longitude'] = locations[locations['country'] == train['country']]['longitude']
+
+lat = train[train['is_match'] == False].apply(
+    replace_latitude, locations=locations, axis=1)
+lon = train[train['is_match'] == False].apply(
+    replace_longitude, locations=locations, axis=1)
+
+# print(train[train['is_match'] == False])
+
+train[train['is_match'] == False]['latitude'] = lat
+train[train['is_match'] == False]['longitude'] = lon
+
+# Check for imposible ages
 train.apply(check_valid_date, axis=1)
 
 
@@ -177,21 +173,20 @@ merged_test.rename(columns={'province_x': 'province', 'country_x': 'country',
                             'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
 
-cols = ['confirmed', 'deaths', 'active', 'recovered', 'fatality_ratio', 'incidence_rate']
+cols = ['confirmed', 'deaths', 'active',
+        'recovered', 'fatality_ratio', 'incidence_rate']
 
 # impute values for countries which didnt have a match in the merge
 for i in cols:
 
     train_means = round(merged_train.groupby(['country'])[i].mean())
     merged_train[i] = merged_train.apply(
-    impute_columns_from_location, mean=train_means, attr=i, axis=1)
+        impute_columns_from_location, mean=train_means, attr=i, axis=1)
 
     test_means = round(merged_test.groupby(['country'])[i].mean())
     merged_test[i] = merged_test.apply(
-    impute_columns_from_location, mean=test_means, attr=i, axis=1)
+        impute_columns_from_location, mean=test_means, attr=i, axis=1)
 
 
 merged_test.to_csv("../results/cases_test_processed.csv", index=False)
 merged_train.to_csv("../results/cases_train_processed.csv", index=False)
-
-
