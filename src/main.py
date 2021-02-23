@@ -84,7 +84,6 @@ for attr, lower, upper in check:
 
 assert len(outliers) == 0, "An outlier was detected, perform further investigation!"
 
-
 # Check if all coordinates are in their respective country
 train['reverse_country_iso'] = train.apply(get_country_iso, axis=1)
 train['reverse_country'] = train.apply(get_country, axis=1)
@@ -92,25 +91,27 @@ train['is_match'] = (train['country'] == train['reverse_country']) | (
     train['province'] == train['reverse_country'])
 
 # for all rows that the coordinates and country don't match, replace the coordinates with the ones from locations.csv
-
-train[train['is_match'] == False].to_csv("../data/mismatched_rows.csv")
 mismatched_rows = pd.DataFrame(train[train['is_match'] == False])
-# train[train['is_match'] == False]['latitude'] = locations[locations['country'] == train['country']]['latitude']
-# train[train['is_match'] == False]['longitude'] = locations[locations['country'] == train['country']]['longitude']
 
-lat = train[train['is_match'] == False].apply(
-    replace_latitude, locations=locations, axis=1)
-lon = train[train['is_match'] == False].apply(
-    replace_longitude, locations=locations, axis=1)
+mismatched_countries = mismatched_rows['country'].unique()
+new_lat = {}
+new_lon = {}
+for country in mismatched_countries:
+    new_lat[country] = locations[locations['country'] == country].groupby(['country'])[
+        'latitude'].mean()
+    new_lon[country] = locations[locations['country'] == country].groupby(['country'])[
+        'longitude'].mean()
 
-# print(train[train['is_match'] == False])
+for country in mismatched_countries:
+    if len(new_lat[country]) > 0 and len(new_lon[country]) > 0:
+        train.loc[train['country'] == country,
+                  'latitude'] = new_lat[country][0]
+        train.loc[train['country'] == country,
+                  'longitude'] = new_lon[country][0]
 
-train[train['is_match'] == False]['latitude'] = lat
-train[train['is_match'] == False]['longitude'] = lon
 
 # Check for imposible ages
 train.apply(check_valid_date, axis=1)
-
 
 ''' TASK 1.4 '''  # locations.csv
 
@@ -157,18 +158,7 @@ merged_train = pd.merge(train, locations, on="combined_key", how="left")
 merged_train.rename(columns={'province_x': 'province', 'country_x': 'country',
                              'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
-# fixing incorrect lon/lat from train data
 
-
-def fix_coordinates(row):
-    row['longitude'] = location[location['country'] == row['country']]['longitude']
-    row['latitude'] = location[location['country'] == row['country']]['latitude']
-
-
-# merged_train.loc[mismatched_rows.index]['latitude_y']
-# merged_train.loc[mismatched_rows.index]['longitude'] = merged_train.loc[mismatched_rows.index]['longitude_y']
-
-merged_train.to_csv('test.csv')
 # drop duplicate columns
 merged_train.drop(columns=['province_y', 'country_y',
                            'latitude_y', 'longitude_y', 'is_match'], inplace=True)
