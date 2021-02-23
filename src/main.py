@@ -163,7 +163,6 @@ merged_train.rename(columns={'province_x': 'province', 'country_x': 'country',
 merged_train.drop(columns=['province_y', 'country_y',
                            'latitude_y', 'longitude_y', 'is_match'], inplace=True)
 
-
 # repeat on test
 test['combined_key'] = test.apply(combine_keys, axis=1)
 
