@@ -94,6 +94,7 @@ train['is_match'] = (train['country'] == train['reverse_country']) | (
 # for all rows that the coordinates and country don't match, replace the coordinates with the ones from locations.csv
 
 train[train['is_match'] == False].to_csv("../data/mismatched_rows.csv")
+mismatched_rows = pd.DataFrame(train[train['is_match'] == False])
 # train[train['is_match'] == False]['latitude'] = locations[locations['country'] == train['country']]['latitude']
 # train[train['is_match'] == False]['longitude'] = locations[locations['country'] == train['country']]['longitude']
 
@@ -156,9 +157,21 @@ merged_train = pd.merge(train, locations, on="combined_key", how="left")
 merged_train.rename(columns={'province_x': 'province', 'country_x': 'country',
                              'longitude_x': 'longitude', 'latitude_x': 'latitude'}, inplace=True)
 
+# fixing incorrect lon/lat from train data
+
+
+def fix_coordinates(row):
+    row['longitude'] = location[location['country'] == row['country']]['longitude']
+    row['latitude'] = location[location['country'] == row['country']]['latitude']
+
+
+# merged_train.loc[mismatched_rows.index]['latitude_y']
+# merged_train.loc[mismatched_rows.index]['longitude'] = merged_train.loc[mismatched_rows.index]['longitude_y']
+
+merged_train.to_csv('test.csv')
 # drop duplicate columns
 merged_train.drop(columns=['province_y', 'country_y',
-                           'latitude_y', 'longitude_y'], inplace=True)
+                           'latitude_y', 'longitude_y', 'is_match'], inplace=True)
 
 
 # repeat on test

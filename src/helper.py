@@ -141,11 +141,13 @@ def check_valid_date(row):
     if row['date_confirmation'].year > 2021 or row['date_confirmation'].year < 2019:
         print("Bad year detected")
 
+
 def impute_columns_from_location(row, attr, mean):
     if pd.isna(row[attr]):
         return mean[row['country']]
     else:
         return row[attr]
+
 
 def get_country_iso(row):
     return rg.search((row.latitude, row.longitude), mode=1)[0]['cc']
@@ -154,20 +156,20 @@ def get_country_iso(row):
 def get_country(row):
     return iso_to_country_dict[row.reverse_country_iso]['Name']
 
+
 def replace_latitude(row, locations):
     matches = locations[locations['country'] == row['country']]
     # if only one country matching this row
     if len(matches) == 1:
         return matches['latitude']
-
     else:
         return matches['latitude'].mean()
+
 
 def replace_longitude(row, locations):
     matches = locations[locations['country'] == row['country']]
     # if only one country matching this row
     if len(matches) == 1:
         return matches['longitude']
-
     else:
         return matches['longitude'].mean()
