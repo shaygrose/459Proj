@@ -18,10 +18,6 @@ import datetime as dt
 # with open('svc_tfidf.pickle', 'rb') as data:
 #         tfidf = pickle.load(data)
 
-# how to save a model as a pickle file
-#  with open('nmf_model.pickle', 'wb') as output:
-#         pickle.dump(models[best_params], output)
-
 
 data = pd.read_csv("../data/cases_train_processed.csv")
 
@@ -59,16 +55,16 @@ X_train, X_valid, y_train, y_valid = train_test_split(
     X, y, test_size=0.33, random_state=42)
 
 ''' RANDOM FOREST '''
-# rf_model = RandomForestClassifier(
-#     n_estimators=100, max_depth=10, min_samples_leaf=10)
-# rf_model.fit(X_train, y_train)
+rf_model = RandomForestClassifier(
+    n_estimators=100, max_depth=10, min_samples_leaf=10)
+rf_model.fit(X_train, y_train)
 # rf_score = rf_model.score(X_valid, y_valid)
 
 # print(rf_score)
 
 ''' ADA BOOST '''
-# ada = AdaBoostClassifier(n_estimators=100, random_state=0)
-# ada.fit(X_train, y_train)
+ada = AdaBoostClassifier(n_estimators=100, random_state=0)
+ada.fit(X_train, y_train)
 # print(ada.score(X_valid, y_valid))
 
 ''' KNN '''
@@ -80,3 +76,8 @@ n_neighbors = 10
 clf = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')
 clf.fit(X_train, y_train)
 print(clf.score(X_valid, y_valid))
+
+# save a model as a pickle file
+pickle.dump(rf_model, open('../models/rf.pickle', 'wb'))
+pickle.dump(ada, open('../models/ada.pickle', 'wb'))
+pickle.dump(clf, open('../models/knn.pickle', 'wb'))
