@@ -5,6 +5,7 @@ import sys
 import os
 import csv
 from sklearn.ensemble import AdaBoostClassifier
+import xgboost as xgb
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import neighbors
 # Import train_test_split function
@@ -12,10 +13,8 @@ from sklearn.model_selection import train_test_split
 # Import scikit-learn metrics module for accuracy calculation
 from sklearn import metrics
 import datetime as dt
-
-
-# how to open a pickle file in python
-#   tfidf = pickle.load(open('svc_tfidf.pickle', 'rb'))
+import os.path
+from os import path
 
 
 data = pd.read_csv("data/cases_train_processed.csv")
@@ -55,29 +54,46 @@ X_train, X_valid, y_train, y_valid = train_test_split(
     X, y, test_size=0.2, random_state=69)
 
 ''' RANDOM FOREST '''
-rf_model = RandomForestClassifier(
-    n_estimators=100, max_depth=10, min_samples_leaf=10)
-rf_model.fit(X_train, y_train)
-# rf_score = rf_model.score(X_valid, y_valid)
+if not path.exists('models/rf_classifier.pkl'):
+    rf_model = RandomForestClassifier(
+        n_estimators=100, max_depth=10, min_samples_leaf=10)
+    rf_model.fit(X_train, y_train)
+    pickle.dump(rf_model, open('models/rf_classifier.pkl', 'wb'))
 
-# print(rf_score)
+rf_model = pickle.load(open('models/rf_classifier.pkl', 'rb'))
+rf_score = rf_model.score(X_valid, y_valid)
+print("Random Forest score on validation: ", rf_score)
+
 
 ''' ADA BOOST '''
-ada = AdaBoostClassifier(n_estimators=100, random_state=0)
-ada.fit(X_train, y_train)
-# print(ada.score(X_valid, y_valid))
+# ada = AdaBoostClassifier(n_estimators=100, random_state=69)
+# ada.fit(X_train, y_train)
+# ada_score = ada.score(X_valid, y_valid)
+
+# print("AdaBoost score on validation: ", ada_score)
+
+''' XG BOOST '''
+if not path.exists('models/xgb_classifier.pkl'):
+    data_dmatrix = xgb.DMatrix(data=X, label=y)
+    xg_reg = xgb.XGBRegressor(objective='multi:softmax', colsample_bytree=0.3, learning_rate=0.1,
+                              max_depth=10, alpha=10, n_estimators=20, num_class=4, verbosity=0)
+    xg_reg.fit(X_train, y_train)
+    # write model to pkl file
+    pickle.dump(xg_reg, open('models/xgb_classifier.pkl', 'wb'))
+
+xg_reg = pickle.load(open('models/xgb_classifier.pkl', 'rb'))
+xg_score = xg_reg.score(X_valid, y_valid)
+print("XGBoost score on validation: ", xg_score)
 
 ''' KNN '''
-
 # normalized = ((data - data.mean())/data.std())
+if not path.exists('models/knn_classifier.pkl'):
+    # weights can be distance or uniform
+    n_neighbors = 11
+    knn = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')
+    knn.fit(X_train, y_train)
+    pickle.dump(knn, open('models/knn_classifier.pkl', 'wb'))
 
-# weights can be distance or uniform
-n_neighbors = 10
-clf = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')
-clf.fit(X_train, y_train)
-print(clf.score(X_valid, y_valid))
-
-# save a model as a pickle file
-pickle.dump(rf_model, open('models/rf.pickle', 'wb'))
-pickle.dump(ada, open('models/ada.pickle', 'wb'))
-pickle.dump(clf, open('models/knn.pickle', 'wb'))
+knn = pickle.load(open('models/knn_classifier.pkl', 'rb'))
+knn_score = knn.score(X_valid, y_valid)
+print("KNN score on validation: ", knn_score)
