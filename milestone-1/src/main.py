@@ -189,6 +189,55 @@ for i in cols:
     merged_test[i] = merged_test.apply(
         impute_columns_from_location, mean=test_means, attr=i, axis=1)
 
+# merged_train[merged_train["country"] == "Puerto Rico"]["province"] = "Puerto Rico"
+
+# puerto = locations[locations["province"] == "Puerto Rico"]
+
+# merged_train[merged_train["country"] == "Republic of Congo"]["country"] = "Congo (Brazzaville)"
+# merged_train[merged_train["country"] == "Democratic Republic of the Congo"]["country"] = "Congo (Brazzaville)"
+# merged_test[merged_test["country"] == "Democratic Republic of the Congo"]["country"] = "Congo (Brazzaville)"
+
+merged_train["country"].replace("Democratic Republic of the Congo", "Congo (Brazzaville)", inplace=True)
+merged_train["country"].replace("Republic of Congo", "Congo (Brazzaville)", inplace=True)
+merged_test["country"].replace("Democratic Republic of the Congo", "Congo (Brazzaville)", inplace=True)
+
+
+def fill(row, province_means, country_means, attr):
+    if row['province'] in province_means.keys():
+        return province_means[row['province']]
+    elif row['province'] in country_means.keys():
+        return country_means[row['province']]
+    elif row['country'] in province_means.keys():
+        return province_means[row['country']]
+    elif row['country'] in country_means.keys():
+        return country_means[row['country']]
+    else: 
+        return row[attr]
+    
+
+# Austria Bahamas Russia Ecuador Paraguay Algeria Bolivia Zimbabwe Taiwan* Siberia Iran
+for i in cols:
+
+    # puerto_rico_means = round(puerto.groupby(["province"])[i].mean())
+    # merged_train[i] = merged_train.apply(
+    #     impute_columns_from_province, mean=puerto_rico_means, attr=i, axis=1)
+    country_means = round(locations.groupby(['country'])[i].mean())
+    province_means = round(locations.groupby(['province'])[i].mean())
+
+    merged_train[i] = merged_train.apply(
+        fill, province_means=province_means, country_means=country_means, attr=i, axis=1)
+
+    test_means = round(locations.groupby(['country'])[i].mean())
+    merged_test[i] = merged_test.apply(
+        fill, province_means=province_means, country_means=country_means, attr=i, axis=1)
+
+print(merged_train[pd.isna(merged_train["deaths"])]["country"].count())
+print(merged_test[pd.isna(merged_test["deaths"])]["country"].count())
+
+
+merged_train.drop(columns=["reverse_country_iso", "reverse_country", "combined_key"], inplace=True)
+# merged_test.drop(columns=["reverse_country_iso", "reverse_country", "combined_key"], inplace=True)
+
 
 merged_test.to_csv("../results/cases_test_processed.csv", index=False)
 merged_train.to_csv("../results/cases_train_processed.csv", index=False)

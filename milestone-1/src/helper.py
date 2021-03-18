@@ -148,6 +148,11 @@ def impute_columns_from_location(row, attr, mean):
     else:
         return row[attr]
 
+def impute_columns_from_province(row, attr, mean):
+    if pd.isna(row[attr]) and row['country'] == "Puerto Rico":
+        return mean[row['province']]
+    else:
+        return row[attr]
 
 def get_country_iso(row):
     return rg.search((row.latitude, row.longitude), mode=1)[0]['cc']
