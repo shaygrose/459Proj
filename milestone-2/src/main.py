@@ -18,7 +18,7 @@ import datetime as dt
 #   tfidf = pickle.load(open('svc_tfidf.pickle', 'rb'))
 
 
-data = pd.read_csv("../data/cases_train_processed.csv")
+data = pd.read_csv("data/cases_train_processed.csv")
 
 # we will only be using the country for classifying
 data.drop(columns=["latitude", "longitude", "province"], inplace=True)
@@ -78,6 +78,6 @@ clf.fit(X_train, y_train)
 print(clf.score(X_valid, y_valid))
 
 # save a model as a pickle file
-pickle.dump(rf_model, open('../models/rf.pickle', 'wb'))
-pickle.dump(ada, open('../models/ada.pickle', 'wb'))
-pickle.dump(clf, open('../models/knn.pickle', 'wb'))
+pickle.dump(rf_model, open('models/rf.pickle', 'wb'))
+pickle.dump(ada, open('models/ada.pickle', 'wb'))
+pickle.dump(clf, open('models/knn.pickle', 'wb'))
