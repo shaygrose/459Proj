@@ -52,7 +52,7 @@ y = y.cat.codes
 
 # 80% train, 20% test
 X_train, X_valid, y_train, y_valid = train_test_split(
-    X, y, test_size=0.2, random_state=42)
+    X, y, test_size=0.2, random_state=69)
 
 ''' RANDOM FOREST '''
 rf_model = RandomForestClassifier(
