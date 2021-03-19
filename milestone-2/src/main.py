@@ -121,7 +121,6 @@ knn_valid_pred = knn.predict(X_valid)
 xg_valid_pred = xg_reg.predict(X_valid)
 
 
-# 0:deceased, 1:hospitalized, 2:nonhospitalized, 3:recovered
 target_names = ['0', '1', '2', '3']
 print('--------------------RF Metrics----------------------------------')
 print('- Train -')
