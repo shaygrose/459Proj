@@ -1,743 +1,743 @@
 province,country,latitude,longitude,confirmed,deaths,recovered,active,combined_key,incidence_rate,fatality_ratio
-,Afghanistan,33.93911,67.709953,38919,1437,32576,4906.0,Afghanistan,99.98,3.69
-,Albania,41.1533,20.1683,12226,358,6888,4980.0,Albania,424.84,2.93
-,Algeria,28.0339,1.6596,49623,1665,34923,13035.0,Algeria,113.16,3.36
-,Andorra,42.5063,1.5218,1564,53,1164,347.0,Andorra,2024.2,3.39
-,Angola,-11.2027,17.8739,3901,147,1445,2309.0,Angola,11.87,3.77
-,Antigua and Barbuda,17.0608,-61.7964,96,3,92,1.0,Antigua and Barbuda,98.03,3.12
-,Argentina,-38.4161,-63.6167,622934,12799,478077,132058.0,Argentina,1378.3,2.05
-,Armenia,40.0691,45.0382,47154,928,42551,3675.0,Armenia,1591.3,1.97
-Australian Capital Territory,Australia,-35.4735,149.0124,113,3,110,0.0,"Australian Capital Territory, Australia",26.4,2.65
-New South Wales,Australia,-33.8688,151.2093,4200,53,2994,1153.0,"New South Wales, Australia",51.74,1.26
-Northern Territory,Australia,-12.4634,130.8456,33,0,31,2.0,"Northern Territory, Australia",13.44,0.0
-Queensland,Australia,-27.4698,153.0251,1152,6,1123,23.0,"Queensland, Australia",22.52,0.52
-South Australia,Australia,-34.9285,138.6007,466,4,462,0.0,"South Australia, Australia",26.53,0.86
-Tasmania,Australia,-42.8821,147.3272,230,13,217,0.0,"Tasmania, Australia",42.95,5.65
-Victoria,Australia,-37.8136,144.9631,20042,761,18379,902.0,"Victoria, Australia",302.3,3.8
-Western Australia,Australia,-31.9505,115.8605,662,9,650,3.0,"Western Australia, Australia",25.17,1.36
-,Austria,47.5162,14.5501,37474,765,28961,7748.0,Austria,416.08,2.04
-,Azerbaijan,40.1431,47.5769,39042,574,36601,1867.0,Azerbaijan,385.06,1.47
-,Bahamas,25.025885,-78.035889,3214,73,1679,1462.0,Bahamas,817.3,2.27
-,Bahrain,26.0275,50.55,64499,221,57299,6979.0,Bahrain,3790.53,0.34
-,Bangladesh,23.685,90.3563,347372,4913,254386,88073.0,Bangladesh,210.93,1.41
-,Barbados,13.1939,-59.5432,185,7,172,6.0,Barbados,64.38,3.78
-,Belarus,53.7098,27.9534,75461,776,73212,1473.0,Belarus,798.59,1.03
-,Belgium,50.8333,4.469936,100748,9944,18945,71859.0,Belgium,869.3,9.87
-,Belize,17.1899,-88.4976,1606,20,876,710.0,Belize,403.9,1.25
-,Benin,9.3077,2.3158,2280,40,1950,290.0,Benin,18.81,1.75
-,Bhutan,27.5142,90.4336,259,0,190,69.0,Bhutan,33.57,0.0
-,Bolivia,-16.2902,-63.5887,130470,7586,89032,33852.0,Bolivia,1117.7,5.81
-,Bosnia and Herzegovina,43.9159,17.6791,25217,758,17489,6970.0,Bosnia and Herzegovina,768.62,3.01
-,Botswana,-22.3285,24.6849,2567,13,624,1930.0,Botswana,109.16,0.51
-Acre,Brazil,-9.0238,-70.812,27061,648,24298,2115.0,"Acre, Brazil",3068.37,2.39
-Alagoas,Brazil,-9.5713,-36.782,83950,2014,80658,1278.0,"Alagoas, Brazil",2515.46,2.4
-Amapa,Brazil,0.902,-52.003,46738,691,35026,11021.0,"Amapa, Brazil",5526.34,1.48
-Amazonas,Brazil,-3.4168,-65.8561,131573,3956,109874,17743.0,"Amazonas, Brazil",3174.57,3.01
-Bahia,Brazil,-12.5797,-41.7007,294210,6221,280351,7638.0,"Bahia, Brazil",1978.14,2.11
-Ceara,Brazil,-5.4984,-39.3206,233600,8801,206727,18072.0,"Ceara, Brazil",2558.02,3.77
-Distrito Federal,Brazil,-15.7998,-47.8645,183096,3048,170627,9421.0,"Distrito Federal, Brazil",6072.3,1.66
-Espirito Santo,Brazil,-19.1834,-40.3089,123720,3408,113545,6767.0,"Espirito Santo, Brazil",3078.65,2.75
-Goias,Brazil,-15.827,-49.8362,182856,4135,172741,5980.0,"Goias, Brazil",2605.4,2.26
-Maranhao,Brazil,-4.9609,-45.2744,167333,3643,157810,5880.0,"Maranhao, Brazil",2365.07,2.18
-Mato Grosso,Brazil,-12.6819,-56.9211,112242,3214,92468,16560.0,"Mato Grosso, Brazil",3221.21,2.86
-Mato Grosso do Sul,Brazil,-20.7722,-54.7852,63466,1162,56313,5991.0,"Mato Grosso do Sul, Brazil",2283.78,1.83
-Minas Gerais,Brazil,-18.5122,-44.555,268009,6656,233463,27890.0,"Minas Gerais, Brazil",1266.06,2.48
-Para,Brazil,-1.9981,-54.9306,220205,6451,204728,9026.0,"Para, Brazil",2559.67,2.93
-Paraiba,Brazil,-7.24,-36.782,116588,2695,89305,24588.0,"Paraiba, Brazil",2901.55,2.31
-Parana,Brazil,-25.2521,-52.0215,163479,4093,114358,45028.0,"Parana, Brazil",1429.77,2.5
-Pernambuco,Brazil,-8.8137,-36.9541,141042,8004,122512,10526.0,"Pernambuco, Brazil",1475.79,5.67
-Piaui,Brazil,-7.7183,-42.7289,90061,2025,87492,544.0,"Piaui, Brazil",2751.44,2.25
-Rio Grande do Norte,Brazil,-5.4026,-36.9541,66963,2348,39924,24691.0,"Rio Grande do Norte, Brazil",1909.49,3.51
-Rio Grande do Sul,Brazil,-30.0346,-51.2177,174140,4371,159153,10616.0,"Rio Grande do Sul, Brazil",1530.6,2.51
-Rio de Janeiro,Brazil,-22.9068,-43.1729,251261,17634,228258,5369.0,"Rio de Janeiro, Brazil",1455.32,7.02
-Rondonia,Brazil,-11.5057,-63.5806,62697,1297,52932,8468.0,"Rondonia, Brazil",3527.8,2.07
-Roraima,Brazil,-2.7376,-62.0751,48088,613,15164,32311.0,"Roraima, Brazil",7938.44,1.27
-Santa Catarina,Brazil,-27.2423,-50.2189,205250,2635,194520,8095.0,"Santa Catarina, Brazil",2864.7,1.28
-Sao Paulo,Brazil,-23.5505,-46.6333,931673,33927,780448,117298.0,"Sao Paulo, Brazil",2028.95,3.64
-Sergipe,Brazil,-10.5741,-37.3857,75772,1976,68932,4864.0,"Sergipe, Brazil",3296.3,2.61
-Tocantins,Brazil,-10.1753,-48.2982,63167,866,45266,17035.0,"Tocantins, Brazil",4016.04,1.37
-,Brunei,4.5353,114.7277,145,3,142,0.0,Brunei,33.14,2.07
-,Bulgaria,42.7339,25.4858,18819,755,13558,4506.0,Bulgaria,270.84,4.01
-,Burkina Faso,12.2383,-1.5616,1816,56,1176,584.0,Burkina Faso,8.69,3.08
-,Burma,21.9162,95.956,5263,81,1188,3994.0,Burma,9.67,1.54
-,Burundi,-3.3731,29.9189,473,1,374,98.0,Burundi,3.98,0.21
-,Cabo Verde,16.5388,-23.0418,5186,50,4581,555.0,Cabo Verde,932.75,0.96
-,Cambodia,11.55,104.9167,275,0,274,1.0,Cambodia,1.64,0.0
-,Cameroon,3.848,11.5021,20431,416,19124,891.0,Cameroon,76.96,2.04
-Alberta,Canada,53.9333,-116.5765,16381,255,14702,1424.0,"Alberta, Canada",371.19,1.56
-British Columbia,Canada,53.7267,-127.6476,7842,223,5797,1822.0,"British Columbia, Canada",153.44,2.84
+,Afghanistan,33.93911,67.709953,38919,1437,32576,4906.0,Afghanistan,99.976005,3.692284
+,Albania,41.1533,20.1683,12226,358,6888,4980.0,Albania,424.838418,2.928186
+,Algeria,28.0339,1.6596,49623,1665,34923,13035.0,Algeria,113.162645,3.355299
+,Andorra,42.5063,1.5218,1564,53,1164,347.0,Andorra,2024.20242,3.388747
+,Angola,-11.2027,17.8739,3901,147,1445,2309.0,Angola,11.869312,3.768265
+,Antigua and Barbuda,17.0608,-61.7964,96,3,92,1.0,Antigua and Barbuda,98.031207,3.125
+,Argentina,-38.4161,-63.6167,622934,12799,478077,132058.0,Argentina,1378.30134,2.054632
+,Armenia,40.0691,45.0382,47154,928,42551,3675.0,Armenia,1591.301936,1.96802
+Australian Capital Territory,Australia,-35.4735,149.0124,113,3,110,0.0,"Australian Capital Territory, Australia",26.395702,2.654867
+New South Wales,Australia,-33.8688,151.2093,4200,53,2994,1153.0,"New South Wales, Australia",51.736881,1.261905
+Northern Territory,Australia,-12.4634,130.8456,33,0,31,2.0,"Northern Territory, Australia",13.436482,0.0
+Queensland,Australia,-27.4698,153.0251,1152,6,1123,23.0,"Queensland, Australia",22.519793,0.520833
+South Australia,Australia,-34.9285,138.6007,466,4,462,0.0,"South Australia, Australia",26.530031,0.858369
+Tasmania,Australia,-42.8821,147.3272,230,13,217,0.0,"Tasmania, Australia",42.950514,5.652174
+Victoria,Australia,-37.8136,144.9631,20042,761,18379,902.0,"Victoria, Australia",302.297169,3.797026
+Western Australia,Australia,-31.9505,115.8605,662,9,650,3.0,"Western Australia, Australia",25.165362,1.359517
+,Austria,47.5162,14.5501,37474,765,28961,7748.0,Austria,416.081897,2.041415
+,Azerbaijan,40.1431,47.5769,39042,574,36601,1867.0,Azerbaijan,385.060915,1.470212
+,Bahamas,25.025885,-78.035889,3214,73,1679,1462.0,Bahamas,817.295956,2.271313
+,Bahrain,26.0275,50.55,64499,221,57299,6979.0,Bahrain,3790.529172,0.342641
+,Bangladesh,23.685,90.3563,347372,4913,254386,88073.0,Bangladesh,210.925558,1.414334
+,Barbados,13.1939,-59.5432,185,7,172,6.0,Barbados,64.376712,3.783784
+,Belarus,53.7098,27.9534,75461,776,73212,1473.0,Belarus,798.58648,1.028346
+,Belgium,50.8333,4.469936,100748,9944,18945,71859.0,Belgium,869.295411,9.870171
+,Belize,17.1899,-88.4976,1606,20,876,710.0,Belize,403.902208,1.24533
+,Benin,9.3077,2.3158,2280,40,1950,290.0,Benin,18.806919,1.754386
+,Bhutan,27.5142,90.4336,259,0,190,69.0,Bhutan,33.566093,0.0
+,Bolivia,-16.2902,-63.5887,130470,7586,89032,33852.0,Bolivia,1117.704753,5.814363
+,Bosnia and Herzegovina,43.9159,17.6791,25217,758,17489,6970.0,Bosnia and Herzegovina,768.619992,3.005909
+,Botswana,-22.3285,24.6849,2567,13,624,1930.0,Botswana,109.158561,0.506428
+Acre,Brazil,-9.0238,-70.812,27061,648,24298,2115.0,"Acre, Brazil",3068.366716,2.39459
+Alagoas,Brazil,-9.5713,-36.782,83950,2014,80658,1278.0,"Alagoas, Brazil",2515.463584,2.399047
+Amapa,Brazil,0.902,-52.003,46738,691,35026,11021.0,"Amapa, Brazil",5526.343483,1.478454
+Amazonas,Brazil,-3.4168,-65.8561,131573,3956,109874,17743.0,"Amazonas, Brazil",3174.566791,3.006696
+Bahia,Brazil,-12.5797,-41.7007,294210,6221,280351,7638.0,"Bahia, Brazil",1978.13981,2.114476
+Ceara,Brazil,-5.4984,-39.3206,233600,8801,206727,18072.0,"Ceara, Brazil",2558.015821,3.767551
+Distrito Federal,Brazil,-15.7998,-47.8645,183096,3048,170627,9421.0,"Distrito Federal, Brazil",6072.296061,1.6647
+Espirito Santo,Brazil,-19.1834,-40.3089,123720,3408,113545,6767.0,"Espirito Santo, Brazil",3078.645814,2.754607
+Goias,Brazil,-15.827,-49.8362,182856,4135,172741,5980.0,"Goias, Brazil",2605.39722,2.261342
+Maranhao,Brazil,-4.9609,-45.2744,167333,3643,157810,5880.0,"Maranhao, Brazil",2365.070236,2.177096
+Mato Grosso,Brazil,-12.6819,-56.9211,112242,3214,92468,16560.0,"Mato Grosso, Brazil",3221.21094,2.863456
+Mato Grosso do Sul,Brazil,-20.7722,-54.7852,63466,1162,56313,5991.0,"Mato Grosso do Sul, Brazil",2283.782646,1.830902
+Minas Gerais,Brazil,-18.5122,-44.555,268009,6656,233463,27890.0,"Minas Gerais, Brazil",1266.057188,2.483499
+Para,Brazil,-1.9981,-54.9306,220205,6451,204728,9026.0,"Para, Brazil",2559.670528,2.929543
+Paraiba,Brazil,-7.24,-36.782,116588,2695,89305,24588.0,"Paraiba, Brazil",2901.550897,2.311559
+Parana,Brazil,-25.2521,-52.0215,163479,4093,114358,45028.0,"Parana, Brazil",1429.76749,2.503685
+Pernambuco,Brazil,-8.8137,-36.9541,141042,8004,122512,10526.0,"Pernambuco, Brazil",1475.786881,5.674905
+Piaui,Brazil,-7.7183,-42.7289,90061,2025,87492,544.0,"Piaui, Brazil",2751.443759,2.248476
+Rio Grande do Norte,Brazil,-5.4026,-36.9541,66963,2348,39924,24691.0,"Rio Grande do Norte, Brazil",1909.48979,3.506414
+Rio Grande do Sul,Brazil,-30.0346,-51.2177,174140,4371,159153,10616.0,"Rio Grande do Sul, Brazil",1530.599823,2.510049
+Rio de Janeiro,Brazil,-22.9068,-43.1729,251261,17634,228258,5369.0,"Rio de Janeiro, Brazil",1455.324816,7.0182
+Rondonia,Brazil,-11.5057,-63.5806,62697,1297,52932,8468.0,"Rondonia, Brazil",3527.803176,2.06868
+Roraima,Brazil,-2.7376,-62.0751,48088,613,15164,32311.0,"Roraima, Brazil",7938.44437,1.274746
+Santa Catarina,Brazil,-27.2423,-50.2189,205250,2635,194520,8095.0,"Santa Catarina, Brazil",2864.704441,1.2838
+Sao Paulo,Brazil,-23.5505,-46.6333,931673,33927,780448,117298.0,"Sao Paulo, Brazil",2028.946636,3.641514
+Sergipe,Brazil,-10.5741,-37.3857,75772,1976,68932,4864.0,"Sergipe, Brazil",3296.303643,2.607823
+Tocantins,Brazil,-10.1753,-48.2982,63167,866,45266,17035.0,"Tocantins, Brazil",4016.044596,1.370969
+,Brunei,4.5353,114.7277,145,3,142,0.0,Brunei,33.144145,2.068966
+,Bulgaria,42.7339,25.4858,18819,755,13558,4506.0,Bulgaria,270.837576,4.011903
+,Burkina Faso,12.2383,-1.5616,1816,56,1176,584.0,Burkina Faso,8.687633,3.0837
+,Burma,21.9162,95.956,5263,81,1188,3994.0,Burma,9.672891,1.539046
+,Burundi,-3.3731,29.9189,473,1,374,98.0,Burundi,3.977872,0.211416
+,Cabo Verde,16.5388,-23.0418,5186,50,4581,555.0,Cabo Verde,932.753944,0.964134
+,Cambodia,11.55,104.9167,275,0,274,1.0,Cambodia,1.644838,0.0
+,Cameroon,3.848,11.5021,20431,416,19124,891.0,Cameroon,76.964909,2.036122
+Alberta,Canada,53.9333,-116.5765,16381,255,14702,1424.0,"Alberta, Canada",371.186451,1.556682
+British Columbia,Canada,53.7267,-127.6476,7842,223,5797,1822.0,"British Columbia, Canada",153.436262,2.843662
 Diamond Princess,Canada,,,0,1,0,,"Diamond Princess, Canada",,
 Grand Princess,Canada,,,13,0,13,0.0,"Grand Princess, Canada",,0.0
-Manitoba,Canada,53.7609,-98.8139,1558,16,1211,331.0,"Manitoba, Canada",113.1,1.03
-New Brunswick,Canada,46.5653,-66.4619,194,2,192,0.0,"New Brunswick, Canada",24.87,1.03
-Newfoundland and Labrador,Canada,53.1355,-57.6604,272,3,267,2.0,"Newfoundland and Labrador, Canada",52.17,1.1
-Northwest Territories,Canada,64.8255,-124.8457,5,0,5,0.0,"Northwest Territories,Canada",11.13,0.0
-Nova Scotia,Canada,44.682,-63.7443,1086,65,1021,0.0,"Nova Scotia, Canada",111.1,5.99
-Ontario,Canada,51.2538,-85.3232,48317,2876,42573,2868.0,"Ontario, Canada",328.42,5.95
-Prince Edward Island,Canada,46.5107,-63.4168,57,0,56,1.0,"Prince Edward Island, Canada",36.04,0.0
-Quebec,Canada,52.9399,-73.5491,67080,5797,58490,2793.0,"Quebec, Canada",785.69,8.64
-Saskatchewan,Canada,52.9399,-106.4509,1787,24,1642,121.0,"Saskatchewan, Canada",151.23,1.34
-Yukon,Canada,64.2823,-135.0,15,0,15,0.0,"Yukon, Canada",36.52,0.0
-,Central African Republic,6.6111,20.9394,4786,62,1830,2894.0,Central African Republic,99.09,1.3
-,Chad,15.4542,18.7322,1149,81,966,102.0,Chad,7.0,7.05
-Antofagasta,Chile,-23.6509,-70.3975,19391,489,18423,479.0,"Antofagasta, Chile",3191.76,2.52
-Araucania,Chile,-38.9489,-72.3311,6358,103,5770,485.0,"Araucania, Chile",664.21,1.62
-Arica y Parinacota,Chile,-18.594,-69.4785,7561,138,7030,393.0,"Arica y Parinacota, Chile",3344.57,1.83
-Atacama,Chile,-27.5661,-70.0503,6552,56,6083,413.0,"Atacama, Chile",2267.57,0.85
-Aysen,Chile,-45.9864,-73.7669,223,1,155,67.0,"Aysen, Chile",216.17,0.45
-Biobio,Chile,-37.4464,-72.1416,21564,286,19404,1874.0,"Biobio, Chile",1385.14,1.33
-Coquimbo,Chile,-29.959,-71.3389,11497,192,10756,549.0,"Coquimbo, Chile",1517.58,1.67
-Los Lagos,Chile,-41.9198,-72.1416,8086,85,7312,689.0,"Los Lagos, Chile",975.74,1.05
-Los Rios,Chile,-40.231,-72.3311,1500,15,1254,231.0,"Los Rios, Chile",389.78,1.0
-Magallanes,Chile,-52.368,-70.9863,6273,64,4924,1285.0,"Magallanes, Chile",3766.82,1.02
-Maule,Chile,-35.5183,-71.6885,14317,297,12693,1327.0,"Maule, Chile",1370.11,2.07
-Metropolitana,Chile,-33.4376,-70.6505,282535,8998,269784,3753.0,"Metropolitana, Chile",3972.2,3.18
-Nuble,Chile,-36.7226,-71.7622,5881,105,5223,553.0,"Nuble, Chile",1223.66,1.79
-OHiggins,Chile,-34.5755,-71.0022,15386,383,14218,785.0,"OHiggins, Chile",1682.35,2.49
-Tarapaca,Chile,-19.9232,-69.5132,11401,218,10898,285.0,"Tarapaca, Chile",3449.02,1.91
-Unknown,Chile,,,54,1,54,,"Unknown, Chile",,1.85
-Valparaiso,Chile,-33.0472,-71.6127,26095,823,24120,1152.0,"Valparaiso, Chile",1437.03,3.15
-Anhui,China,31.8257,117.2264,991,6,985,0.0,"Anhui, China",1.57,0.61
-Beijing,China,40.1824,116.4142,935,9,926,0.0,"Beijing, China",4.34,0.96
-Chongqing,China,30.0572,107.874,584,6,577,1.0,"Chongqing, China",1.88,1.03
-Fujian,China,26.0789,117.9874,395,1,380,14.0,"Fujian, China",1.0,0.25
-Gansu,China,35.7518,104.2861,170,2,168,0.0,"Gansu, China",0.64,1.18
-Guangdong,China,23.3417,113.4244,1797,8,1767,22.0,"Guangdong, China",1.58,0.45
-Guangxi,China,23.8298,108.7881,258,2,253,3.0,"Guangxi, China",0.52,0.78
-Guizhou,China,26.8154,106.8748,147,2,145,0.0,"Guizhou, China",0.41,1.36
-Hainan,China,19.1959,109.7453,171,6,165,0.0,"Hainan, China",1.83,3.51
-Hebei,China,37.8957,114.9042,365,6,356,3.0,"Hebei, China",0.48,1.64
-Heilongjiang,China,47.862,127.7615,948,13,935,0.0,"Heilongjiang, China",2.51,1.37
-Henan,China,33.882,113.614,1279,22,1254,3.0,"Henan, China",1.33,1.72
-Hong Kong,China,22.3,114.2,5009,103,4708,198.0,"Hong Kong, China",66.81,2.06
-Hubei,China,30.9756,112.2707,68139,4512,63627,0.0,"Hubei, China",115.16,6.62
-Hunan,China,27.6104,111.7088,1019,4,1015,0.0,"Hunan, China",1.48,0.39
-Inner Mongolia,China,44.0935,113.9448,261,1,259,1.0,"Inner Mongolia, China",1.03,0.38
-Jiangsu,China,32.9711,119.455,665,0,664,1.0,"Jiangsu, China",0.83,0.0
-Jiangxi,China,27.614,115.7221,935,1,934,0.0,"Jiangxi, China",2.01,0.11
-Jilin,China,43.6661,126.1923,157,2,155,0.0,"Jilin, China",0.58,1.27
-Liaoning,China,41.2956,122.6085,265,2,262,1.0,"Liaoning, China",0.61,0.75
-Macau,China,22.1667,113.55,46,0,46,0.0,"Macau, China",7.08,0.0
-Ningxia,China,37.2692,106.1655,75,0,75,0.0,"Ningxia, China",1.09,0.0
-Qinghai,China,35.7452,95.9956,18,0,18,0.0,"Qinghai, China",0.3,0.0
-Shaanxi,China,35.1917,108.8701,399,3,372,24.0,"Shaanxi, China",1.03,0.75
-Shandong,China,36.3427,118.1498,831,7,815,9.0,"Shandong, China",0.83,0.84
-Shanghai,China,31.202,121.4491,972,7,916,49.0,"Shanghai, China",4.01,0.72
-Shanxi,China,37.5777,112.2922,203,0,203,0.0,"Shanxi, China",0.55,0.0
-Sichuan,China,30.6171,102.7103,672,3,652,17.0,"Sichuan, China",0.81,0.45
-Tianjin,China,39.3054,117.323,237,3,226,8.0,"Tianjin, China",1.52,1.27
-Tibet,China,31.6927,88.0924,1,0,1,0.0,"Tibet, China",0.03,0.0
-Xinjiang,China,41.1129,85.2401,902,3,899,0.0,"Xinjiang, China",3.63,0.33
-Yunnan,China,24.974,101.487,206,2,196,8.0,"Yunnan, China",0.43,0.97
-Zhejiang,China,29.1832,120.0934,1282,1,1272,9.0,"Zhejiang, China",2.23,0.08
-Amazonas,Colombia,-1.4429,-71.5724,2732,115,2597,20.0,"Amazonas, Colombia",3567.09,4.21
-Antioquia,Colombia,7.1986,-75.3412,102501,2187,85968,14346.0,"Antioquia, Colombia",1599.8,2.13
-Arauca,Colombia,7.0762,-70.7105,1449,34,1122,293.0,"Arauca, Colombia",552.69,2.35
-Atlantico,Colombia,10.6966,-74.8741,66512,3016,61671,1825.0,"Atlantico, Colombia",2623.21,4.53
-Bolivar,Colombia,8.6704,-74.03,27972,754,25630,1588.0,"Bolivar, Colombia",1351.23,2.7
-Boyaca,Colombia,5.4545,-73.362,5995,117,4266,1612.0,"Boyaca, Colombia",492.45,1.95
-Caldas,Colombia,5.2983,-75.2479,4653,106,3183,1364.0,"Caldas, Colombia",466.11,2.28
-Capital District,Colombia,4.711,-74.0721,250490,6408,205741,38341.0,"Capital District, Colombia",3379.26,2.56
-Caqueta,Colombia,0.8699,-73.8419,7759,274,6504,981.0,"Caqueta, Colombia",1932.56,3.53
-Casanare,Colombia,5.7589,-71.5724,1771,41,1203,527.0,"Casanare, Colombia",421.16,2.32
-Cauca,Colombia,2.705,-76.82600000000002,8192,224,6257,1711.0,"Cauca, Colombia",559.38,2.73
-Cesar,Colombia,9.3373,-73.6536,17236,494,12740,4002.0,"Cesar, Colombia",1435.65,2.87
-Choco,Colombia,5.2528,-76.82600000000002,3930,154,3636,140.0,"Choco, Colombia",734.82,3.92
-Cordoba,Colombia,8.0493,-75.574,22745,1480,19406,1859.0,"Cordoba, Colombia",1274.38,6.51
-Cundinamarca,Colombia,5.026,-74.03,30582,898,25087,4597.0,"Cundinamarca, Colombia",1047.67,2.94
-Guainia,Colombia,2.5854,-68.5247,547,10,234,303.0,"Guainia, Colombia",1136.88,1.83
-Guaviare,Colombia,1.0654,-73.2603,628,11,417,200.0,"Guaviare, Colombia",758.76,1.75
-Huila,Colombia,2.5359,-75.5277,9380,282,6258,2840.0,"Huila, Colombia",852.43,3.01
-La Guajira,Colombia,11.3548,-72.5205,7207,275,5698,1234.0,"La Guajira, Colombia",818.46,3.82
-Magdalena,Colombia,10.4113,-74.4057,14454,789,12119,1546.0,"Magdalena, Colombia",1077.25,5.46
-Meta,Colombia,3.272,-73.0877,14066,366,11374,2326.0,"Meta, Colombia",1352.86,2.6
-Narino,Colombia,1.2892,-77.3579,17412,638,14545,2229.0,"Narino, Colombia",1067.83,3.66
-Norte de Santander,Colombia,7.9463,-72.8988,14427,831,11890,1706.0,"Norte de Santander, Colombia",967.16,5.76
-Putumayo,Colombia,0.436,-75.5277,3619,160,3065,394.0,"Putumayo, Colombia",1039.4,4.42
-Quindio,Colombia,4.461,-75.6674,2531,76,1571,884.0,"Quindio, Colombia",468.79,3.0
-Risaralda,Colombia,5.3158,-75.9928,9468,195,6938,2335.0,"Risaralda, Colombia",1003.6,2.06
-San Andres y Providencia,Colombia,12.5567,-81.7185,841,9,337,495.0,"San Andres y Providencia, Colombia",1372.39,1.07
-Santander,Colombia,6.6437,-73.6536,27012,1158,20338,5516.0,"Santander, Colombia",1236.34,4.29
-Sucre,Colombia,8.814,-74.7233,13512,559,11964,989.0,"Sucre, Colombia",1493.26,4.14
-Tolima,Colombia,4.0925,-75.1545,10862,277,8129,2456.0,"Tolima, Colombia",816.58,2.55
-Valle del Cauca,Colombia,3.8009,-76.6413,56837,2092,47119,7626.0,"Valle del Cauca, Colombia",1269.85,3.68
-Vaupes,Colombia,0.8554,-70.812,679,5,457,217.0,"Vaupes, Colombia",1664.34,0.74
-Vichada,Colombia,4.4234,-69.2878,397,4,221,172.0,"Vichada, Colombia",368.25,1.01
-,Comoros,-11.6455,43.3333,470,7,450,13.0,Comoros,54.05,1.49
-,Congo (Brazzaville),-0.228,15.8277,4986,89,3887,1010.0,Congo (Brazzaville),90.36,1.78
-,Congo (Kinshasa),-4.0383,21.7587,10488,268,9891,329.0,Congo (Kinshasa),11.71,2.56
-,Costa Rica,9.7489,-83.7534,63712,706,23552,39454.0,Costa Rica,1250.7,1.11
-,Cote d'Ivoire,7.54,-5.5471,19269,120,18392,757.0,Cote d'Ivoire,73.05,0.62
-,Croatia,45.1,15.2,14725,244,12353,2128.0,Croatia,358.69,1.66
-,Cuba,21.521757,-77.78116700000002,5055,113,4284,658.0,Cuba,44.63,2.24
-,Cyprus,35.1264,33.4299,1590,22,1282,286.0,Cyprus,131.69,1.38
-,Czechia,49.8175,15.473,48306,499,24228,23579.0,Czechia,451.08,1.03
-Faroe Islands,Denmark,61.8926,-6.9118,431,0,412,19.0,"Faroe Islands, Denmark",882.02,0.0
-Greenland,Denmark,71.7069,-42.6043,14,0,14,0.0,"Greenland, Denmark",24.66,0.0
-,Denmark,56.2639,9.5018,22436,635,17316,4485.0,Denmark,387.35,2.83
-,Diamond Princess,,,712,13,651,48.0,Diamond Princess,,1.83
-,Djibouti,11.8251,42.5903,5403,61,5333,9.0,Djibouti,546.86,1.13
-,Dominica,15.415,-61.371,24,0,18,6.0,Dominica,33.34,0.0
-,Dominican Republic,18.7357,-70.1627,107700,2044,80820,24836.0,Dominican Republic,992.82,1.9
-,Ecuador,-1.8312,-78.1834,125620,11084,97063,17473.0,Ecuador,712.01,8.82
-,Egypt,26.820553000000004,30.802498,101900,5750,88666,7484.0,Egypt,99.58,5.64
-,El Salvador,13.7942,-88.8965,27428,808,21247,5373.0,El Salvador,422.87,2.95
-,Equatorial Guinea,1.6508,10.2679,5002,83,4509,410.0,Equatorial Guinea,356.53,1.66
-,Eritrea,15.1794,39.7823,364,0,305,59.0,Eritrea,10.26,0.0
-,Estonia,58.5953,25.0136,2875,64,2374,437.0,Estonia,216.73,2.23
-,Eswatini,-26.5225,31.4659,5245,104,4571,570.0,Eswatini,452.09,1.98
-,Ethiopia,9.145,40.4897,68131,1089,27939,39103.0,Ethiopia,59.26,1.6
-,Fiji,-17.7134,178.065,32,2,26,4.0,Fiji,3.57,6.25
-,Finland,61.92411,25.748151,8922,339,7700,883.0,Finland,161.03,3.8
-French Guiana,France,4.0,-53.0,9692,65,9341,286.0,"French Guiana, France",3244.92,0.67
-French Polynesia,France,-17.6797,-149.4068,1271,2,1028,241.0,"French Polynesia, France",452.47,0.16
-Guadeloupe,France,16.265,-61.551,3426,26,837,2563.0,"Guadeloupe, France",856.23,0.76
-Martinique,France,14.6415,-61.0242,1122,18,98,1006.0,"Martinique, France",298.99,1.6
-Mayotte,France,-12.8275,45.166244,3541,40,2964,537.0,"Mayotte, France",1297.96,1.13
-New Caledonia,France,-20.904305,165.618042,26,0,26,0.0,"New Caledonia, France",9.11,0.0
-Reunion,France,-21.1151,55.5364,3194,15,2482,697.0,"Reunion, France",356.75,0.47
-Saint Barthelemy,France,17.9,-62.8333,23,0,16,7.0,"Saint Barthelemy, France",232.68,0.0
-Saint Pierre and Miquelon,France,46.8852,-56.3159,11,0,5,6.0,"Saint Pierre and Miquelon, France",189.82,0.0
-St Martin,France,18.0708,-63.0501,330,6,206,118.0,"St Martin, France",853.62,1.82
-,France,46.2276,2.2137,444978,31085,76583,337913.0,France,681.52,6.99
-,Gabon,-0.8037,11.6094,8696,53,7848,795.0,Gabon,390.7,0.61
-,Gambia,13.4432,-15.3101,3504,108,1992,1404.0,Gambia,144.99,3.08
-,Georgia,42.3154,43.3569,3306,19,1481,1806.0,Georgia,82.87,0.57
-Baden-Wurttemberg,Germany,48.6616,9.3501,46779,1871,41228,3680.0,"Baden-Wurttemberg, Germany",422.59,4.0
-Bayern,Germany,48.7904,11.4979,64465,2648,56398,5419.0,"Bayern, Germany",492.98,4.11
-Berlin,Germany,52.52,13.405,13064,227,11667,1170.0,"Berlin, Germany",358.43,1.74
-Brandenburg,Germany,52.4125,12.5316,4117,173,3792,152.0,"Brandenburg, Germany",163.9,4.2
-Bremen,Germany,53.0793,8.8017,2192,59,2015,118.0,"Bremen, Germany",320.94,2.69
-Hamburg,Germany,53.5511,9.9937,7149,269,6129,751.0,"Hamburg, Germany",388.28,3.76
-Hessen,Germany,50.6521,9.1624,17516,543,15649,1324.0,"Hessen, Germany",279.55,3.1
-Mecklenburg-Vorpommern,Germany,53.6127,12.4296,1105,20,1014,71.0,"Mecklenburg-Vorpommern, Germany",68.65,1.81
-Niedersachsen,Germany,52.6367,9.8451,18775,669,16482,1624.0,"Niedersachsen, Germany",235.2,3.56
-Nordrhein-Westfalen,Germany,51.4332,7.6616,64692,1844,58524,4324.0,"Nordrhein-Westfalen, Germany",360.75,2.85
-Rheinland-Pfalz,Germany,50.1183,7.309,10075,247,9057,771.0,"Rheinland-Pfalz, Germany",246.64,2.45
-Saarland,Germany,49.3964,7.023,3275,176,3003,96.0,"Saarland, Germany",330.64,5.37
-Sachsen,Germany,51.1045,13.2017,6658,226,5826,606.0,"Sachsen, Germany",163.27,3.39
-Sachsen-Anhalt,Germany,51.9503,11.6923,2423,66,2213,144.0,"Sachsen-Anhalt, Germany",109.72,2.72
-Schleswig-Holstein,Germany,54.2194,9.6961,4384,161,3981,242.0,"Schleswig-Holstein, Germany",151.34,3.67
-Thuringen,Germany,51.011,10.8453,3919,189,3532,198.0,"Thuringen, Germany",182.86,4.82
+Manitoba,Canada,53.7609,-98.8139,1558,16,1211,331.0,"Manitoba, Canada",113.102052,1.026958
+New Brunswick,Canada,46.5653,-66.4619,194,2,192,0.0,"New Brunswick, Canada",24.872018,1.030928
+Newfoundland and Labrador,Canada,53.1355,-57.6604,272,3,267,2.0,"Newfoundland and Labrador, Canada",52.170744,1.102941
+Northwest Territories,Canada,64.8255,-124.8457,5,0,5,0.0,"Northwest Territories,Canada",11.134865,0.0
+Nova Scotia,Canada,44.682,-63.7443,1086,65,1021,0.0,"Nova Scotia, Canada",111.104632,5.985267
+Ontario,Canada,51.2538,-85.3232,48317,2876,42573,2868.0,"Ontario, Canada",328.42284,5.952356
+Prince Edward Island,Canada,46.5107,-63.4168,57,0,56,1.0,"Prince Edward Island, Canada",36.039909,0.0
+Quebec,Canada,52.9399,-73.5491,67080,5797,58490,2793.0,"Quebec, Canada",785.69409,8.64192
+Saskatchewan,Canada,52.9399,-106.4509,1787,24,1642,121.0,"Saskatchewan, Canada",151.227166,1.343033
+Yukon,Canada,64.2823,-135.0,15,0,15,0.0,"Yukon, Canada",36.515897,0.0
+,Central African Republic,6.6111,20.9394,4786,62,1830,2894.0,Central African Republic,99.093869,1.295445
+,Chad,15.4542,18.7322,1149,81,966,102.0,Chad,6.995068,7.049608
+Antofagasta,Chile,-23.6509,-70.3975,19391,489,18423,479.0,"Antofagasta, Chile",3191.755523,2.521788
+Araucania,Chile,-38.9489,-72.3311,6358,103,5770,485.0,"Araucania, Chile",664.212347,1.620006
+Arica y Parinacota,Chile,-18.594,-69.4785,7561,138,7030,393.0,"Arica y Parinacota, Chile",3344.568891,1.825155
+Atacama,Chile,-27.5661,-70.0503,6552,56,6083,413.0,"Atacama, Chile",2267.567418,0.854701
+Aysen,Chile,-45.9864,-73.7669,223,1,155,67.0,"Aysen, Chile",216.173249,0.44843
+Biobio,Chile,-37.4464,-72.1416,21564,286,19404,1874.0,"Biobio, Chile",1385.144575,1.326285
+Coquimbo,Chile,-29.959,-71.3389,11497,192,10756,549.0,"Coquimbo, Chile",1517.583482,1.670001
+Los Lagos,Chile,-41.9198,-72.1416,8086,85,7312,689.0,"Los Lagos, Chile",975.735724,1.0512
+Los Rios,Chile,-40.231,-72.3311,1500,15,1254,231.0,"Los Rios, Chile",389.775411,1.0
+Magallanes,Chile,-52.368,-70.9863,6273,64,4924,1285.0,"Magallanes, Chile",3766.82099,1.020245
+Maule,Chile,-35.5183,-71.6885,14317,297,12693,1327.0,"Maule, Chile",1370.113403,2.074457
+Metropolitana,Chile,-33.4376,-70.6505,282535,8998,269784,3753.0,"Metropolitana, Chile",3972.200571,3.184738
+Nuble,Chile,-36.7226,-71.7622,5881,105,5223,553.0,"Nuble, Chile",1223.65582,1.785411
+OHiggins,Chile,-34.5755,-71.0022,15386,383,14218,785.0,"OHiggins, Chile",1682.348246,2.489276
+Tarapaca,Chile,-19.9232,-69.5132,11401,218,10898,285.0,"Tarapaca, Chile",3449.016511,1.912113
+Unknown,Chile,,,54,1,54,,"Unknown, Chile",,1.851852
+Valparaiso,Chile,-33.0472,-71.6127,26095,823,24120,1152.0,"Valparaiso, Chile",1437.026888,3.153861
+Anhui,China,31.8257,117.2264,991,6,985,0.0,"Anhui, China",1.567046,0.605449
+Beijing,China,40.1824,116.4142,935,9,926,0.0,"Beijing, China",4.340761,0.962567
+Chongqing,China,30.0572,107.874,584,6,577,1.0,"Chongqing, China",1.882656,1.027397
+Fujian,China,26.0789,117.9874,395,1,380,14.0,"Fujian, China",1.002284,0.253165
+Gansu,China,35.7518,104.2861,170,2,168,0.0,"Gansu, China",0.644672,1.176471
+Guangdong,China,23.3417,113.4244,1797,8,1767,22.0,"Guangdong, China",1.583818,0.445186
+Guangxi,China,23.8298,108.7881,258,2,253,3.0,"Guangxi, China",0.523752,0.775194
+Guizhou,China,26.8154,106.8748,147,2,145,0.0,"Guizhou, China",0.408333,1.360544
+Hainan,China,19.1959,109.7453,171,6,165,0.0,"Hainan, China",1.830835,3.508772
+Hebei,China,37.8957,114.9042,365,6,356,3.0,"Hebei, China",0.48306,1.643836
+Heilongjiang,China,47.862,127.7615,948,13,935,0.0,"Heilongjiang, China",2.512589,1.371308
+Henan,China,33.882,113.614,1279,22,1254,3.0,"Henan, China",1.331598,1.720094
+Hong Kong,China,22.3,114.2,5009,103,4708,198.0,"Hong Kong, China",66.813499,2.056299
+Hubei,China,30.9756,112.2707,68139,4512,63627,0.0,"Hubei, China",115.158019,6.621758
+Hunan,China,27.6104,111.7088,1019,4,1015,0.0,"Hunan, China",1.477026,0.392542
+Inner Mongolia,China,44.0935,113.9448,261,1,259,1.0,"Inner Mongolia, China",1.029992,0.383142
+Jiangsu,China,32.9711,119.455,665,0,664,1.0,"Jiangsu, China",0.825984,0.0
+Jiangxi,China,27.614,115.7221,935,1,934,0.0,"Jiangxi, China",2.011618,0.106952
+Jilin,China,43.6661,126.1923,157,2,155,0.0,"Jilin, China",0.580621,1.273885
+Liaoning,China,41.2956,122.6085,265,2,262,1.0,"Liaoning, China",0.607938,0.754717
+Macau,China,22.1667,113.55,46,0,46,0.0,"Macau, China",7.084094,0.0
+Ningxia,China,37.2692,106.1655,75,0,75,0.0,"Ningxia, China",1.090116,0.0
+Qinghai,China,35.7452,95.9956,18,0,18,0.0,"Qinghai, China",0.298507,0.0
+Shaanxi,China,35.1917,108.8701,399,3,372,24.0,"Shaanxi, China",1.032609,0.75188
+Shandong,China,36.3427,118.1498,831,7,815,9.0,"Shandong, China",0.827113,0.842359
+Shanghai,China,31.202,121.4491,972,7,916,49.0,"Shanghai, China",4.009901,0.720165
+Shanxi,China,37.5777,112.2922,203,0,203,0.0,"Shanxi, China",0.545992,0.0
+Sichuan,China,30.6171,102.7103,672,3,652,17.0,"Sichuan, China",0.805659,0.446429
+Tianjin,China,39.3054,117.323,237,3,226,8.0,"Tianjin, China",1.519231,1.265823
+Tibet,China,31.6927,88.0924,1,0,1,0.0,"Tibet, China",0.02907,0.0
+Xinjiang,China,41.1129,85.2401,902,3,899,0.0,"Xinjiang, China",3.62686,0.332594
+Yunnan,China,24.974,101.487,206,2,196,8.0,"Yunnan, China",0.426501,0.970874
+Zhejiang,China,29.1832,120.0934,1282,1,1272,9.0,"Zhejiang, China",2.234617,0.078003
+Amazonas,Colombia,-1.4429,-71.5724,2732,115,2597,20.0,"Amazonas, Colombia",3567.09188,4.20937
+Antioquia,Colombia,7.1986,-75.3412,102501,2187,85968,14346.0,"Antioquia, Colombia",1599.802844,2.133638
+Arauca,Colombia,7.0762,-70.7105,1449,34,1122,293.0,"Arauca, Colombia",552.686384,2.346446
+Atlantico,Colombia,10.6966,-74.8741,66512,3016,61671,1825.0,"Atlantico, Colombia",2623.212544,4.53452
+Bolivar,Colombia,8.6704,-74.03,27972,754,25630,1588.0,"Bolivar, Colombia",1351.232543,2.695553
+Boyaca,Colombia,5.4545,-73.362,5995,117,4266,1612.0,"Boyaca, Colombia",492.452619,1.951626
+Caldas,Colombia,5.2983,-75.2479,4653,106,3183,1364.0,"Caldas, Colombia",466.113368,2.2781
+Capital District,Colombia,4.711,-74.0721,250490,6408,205741,38341.0,"Capital District, Colombia",3379.261648,2.558186
+Caqueta,Colombia,0.8699,-73.8419,7759,274,6504,981.0,"Caqueta, Colombia",1932.55606,3.531383
+Casanare,Colombia,5.7589,-71.5724,1771,41,1203,527.0,"Casanare, Colombia",421.161273,2.315076
+Cauca,Colombia,2.705,-76.82600000000002,8192,224,6257,1711.0,"Cauca, Colombia",559.376383,2.734375
+Cesar,Colombia,9.3373,-73.6536,17236,494,12740,4002.0,"Cesar, Colombia",1435.646616,2.866094
+Choco,Colombia,5.2528,-76.82600000000002,3930,154,3636,140.0,"Choco, Colombia",734.818427,3.918575
+Cordoba,Colombia,8.0493,-75.574,22745,1480,19406,1859.0,"Cordoba, Colombia",1274.384617,6.506925
+Cundinamarca,Colombia,5.026,-74.03,30582,898,25087,4597.0,"Cundinamarca, Colombia",1047.666029,2.936368
+Guainia,Colombia,2.5854,-68.5247,547,10,234,303.0,"Guainia, Colombia",1136.883236,1.828154
+Guaviare,Colombia,1.0654,-73.2603,628,11,417,200.0,"Guaviare, Colombia",758.756509,1.751592
+Huila,Colombia,2.5359,-75.5277,9380,282,6258,2840.0,"Huila, Colombia",852.428148,3.006397
+La Guajira,Colombia,11.3548,-72.5205,7207,275,5698,1234.0,"La Guajira, Colombia",818.456437,3.815735
+Magdalena,Colombia,10.4113,-74.4057,14454,789,12119,1546.0,"Magdalena, Colombia",1077.253072,5.458697
+Meta,Colombia,3.272,-73.0877,14066,366,11374,2326.0,"Meta, Colombia",1352.86163,2.602019
+Narino,Colombia,1.2892,-77.3579,17412,638,14545,2229.0,"Narino, Colombia",1067.833032,3.66414
+Norte de Santander,Colombia,7.9463,-72.8988,14427,831,11890,1706.0,"Norte de Santander, Colombia",967.158704,5.760033
+Putumayo,Colombia,0.436,-75.5277,3619,160,3065,394.0,"Putumayo, Colombia",1039.398935,4.421111
+Quindio,Colombia,4.461,-75.6674,2531,76,1571,884.0,"Quindio, Colombia",468.787044,3.002766
+Risaralda,Colombia,5.3158,-75.9928,9468,195,6938,2335.0,"Risaralda, Colombia",1003.602922,2.059569
+San Andres y Providencia,Colombia,12.5567,-81.7185,841,9,337,495.0,"San Andres y Providencia, Colombia",1372.389034,1.070155
+Santander,Colombia,6.6437,-73.6536,27012,1158,20338,5516.0,"Santander, Colombia",1236.33937,4.286984
+Sucre,Colombia,8.814,-74.7233,13512,559,11964,989.0,"Sucre, Colombia",1493.264726,4.137063
+Tolima,Colombia,4.0925,-75.1545,10862,277,8129,2456.0,"Tolima, Colombia",816.576917,2.550175
+Valle del Cauca,Colombia,3.8009,-76.6413,56837,2092,47119,7626.0,"Valle del Cauca, Colombia",1269.849143,3.680701
+Vaupes,Colombia,0.8554,-70.812,679,5,457,217.0,"Vaupes, Colombia",1664.338064,0.736377
+Vichada,Colombia,4.4234,-69.2878,397,4,221,172.0,"Vichada, Colombia",368.247254,1.007557
+,Comoros,-11.6455,43.3333,470,7,450,13.0,Comoros,54.048149,1.489362
+,Congo (Brazzaville),-0.228,15.8277,4986,89,3887,1010.0,Congo (Brazzaville),90.357319,1.784998
+,Congo (Kinshasa),-4.0383,21.7587,10488,268,9891,329.0,Congo (Kinshasa),11.710402,2.555301
+,Costa Rica,9.7489,-83.7534,63712,706,23552,39454.0,Costa Rica,1250.698355,1.108112
+,Cote d'Ivoire,7.54,-5.5471,19269,120,18392,757.0,Cote d'Ivoire,73.048749,0.622762
+,Croatia,45.1,15.2,14725,244,12353,2128.0,Croatia,358.685474,1.657046
+,Cuba,21.521757,-77.78116700000002,5055,113,4284,658.0,Cuba,44.629393,2.23541
+,Cyprus,35.1264,33.4299,1590,22,1282,286.0,Cyprus,131.692178,1.383648
+,Czechia,49.8175,15.473,48306,499,24228,23579.0,Czechia,451.07929,1.032998
+Faroe Islands,Denmark,61.8926,-6.9118,431,0,412,19.0,"Faroe Islands, Denmark",882.021897,0.0
+Greenland,Denmark,71.7069,-42.6043,14,0,14,0.0,"Greenland, Denmark",24.660044,0.0
+,Denmark,56.2639,9.5018,22436,635,17316,4485.0,Denmark,387.348303,2.830273
+,Diamond Princess,,,712,13,651,48.0,Diamond Princess,,1.825843
+,Djibouti,11.8251,42.5903,5403,61,5333,9.0,Djibouti,546.861241,1.129002
+,Dominica,15.415,-61.371,24,0,18,6.0,Dominica,33.337501,0.0
+,Dominican Republic,18.7357,-70.1627,107700,2044,80820,24836.0,Dominican Republic,992.818521,1.897864
+,Ecuador,-1.8312,-78.1834,125620,11084,97063,17473.0,Ecuador,712.008008,8.823436
+,Egypt,26.820553000000004,30.802498,101900,5750,88666,7484.0,Egypt,99.575506,5.642787
+,El Salvador,13.7942,-88.8965,27428,808,21247,5373.0,El Salvador,422.866945,2.945895
+,Equatorial Guinea,1.6508,10.2679,5002,83,4509,410.0,Equatorial Guinea,356.525551,1.659336
+,Eritrea,15.1794,39.7823,364,0,305,59.0,Eritrea,10.263851,0.0
+,Estonia,58.5953,25.0136,2875,64,2374,437.0,Estonia,216.729399,2.226087
+,Eswatini,-26.5225,31.4659,5245,104,4571,570.0,Eswatini,452.091256,1.982841
+,Ethiopia,9.145,40.4897,68131,1089,27939,39103.0,Ethiopia,59.263115,1.598391
+,Fiji,-17.7134,178.065,32,2,26,4.0,Fiji,3.56966,6.25
+,Finland,61.92411,25.748151,8922,339,7700,883.0,Finland,161.026062,3.799597
+French Guiana,France,4.0,-53.0,9692,65,9341,286.0,"French Guiana, France",3244.922694,0.670656
+French Polynesia,France,-17.6797,-149.4068,1271,2,1028,241.0,"French Polynesia, France",452.467747,0.157356
+Guadeloupe,France,16.265,-61.551,3426,26,837,2563.0,"Guadeloupe, France",856.228148,0.758903
+Martinique,France,14.6415,-61.0242,1122,18,98,1006.0,"Martinique, France",298.988715,1.604278
+Mayotte,France,-12.8275,45.166244,3541,40,2964,537.0,"Mayotte, France",1297.958675,1.129624
+New Caledonia,France,-20.904305,165.618042,26,0,26,0.0,"New Caledonia, France",9.107117,0.0
+Reunion,France,-21.1151,55.5364,3194,15,2482,697.0,"Reunion, France",356.748739,0.469631
+Saint Barthelemy,France,17.9,-62.8333,23,0,16,7.0,"Saint Barthelemy, France",232.675771,0.0
+Saint Pierre and Miquelon,France,46.8852,-56.3159,11,0,5,6.0,"Saint Pierre and Miquelon, France",189.818809,0.0
+St Martin,France,18.0708,-63.0501,330,6,206,118.0,"St Martin, France",853.617528,1.818182
+,France,46.2276,2.2137,444978,31085,76583,337913.0,France,681.516876,6.985739
+,Gabon,-0.8037,11.6094,8696,53,7848,795.0,Gabon,390.703626,0.609476
+,Gambia,13.4432,-15.3101,3504,108,1992,1404.0,Gambia,144.993263,3.082192
+,Georgia,42.3154,43.3569,3306,19,1481,1806.0,Georgia,82.874279,0.574713
+Baden-Wurttemberg,Germany,48.6616,9.3501,46779,1871,41228,3680.0,"Baden-Wurttemberg, Germany",422.592353,3.999658
+Bayern,Germany,48.7904,11.4979,64465,2648,56398,5419.0,"Bayern, Germany",492.975265,4.107655
+Berlin,Germany,52.52,13.405,13064,227,11667,1170.0,"Berlin, Germany",358.425889,1.7376
+Brandenburg,Germany,52.4125,12.5316,4117,173,3792,152.0,"Brandenburg, Germany",163.898728,4.202089
+Bremen,Germany,53.0793,8.8017,2192,59,2015,118.0,"Bremen, Germany",320.943621,2.691606
+Hamburg,Germany,53.5511,9.9937,7149,269,6129,751.0,"Hamburg, Germany",388.283812,3.762764
+Hessen,Germany,50.6521,9.1624,17516,543,15649,1324.0,"Hessen, Germany",279.548898,3.100023
+Mecklenburg-Vorpommern,Germany,53.6127,12.4296,1105,20,1014,71.0,"Mecklenburg-Vorpommern, Germany",68.647398,1.809955
+Niedersachsen,Germany,52.6367,9.8451,18775,669,16482,1624.0,"Niedersachsen, Germany",235.203537,3.563249
+Nordrhein-Westfalen,Germany,51.4332,7.6616,64692,1844,58524,4324.0,"Nordrhein-Westfalen, Germany",360.749785,2.85043
+Rheinland-Pfalz,Germany,50.1183,7.309,10075,247,9057,771.0,"Rheinland-Pfalz, Germany",246.643446,2.451613
+Saarland,Germany,49.3964,7.023,3275,176,3003,96.0,"Saarland, Germany",330.638086,5.374046
+Sachsen,Germany,51.1045,13.2017,6658,226,5826,606.0,"Sachsen, Germany",163.268829,3.394413
+Sachsen-Anhalt,Germany,51.9503,11.6923,2423,66,2213,144.0,"Sachsen-Anhalt, Germany",109.721368,2.723896
+Schleswig-Holstein,Germany,54.2194,9.6961,4384,161,3981,242.0,"Schleswig-Holstein, Germany",151.344007,3.672445
+Thuringen,Germany,51.011,10.8453,3919,189,3532,198.0,"Thuringen, Germany",182.862102,4.822659
 Unknown,Germany,,,2344,0,0,2344.0,"Unknown, Germany",,0.0
-,Ghana,7.9465,-1.0232,45877,297,45081,499.0,Ghana,147.64,0.65
-,Greece,39.0742,21.8243,14978,331,1347,13300.0,Greece,143.7,2.21
-,Grenada,12.1165,-61.679,24,0,24,0.0,Grenada,21.33,0.0
-,Guatemala,15.7835,-90.2308,85152,3105,74497,7550.0,Guatemala,475.3,3.65
-,Guinea,9.9456,-9.6966,10286,63,9681,542.0,Guinea,78.32,0.61
-,Guinea-Bissau,11.8037,-15.1804,2303,39,1127,1137.0,Guinea-Bissau,117.02,1.69
-,Guyana,4.860416000000002,-58.93018000000001,2168,64,1331,773.0,Guyana,275.63,2.95
-,Haiti,18.9712,-72.2852,8600,221,6363,2016.0,Haiti,75.42,2.57
-,Holy See,41.9029,12.4534,12,0,12,0.0,Holy See,1483.31,0.0
-,Honduras,15.2,-86.2419,71143,2166,21810,47167.0,Honduras,718.28,3.04
-,Hungary,47.1625,19.5033,16920,675,4382,11863.0,Hungary,175.15,3.99
-,Iceland,64.9631,-19.0208,2307,10,2116,181.0,Iceland,676.04,0.43
-Andaman and Nicobar Islands,India,11.225999,92.968178,3631,52,3414,165.0,"Andaman and Nicobar Islands, India",870.67,1.43
-Andhra Pradesh,India,15.9129,79.74,609558,5244,519891,84423.0,"Andhra Pradesh, India",1130.83,0.86
-Arunachal Pradesh,India,27.768456,96.384277,7005,13,5106,1886.0,"Arunachal Pradesh, India",446.05,0.19
-Assam,India,26.357149,92.830441,152858,540,123687,28631.0,"Assam, India",429.29,0.35
-Bihar,India,25.679658,85.60484,165218,859,151750,12609.0,"Bihar, India",132.39,0.52
-Chandigarh,India,30.733839,76.76827800000002,9506,113,6415,2978.0,"Chandigarh, India",820.56,1.19
-Chhattisgarh,India,21.264705,82.035366,81617,645,44392,36580.0,"Chhattisgarh, India",277.27,0.79
-Dadra and Nagar Haveli and Daman and Diu,India,20.194742,73.080901,2859,2,2639,218.0,"Dadra and Nagar Haveli and Daman and Diu, India",464.33,0.07
-Delhi,India,28.646519,77.10898,238828,4907,201671,32250.0,"Delhi, India",1276.41,2.05
-Goa,India,15.359682,74.057396,27379,335,21314,5730.0,"Goa, India",1726.02,1.22
-Gujarat,India,22.694884,71.590923,120336,3286,100974,16076.0,"Gujarat, India",188.4,2.73
-Haryana,India,29.20004,76.332824,106261,1092,83878,21291.0,"Haryana, India",376.75,1.03
-Himachal Pradesh,India,31.927213,77.233081,11622,111,7081,4430.0,"Himachal Pradesh, India",155.96,0.96
-Jammu and Kashmir,India,33.75943,76.612638,61041,966,39305,20770.0,"Jammu and Kashmir, India",448.62,1.58
-Jharkhand,India,23.654536,85.557631,68578,602,54052,13924.0,"Jharkhand, India",177.69,0.88
-Karnataka,India,14.70518,76.166436,502982,7808,394026,101148.0,"Karnataka, India",744.47,1.55
-Kerala,India,10.450898,76.405749,126381,501,90085,35795.0,"Kerala, India",354.01,0.4
-Ladakh,India,34.1526,77.5771,3635,48,2600,987.0,"Ladakh, India",1325.24,1.32
+,Ghana,7.9465,-1.0232,45877,297,45081,499.0,Ghana,147.642909,0.647383
+,Greece,39.0742,21.8243,14978,331,1347,13300.0,Greece,143.700657,2.209908
+,Grenada,12.1165,-61.679,24,0,24,0.0,Grenada,21.329731,0.0
+,Guatemala,15.7835,-90.2308,85152,3105,74497,7550.0,Guatemala,475.296149,3.646421
+,Guinea,9.9456,-9.6966,10286,63,9681,542.0,Guinea,78.323025,0.612483
+,Guinea-Bissau,11.8037,-15.1804,2303,39,1127,1137.0,Guinea-Bissau,117.022477,1.693443
+,Guyana,4.860416000000002,-58.93018000000001,2168,64,1331,773.0,Guyana,275.630944,2.95203
+,Haiti,18.9712,-72.2852,8600,221,6363,2016.0,Haiti,75.421838,2.569767
+,Holy See,41.9029,12.4534,12,0,12,0.0,Holy See,1483.312732,0.0
+,Honduras,15.2,-86.2419,71143,2166,21810,47167.0,Honduras,718.281834,3.044572
+,Hungary,47.1625,19.5033,16920,675,4382,11863.0,Hungary,175.148934,3.989362
+,Iceland,64.9631,-19.0208,2307,10,2116,181.0,Iceland,676.043956,0.433463
+Andaman and Nicobar Islands,India,11.225999,92.968178,3631,52,3414,165.0,"Andaman and Nicobar Islands, India",870.66824,1.432112
+Andhra Pradesh,India,15.9129,79.74,609558,5244,519891,84423.0,"Andhra Pradesh, India",1130.834194,0.860295
+Arunachal Pradesh,India,27.768456,96.384277,7005,13,5106,1886.0,"Arunachal Pradesh, India",446.048223,0.185582
+Assam,India,26.357149,92.830441,152858,540,123687,28631.0,"Assam, India",429.291523,0.353269
+Bihar,India,25.679658,85.60484,165218,859,151750,12609.0,"Bihar, India",132.386296,0.519919
+Chandigarh,India,30.733839,76.76827800000002,9506,113,6415,2978.0,"Chandigarh, India",820.562931,1.188723
+Chhattisgarh,India,21.264705,82.035366,81617,645,44392,36580.0,"Chhattisgarh, India",277.267154,0.790277
+Dadra and Nagar Haveli and Daman and Diu,India,20.194742,73.080901,2859,2,2639,218.0,"Dadra and Nagar Haveli and Daman and Diu, India",464.331421,0.069955
+Delhi,India,28.646519,77.10898,238828,4907,201671,32250.0,"Delhi, India",1276.409575,2.054617
+Goa,India,15.359682,74.057396,27379,335,21314,5730.0,"Goa, India",1726.020489,1.223566
+Gujarat,India,22.694884,71.590923,120336,3286,100974,16076.0,"Gujarat, India",188.400627,2.730687
+Haryana,India,29.20004,76.332824,106261,1092,83878,21291.0,"Haryana, India",376.749372,1.027658
+Himachal Pradesh,India,31.927213,77.233081,11622,111,7081,4430.0,"Himachal Pradesh, India",155.959074,0.955085
+Jammu and Kashmir,India,33.75943,76.612638,61041,966,39305,20770.0,"Jammu and Kashmir, India",448.622405,1.582543
+Jharkhand,India,23.654536,85.557631,68578,602,54052,13924.0,"Jharkhand, India",177.691072,0.877833
+Karnataka,India,14.70518,76.166436,502982,7808,394026,101148.0,"Karnataka, India",744.467146,1.552342
+Kerala,India,10.450898,76.405749,126381,501,90085,35795.0,"Kerala, India",354.013927,0.39642
+Ladakh,India,34.1526,77.5771,3635,48,2600,987.0,"Ladakh, India",1325.244541,1.320495
 Lakshadweep,India,13.6999972,72.18333259999999,0,0,0,0.0,"Lakshadweep, India",0.0,
-Madhya Pradesh,India,23.541513,78.289633,100458,1901,76952,21605.0,"Madhya Pradesh, India",117.69,1.89
-Maharashtra,India,19.449759,76.108221,1167496,31791,834432,301273.0,"Maharashtra, India",948.07,2.72
-Manipur,India,24.738975,93.882541,8607,52,6629,1926.0,"Manipur, India",278.4,0.6
-Meghalaya,India,25.536934,91.278882,4445,32,2437,1976.0,"Meghalaya, India",132.03,0.72
-Mizoram,India,23.309381,92.83822,1548,0,973,575.0,"Mizoram, India",124.91,0.0
-Nagaland,India,26.06702,94.470302,5357,15,4129,1213.0,"Nagaland, India",238.12,0.28
-Odisha,India,20.505428,84.418059,171341,682,137567,33092.0,"Odisha, India",369.62,0.4
-Puducherry,India,11.882658,78.86498,21913,462,16715,4736.0,"Puducherry, India",1550.22,2.11
-Punjab,India,30.841465000000003,75.40879,92833,2708,68463,21662.0,"Punjab, India",307.99,2.92
-Rajasthan,India,26.583423,73.847973,111290,1308,92265,17717.0,"Rajasthan, India",137.34,1.18
-Sikkim,India,27.571671,88.472712,2303,24,1857,422.0,"Sikkim, India",333.65,1.04
-Tamil Nadu,India,11.006091,78.400624,530908,8685,475717,46506.0,"Tamil Nadu, India",682.04,1.64
-Telangana,India,18.1124,79.0193,169169,1025,137508,30636.0,"Telangana, India",429.77,0.61
-Tripura,India,23.746783,91.743565,21484,235,14142,7107.0,"Tripura, India",515.23,1.09
+Madhya Pradesh,India,23.541513,78.289633,100458,1901,76952,21605.0,"Madhya Pradesh, India",117.688868,1.892333
+Maharashtra,India,19.449759,76.108221,1167496,31791,834432,301273.0,"Maharashtra, India",948.072083,2.723007
+Manipur,India,24.738975,93.882541,8607,52,6629,1926.0,"Manipur, India",278.404487,0.604159
+Meghalaya,India,25.536934,91.278882,4445,32,2437,1976.0,"Meghalaya, India",132.028004,0.71991
+Mizoram,India,23.309381,92.83822,1548,0,973,575.0,"Mizoram, India",124.914867,0.0
+Nagaland,India,26.06702,94.470302,5357,15,4129,1213.0,"Nagaland, India",238.121168,0.280007
+Odisha,India,20.505428,84.418059,171341,682,137567,33092.0,"Odisha, India",369.617235,0.398037
+Puducherry,India,11.882658,78.86498,21913,462,16715,4736.0,"Puducherry, India",1550.219236,2.108338
+Punjab,India,30.841465000000003,75.40879,92833,2708,68463,21662.0,"Punjab, India",307.991942,2.917066
+Rajasthan,India,26.583423,73.847973,111290,1308,92265,17717.0,"Rajasthan, India",137.339636,1.175308
+Sikkim,India,27.571671,88.472712,2303,24,1857,422.0,"Sikkim, India",333.646746,1.042119
+Tamil Nadu,India,11.006091,78.400624,530908,8685,475717,46506.0,"Tamil Nadu, India",682.039258,1.635877
+Telangana,India,18.1124,79.0193,169169,1025,137508,30636.0,"Telangana, India",429.769458,0.605903
+Tripura,India,23.746783,91.743565,21484,235,14142,7107.0,"Tripura, India",515.22929,1.093837
 Unknown,India,,,0,0,0,0.0,"Unknown, India",,
-Uttar Pradesh,India,26.925425,80.560982,342788,4869,270094,67825.0,"Uttar Pradesh, India",144.1,1.42
-Uttarakhand,India,30.156447,79.197608,38007,464,26250,11293.0,"Uttarakhand, India",337.81,1.22
-West Bengal,India,23.814082,87.979803,218772,4242,190021,24509.0,"West Bengal, India",219.63,1.94
-,Indonesia,-0.7893,113.9213,240687,9448,174350,56889.0,Indonesia,87.99,3.93
-,Iran,32.427908,53.68804599999999,419043,24118,357632,37293.0,Iran,498.9,5.76
-,Iraq,33.223191,43.679291,315597,8491,249539,57567.0,Iraq,784.63,2.69
-,Ireland,53.1424,-7.6921,32538,1792,23364,7382.0,Ireland,658.96,5.51
-,Israel,31.046051,34.851612,183602,1226,132449,49927.0,Israel,2121.21,0.67
-Abruzzo,Italy,42.35122196,13.39843823,4137,474,2984,679.0,"Abruzzo, Italy",315.42,11.46
-Basilicata,Italy,40.63947052,15.80514834,631,28,438,165.0,"Basilicata, Italy",112.1,4.44
-Calabria,Italy,38.90597598,16.59440194,1810,98,1267,445.0,"Calabria, Italy",92.96,5.41
-Campania,Italy,40.83956555,14.25084984,10089,456,5060,4573.0,"Campania, Italy",173.9,4.52
-Emilia-Romagna,Italy,44.49436681,11.3417208,34225,4474,25313,4438.0,"Emilia-Romagna, Italy",767.47,13.07
-Friuli Venezia Giulia,Italy,45.6494354,13.76813649,4345,350,3314,681.0,"Friuli Venezia Giulia, Italy",357.55,8.06
-Lazio,Italy,41.89277044,12.48366722,14179,890,7751,5538.0,"Lazio, Italy",241.18,6.28
-Liguria,Italy,44.41149315,8.9326992,12407,1588,9386,1433.0,"Liguria, Italy",800.12,12.8
-Lombardia,Italy,45.46679409,9.190347404,104547,16917,78695,8935.0,"Lombardia, Italy",1039.18,16.18
-Marche,Italy,43.61675973,13.5188753,7703,989,6093,621.0,"Marche, Italy",505.03,12.84
-Molise,Italy,41.55774754,14.65916051,586,23,459,104.0,"Molise, Italy",191.74,3.92
-P.A. Bolzano,Italy,46.49933453,11.35662422,3281,292,2584,405.0,"P.A. Bolzano, Italy",616.36,8.9
-P.A. Trento,Italy,46.06893511,11.12123097,5689,405,4750,534.0,"P.A. Trento, Italy",1050.76,7.12
-Piemonte,Italy,45.0732745,7.680687483,34241,4154,27783,2304.0,"Piemonte, Italy",785.99,12.13
-Puglia,Italy,41.12559576,16.86736689,6944,578,4278,2088.0,"Puglia, Italy",172.35,8.32
-Sardegna,Italy,39.21531192,9.110616306,3167,141,1431,1595.0,"Sardegna, Italy",193.16,4.45
-Sicilia,Italy,38.11569725,13.362356699999998,5846,296,3318,2232.0,"Sicilia, Italy",116.92,5.06
-Toscana,Italy,43.76923077,11.25588885,13665,1152,9686,2827.0,"Toscana, Italy",366.39,8.43
-Umbria,Italy,43.10675841,12.38824698,2192,83,1638,471.0,"Umbria, Italy",248.52,3.79
-Valle d'Aosta,Italy,45.73750286,7.320149366,1276,146,1082,48.0,"Valle d'Aosta, Italy",1015.39,11.44
-Veneto,Italy,45.43490485,12.33845213,25609,2158,20406,3045.0,"Veneto, Italy",522.01,8.43
-,Jamaica,18.1096,-77.2975,4758,60,1327,3371.0,Jamaica,160.68,1.26
-Aichi,Japan,35.035551,137.211621,5077,79,4554,444.0,"Aichi, Japan",67.23,1.56
-Akita,Japan,39.748679,140.408228,52,0,51,1.0,"Akita, Japan",5.38,0.0
-Aomori,Japan,40.781541,140.828896,35,1,32,2.0,"Aomori, Japan",2.81,2.86
-Chiba,Japan,35.510141,140.198917,3603,68,3174,361.0,"Chiba, Japan",57.56,1.89
-Ehime,Japan,33.624835,132.856842,114,6,108,0.0,"Ehime, Japan",8.51,5.26
-Fukui,Japan,35.846614,136.22465400000002,244,9,215,20.0,"Fukui, Japan",31.77,3.69
-Fukuoka,Japan,33.526032,130.666949,5000,89,4629,282.0,"Fukuoka, Japan",97.97,1.78
-Fukushima,Japan,37.378867,140.223295,218,2,180,36.0,"Fukushima, Japan",11.81,0.92
-Gifu,Japan,35.778671,137.055925,597,10,552,35.0,"Gifu, Japan",30.05,1.68
-Gunma,Japan,36.504479,138.985605,644,19,480,145.0,"Gunma, Japan",33.15,2.95
-Hiroshima,Japan,34.605309000000005,132.788719,472,3,461,8.0,"Hiroshima, Japan",16.83,0.64
-Hokkaido,Japan,43.385711,142.552318,1933,106,1742,85.0,"Hokkaido, Japan",36.82,5.48
-Hyogo,Japan,35.039913,134.828057,2582,56,2349,177.0,"Hyogo, Japan",47.24,2.17
-Ibaraki,Japan,36.303588,140.319591,623,16,568,39.0,"Ibaraki, Japan",21.78,2.57
-Ishikawa,Japan,36.769464,136.771027,750,44,636,70.0,"Ishikawa, Japan",65.93,5.87
-Iwate,Japan,39.593287,141.361777,23,0,23,0.0,"Iwate, Japan",1.87,0.0
-Kagawa,Japan,34.217292,133.969047,94,2,82,10.0,"Kagawa, Japan",9.83,2.13
-Kagoshima,Japan,31.009484000000004,130.430665,377,12,354,11.0,"Kagoshima, Japan",23.53,3.18
-Kanagawa,Japan,35.415312,139.338983,6327,136,5484,707.0,"Kanagawa, Japan",68.78,2.15
-Kochi,Japan,33.422519,133.367307,137,4,129,4.0,"Kochi, Japan",19.63,2.92
-Kumamoto,Japan,32.608154,130.74523100000002,570,8,537,25.0,"Kumamoto, Japan",32.62,1.4
-Kyoto,Japan,35.253815,135.443341,1672,25,1554,93.0,"Kyoto, Japan",64.73,1.5
-Mie,Japan,34.508018,136.376013,469,5,388,76.0,"Mie, Japan",26.34,1.07
-Miyagi,Japan,38.446859,140.927086,365,2,263,100.0,"Miyagi, Japan",15.83,0.55
-Miyazaki,Japan,32.193203999999994,131.299374,365,1,340,24.0,"Miyazaki, Japan",34.01,0.27
-Nagano,Japan,36.132134,138.045528,300,1,296,3.0,"Nagano, Japan",14.64,0.33
-Nagasaki,Japan,33.235712,129.608033,236,3,227,6.0,"Nagasaki, Japan",17.79,1.27
-Nara,Japan,34.317451,135.871644,552,9,527,16.0,"Nara, Japan",41.5,1.63
-Niigata,Japan,37.521819,138.918647,162,0,144,18.0,"Niigata, Japan",7.29,0.0
-Oita,Japan,33.200697,131.43323999999998,158,2,151,5.0,"Oita, Japan",13.92,1.27
-Okayama,Japan,34.89246,133.826252,148,1,146,1.0,"Okayama, Japan",7.83,0.68
-Okinawa,Japan,25.768923,126.668016,2343,45,2139,159.0,"Okinawa, Japan",161.23,1.92
-Osaka,Japan,34.620965000000005,135.507481,10001,192,9014,795.0,"Osaka, Japan",113.53,1.92
-Port Quarantine,Japan,,,887,1,514,372.0,"Port Quarantine, Japan",,0.11
-Saga,Japan,33.286977,130.115738,243,0,243,0.0,"Saga, Japan",29.83,0.0
-Saitama,Japan,35.997101,139.347635,4424,100,4011,313.0,"Saitama, Japan",60.19,2.26
-Shiga,Japan,35.21582700000001,136.138064,477,7,448,22.0,"Shiga, Japan",33.74,1.47
-Shimane,Japan,35.07076,132.55406399999998,137,0,137,0.0,"Shimane, Japan",20.32,0.0
-Shizuoka,Japan,34.916975,138.40778400000002,519,2,494,23.0,"Shizuoka, Japan",14.24,0.39
-Tochigi,Japan,36.689912,139.819213,385,1,313,71.0,"Tochigi, Japan",19.91,0.26
-Tokushima,Japan,33.919178,134.242091,147,9,107,31.0,"Tokushima, Japan",20.19,6.12
-Tokyo,Japan,35.711343,139.446921,24056,390,21208,2458.0,"Tokyo, Japan",172.81,1.62
-Tottori,Japan,35.359069,133.863619,36,0,23,13.0,"Tottori, Japan",6.48,0.0
-Toyama,Japan,36.637464,137.26934599999998,410,25,374,11.0,"Toyama, Japan",39.29,6.1
+Uttar Pradesh,India,26.925425,80.560982,342788,4869,270094,67825.0,"Uttar Pradesh, India",144.099577,1.420411
+Uttarakhand,India,30.156447,79.197608,38007,464,26250,11293.0,"Uttarakhand, India",337.814236,1.220828
+West Bengal,India,23.814082,87.979803,218772,4242,190021,24509.0,"West Bengal, India",219.630088,1.939005
+,Indonesia,-0.7893,113.9213,240687,9448,174350,56889.0,Indonesia,87.99496,3.92543
+,Iran,32.427908,53.68804599999999,419043,24118,357632,37293.0,Iran,498.902569,5.755495
+,Iraq,33.223191,43.679291,315597,8491,249539,57567.0,Iraq,784.627948,2.690456
+,Ireland,53.1424,-7.6921,32538,1792,23364,7382.0,Ireland,658.957964,5.507407
+,Israel,31.046051,34.851612,183602,1226,132449,49927.0,Israel,2121.207675,0.667749
+Abruzzo,Italy,42.35122196,13.39843823,4137,474,2984,679.0,"Abruzzo, Italy",315.421095,11.457578
+Basilicata,Italy,40.63947052,15.80514834,631,28,438,165.0,"Basilicata, Italy",112.104237,4.437401
+Calabria,Italy,38.90597598,16.59440194,1810,98,1267,445.0,"Calabria, Italy",92.957279,5.414365
+Campania,Italy,40.83956555,14.25084984,10089,456,5060,4573.0,"Campania, Italy",173.897546,4.519774
+Emilia-Romagna,Italy,44.49436681,11.3417208,34225,4474,25313,4438.0,"Emilia-Romagna, Italy",767.466678,13.072316
+Friuli Venezia Giulia,Italy,45.6494354,13.76813649,4345,350,3314,681.0,"Friuli Venezia Giulia, Italy",357.548427,8.055236
+Lazio,Italy,41.89277044,12.48366722,14179,890,7751,5538.0,"Lazio, Italy",241.177109,6.276888
+Liguria,Italy,44.41149315,8.9326992,12407,1588,9386,1433.0,"Liguria, Italy",800.12124,12.799226
+Lombardia,Italy,45.46679409,9.190347404,104547,16917,78695,8935.0,"Lombardia, Italy",1039.1753,16.181239
+Marche,Italy,43.61675973,13.5188753,7703,989,6093,621.0,"Marche, Italy",505.025009,12.839154
+Molise,Italy,41.55774754,14.65916051,586,23,459,104.0,"Molise, Italy",191.74326,3.924915
+P.A. Bolzano,Italy,46.49933453,11.35662422,3281,292,2584,405.0,"P.A. Bolzano, Italy",616.360897,8.899726
+P.A. Trento,Italy,46.06893511,11.12123097,5689,405,4750,534.0,"P.A. Trento, Italy",1050.759302,7.119002
+Piemonte,Italy,45.0732745,7.680687483,34241,4154,27783,2304.0,"Piemonte, Italy",785.991939,12.131655
+Puglia,Italy,41.12559576,16.86736689,6944,578,4278,2088.0,"Puglia, Italy",172.348192,8.323733
+Sardegna,Italy,39.21531192,9.110616306,3167,141,1431,1595.0,"Sardegna, Italy",193.157928,4.452163
+Sicilia,Italy,38.11569725,13.362356699999998,5846,296,3318,2232.0,"Sicilia, Italy",116.922549,5.063291
+Toscana,Italy,43.76923077,11.25588885,13665,1152,9686,2827.0,"Toscana, Italy",366.389151,8.430296
+Umbria,Italy,43.10675841,12.38824698,2192,83,1638,471.0,"Umbria, Italy",248.521851,3.786496
+Valle d'Aosta,Italy,45.73750286,7.320149366,1276,146,1082,48.0,"Valle d'Aosta, Italy",1015.390002,11.442006
+Veneto,Italy,45.43490485,12.33845213,25609,2158,20406,3045.0,"Veneto, Italy",522.009012,8.426725
+,Jamaica,18.1096,-77.2975,4758,60,1327,3371.0,Jamaica,160.68022,1.261034
+Aichi,Japan,35.035551,137.211621,5077,79,4554,444.0,"Aichi, Japan",67.225097,1.556037
+Akita,Japan,39.748679,140.408228,52,0,51,1.0,"Akita, Japan",5.380294,0.0
+Aomori,Japan,40.781541,140.828896,35,1,32,2.0,"Aomori, Japan",2.808153,2.857143
+Chiba,Japan,35.510141,140.198917,3603,68,3174,361.0,"Chiba, Japan",57.561593,1.887316
+Ehime,Japan,33.624835,132.856842,114,6,108,0.0,"Ehime, Japan",8.512449,5.263158
+Fukui,Japan,35.846614,136.22465400000002,244,9,215,20.0,"Fukui, Japan",31.77344,3.688525
+Fukuoka,Japan,33.526032,130.666949,5000,89,4629,282.0,"Fukuoka, Japan",97.968544,1.78
+Fukushima,Japan,37.378867,140.223295,218,2,180,36.0,"Fukushima, Japan",11.812395,0.917431
+Gifu,Japan,35.778671,137.055925,597,10,552,35.0,"Gifu, Japan",30.051541,1.675042
+Gunma,Japan,36.504479,138.985605,644,19,480,145.0,"Gunma, Japan",33.153904,2.950311
+Hiroshima,Japan,34.605309000000005,132.788719,472,3,461,8.0,"Hiroshima, Japan",16.832033,0.635593
+Hokkaido,Japan,43.385711,142.552318,1933,106,1742,85.0,"Hokkaido, Japan",36.818704,5.483704
+Hyogo,Japan,35.039913,134.828057,2582,56,2349,177.0,"Hyogo, Japan",47.235826,2.168861
+Ibaraki,Japan,36.303588,140.319591,623,16,568,39.0,"Ibaraki, Japan",21.780879,2.568218
+Ishikawa,Japan,36.769464,136.771027,750,44,636,70.0,"Ishikawa, Japan",65.92543,5.866667
+Iwate,Japan,39.593287,141.361777,23,0,23,0.0,"Iwate, Japan",1.874772,0.0
+Kagawa,Japan,34.217292,133.969047,94,2,82,10.0,"Kagawa, Japan",9.829068,2.12766
+Kagoshima,Japan,31.009484000000004,130.430665,377,12,354,11.0,"Kagoshima, Japan",23.529074,3.183024
+Kanagawa,Japan,35.415312,139.338983,6327,136,5484,707.0,"Kanagawa, Japan",68.784689,2.149518
+Kochi,Japan,33.422519,133.367307,137,4,129,4.0,"Kochi, Japan",19.626692,2.919708
+Kumamoto,Japan,32.608154,130.74523100000002,570,8,537,25.0,"Kumamoto, Japan",32.616775,1.403509
+Kyoto,Japan,35.253815,135.443341,1672,25,1554,93.0,"Kyoto, Japan",64.732011,1.495215
+Mie,Japan,34.508018,136.376013,469,5,388,76.0,"Mie, Japan",26.335265,1.066098
+Miyagi,Japan,38.446859,140.927086,365,2,263,100.0,"Miyagi, Japan",15.825769,0.547945
+Miyazaki,Japan,32.193203999999994,131.299374,365,1,340,24.0,"Miyazaki, Japan",34.007236,0.273973
+Nagano,Japan,36.132134,138.045528,300,1,296,3.0,"Nagano, Japan",14.642789,0.333333
+Nagasaki,Japan,33.235712,129.608033,236,3,227,6.0,"Nagasaki, Japan",17.790858,1.271186
+Nara,Japan,34.317451,135.871644,552,9,527,16.0,"Nara, Japan",41.499921,1.630435
+Niigata,Japan,37.521819,138.918647,162,0,144,18.0,"Niigata, Japan",7.287102,0.0
+Oita,Japan,33.200697,131.43323999999998,158,2,151,5.0,"Oita, Japan",13.915384,1.265823
+Okayama,Japan,34.89246,133.826252,148,1,146,1.0,"Okayama, Japan",7.832404,0.675676
+Okinawa,Japan,25.768923,126.668016,2343,45,2139,159.0,"Okinawa, Japan",161.233939,1.920615
+Osaka,Japan,34.620965000000005,135.507481,10001,192,9014,795.0,"Osaka, Japan",113.526937,1.919808
+Port Quarantine,Japan,,,887,1,514,372.0,"Port Quarantine, Japan",,0.11274
+Saga,Japan,33.286977,130.115738,243,0,243,0.0,"Saga, Japan",29.826527,0.0
+Saitama,Japan,35.997101,139.347635,4424,100,4011,313.0,"Saitama, Japan",60.19299,2.260398
+Shiga,Japan,35.21582700000001,136.138064,477,7,448,22.0,"Shiga, Japan",33.735448,1.467505
+Shimane,Japan,35.07076,132.55406399999998,137,0,137,0.0,"Shimane, Japan",20.31598,0.0
+Shizuoka,Japan,34.916975,138.40778400000002,519,2,494,23.0,"Shizuoka, Japan",14.244436,0.385356
+Tochigi,Japan,36.689912,139.819213,385,1,313,71.0,"Tochigi, Japan",19.907032,0.25974
+Tokushima,Japan,33.919178,134.242091,147,9,107,31.0,"Tokushima, Japan",20.192946,6.122449
+Tokyo,Japan,35.711343,139.446921,24056,390,21208,2458.0,"Tokyo, Japan",172.807861,1.621217
+Tottori,Japan,35.359069,133.863619,36,0,23,13.0,"Tottori, Japan",6.479971,0.0
+Toyama,Japan,36.637464,137.26934599999998,410,25,374,11.0,"Toyama, Japan",39.290773,6.097561
 Unknown,Japan,,,8,0,8,0.0,"Unknown, Japan",,0.0
-Wakayama,Japan,33.911879,135.505446,236,5,227,4.0,"Wakayama, Japan",25.52,2.12
-Yamagata,Japan,38.448396,140.102154,78,1,76,1.0,"Yamagata, Japan",7.24,1.28
-Yamaguchi,Japan,34.201190000000004,131.573293,195,1,171,23.0,"Yamaguchi, Japan",14.36,0.51
-Yamanashi,Japan,35.612364,138.61148899999998,181,6,168,7.0,"Yamanashi, Japan",22.32,3.31
-,Jordan,31.24,36.51,4540,30,2672,1838.0,Jordan,44.5,0.66
-,Kazakhstan,48.0196,66.9237,107262,1671,101877,3714.0,Kazakhstan,571.25,1.56
-,Kenya,-0.0236,37.9062,36829,646,23777,12406.0,Kenya,68.49,1.75
-,"Korea, South",35.90775700000001,127.766922,22975,383,20158,2434.0,"Korea, South",44.81,1.67
-,Kosovo,42.602636,20.902977,12683,488,8788,3407.0,Kosovo,700.58,3.85
-,Kuwait,29.31166,47.481766,99049,581,89498,8970.0,Kuwait,2319.34,0.59
-,Kyrgyzstan,41.20438,74.766098,45335,1063,41484,2788.0,Kyrgyzstan,694.88,2.34
-,Laos,19.85627,102.495496,23,0,22,1.0,Laos,0.32,0.0
-,Latvia,56.8796,24.6032,1515,36,1248,231.0,Latvia,80.32,2.38
-,Lebanon,33.8547,35.8623,28297,286,11440,16571.0,Lebanon,414.58,1.01
-,Lesotho,-29.61,28.2336,1390,33,754,603.0,Lesotho,64.88,2.37
-,Liberia,6.4280550000000005,-9.429499,1335,82,1216,37.0,Liberia,26.4,6.14
-,Libya,26.3351,17.228331,27234,436,14679,12119.0,Libya,396.34,1.6
-,Liechtenstein,47.14,9.55,113,1,109,3.0,Liechtenstein,296.3,0.88
-,Lithuania,55.1694,23.8813,3664,87,2197,1380.0,Lithuania,134.59,2.37
-,Luxembourg,49.8153,6.1296,7718,124,6703,891.0,Luxembourg,1232.95,1.61
-,MS Zaandam,,,9,2,0,7.0,MS Zaandam,,22.22
-,Madagascar,-18.766947,46.869107,16020,219,14630,1171.0,Madagascar,57.85,1.37
-,Malawi,-13.2543,34.3015,5718,179,4030,1509.0,Malawi,29.89,3.13
-,Malaysia,4.210483999999999,101.975766,10167,130,9315,722.0,Malaysia,31.41,1.28
-,Maldives,3.2028,73.2207,9649,33,8188,1428.0,Maldives,1785.06,0.34
-,Mali,17.570692,-3.996166000000001,3006,128,2349,529.0,Mali,14.84,4.26
-,Malta,35.9375,14.3754,2699,19,2017,663.0,Malta,611.27,0.7
-,Mauritania,21.0079,-10.9408,7365,161,6927,277.0,Mauritania,158.4,2.19
-,Mauritius,-20.348404,57.552152,366,10,338,18.0,Mauritius,28.78,2.73
-Aguascalientes,Mexico,21.8853,-102.2916,6581,555,5783,243.0,"Aguascalientes, Mexico",458.72,8.43
-Baja California,Mexico,30.8406,-115.2838,18501,3367,14561,573.0,"Baja California, Mexico",508.99,18.2
-Baja California Sur,Mexico,26.0444,-111.6661,9374,428,8112,834.0,"Baja California Sur, Mexico",1164.89,4.57
-Campeche,Mexico,19.8301,-90.5349,5851,800,4981,70.0,"Campeche, Mexico",584.74,13.67
-Chiapas,Mexico,16.7569,-93.1292,6427,1016,5354,57.0,"Chiapas, Mexico",112.16,15.81
-Chihuahua,Mexico,28.63300000000001,-106.0691,9464,1276,7553,635.0,"Chihuahua, Mexico",248.96,13.48
-Ciudad de Mexico,Mexico,19.4326,-99.1332,116943,11545,98840,6558.0,"Ciudad de Mexico, Mexico",1296.68,9.87
-Coahuila,Mexico,27.0587,-101.7068,24766,1723,22020,1023.0,"Coahuila, Mexico",769.44,6.96
-Colima,Mexico,19.1223,-104.0072,4380,518,3567,295.0,"Colima, Mexico",557.85,11.83
-Durango,Mexico,24.5593,-104.6588,8098,559,6859,680.0,"Durango, Mexico",433.28,6.9
-Guanajuato,Mexico,21.019,-101.2574,38340,2709,33126,2505.0,"Guanajuato, Mexico",615.59,7.07
-Guerrero,Mexico,17.4392,-99.5451,17335,1811,14318,1206.0,"Guerrero, Mexico",474.02,10.45
-Hidalgo,Mexico,20.0911,-98.7624,11930,1853,9478,599.0,"Hidalgo, Mexico",386.53,15.53
-Jalisco,Mexico,20.6595,-103.3494,24400,2974,19623,1803.0,"Jalisco, Mexico",290.14,12.19
-Mexico,Mexico,19.4969,-99.7233,76784,8936,64292,3556.0,"Mexico, Mexico",440.58,11.64
-Michoacan,Mexico,19.5665,-101.7068,18684,1480,15891,1313.0,"Michoacan, Mexico",387.2,7.92
-Morelos,Mexico,18.6813,-99.1013,5699,1054,4449,196.0,"Morelos, Mexico",278.81,18.49
-Nayarit,Mexico,21.7514,-104.8455,5642,695,4662,285.0,"Nayarit, Mexico",437.85,12.32
-Nuevo Leon,Mexico,25.5922,-99.9962,35910,2820,30263,2827.0,"Nuevo Leon, Mexico",640.09,7.85
-Oaxaca,Mexico,17.0732,-96.7266,15374,1356,13292,726.0,"Oaxaca, Mexico",371.03,8.82
-Puebla,Mexico,19.0414,-98.2063,29938,3916,25066,956.0,"Puebla, Mexico",453.3,13.08
-Queretaro,Mexico,20.5888,-100.3899,8152,917,6702,533.0,"Queretaro, Mexico",357.6,11.25
-Quintana Roo,Mexico,19.1817,-88.4791,11290,1573,9361,356.0,"Quintana Roo, Mexico",655.15,13.93
-San Luis Potosi,Mexico,22.1565,-100.9855,21524,1531,19097,896.0,"San Luis Potosi, Mexico",750.97,7.11
-Sinaloa,Mexico,25.1721,-107.4795,17772,3031,14186,555.0,"Sinaloa, Mexico",563.0,17.05
-Sonora,Mexico,29.2972,-110.3309,23749,2827,20240,682.0,"Sonora, Mexico",772.39,11.9
-Tabasco,Mexico,17.8409,-92.6189,30753,2745,27115,893.0,"Tabasco, Mexico",1195.55,8.93
-Tamaulipas,Mexico,24.2669,-98.8363,27645,2059,24678,908.0,"Tamaulipas, Mexico",757.27,7.45
-Tlaxcala,Mexico,19.3139,-98.2404,7165,1002,5994,169.0,"Tlaxcala, Mexico",519.2,13.98
-Veracruz,Mexico,19.1738,-96.1342,31680,4046,26543,1091.0,"Veracruz, Mexico",370.97,12.77
-Yucatan,Mexico,20.7099,-89.0943,17222,1506,14630,1086.0,"Yucatan, Mexico",762.34,8.74
-Zacatecas,Mexico,22.7709,-102.5832,6748,630,5518,600.0,"Zacatecas, Mexico",404.94,9.34
-,Moldova,47.4116,28.3699,46336,1201,34236,10899.0,Moldova,1148.65,2.59
-,Monaco,43.7333,7.4167,192,1,152,39.0,Monaco,489.25,0.52
-,Mongolia,46.8625,103.8467,312,0,302,10.0,Mongolia,9.52,0.0
-,Montenegro,42.708678000000006,19.37439,7898,134,5129,2635.0,Montenegro,1257.52,1.7
-,Morocco,31.7917,-7.0926,99816,1795,79008,19013.0,Morocco,270.43,1.8
-,Mozambique,-18.665695,35.529562,6537,41,3620,2876.0,Mozambique,20.91,0.63
-,Namibia,-22.9576,18.4904,10292,111,7969,2212.0,Namibia,405.05,1.08
-,Nepal,28.1667,84.25,62797,401,45267,17129.0,Nepal,215.52,0.64
-Aruba,Netherlands,12.5211,-69.9683,3460,23,2128,1309.0,"Aruba, Netherlands",3240.73,0.66
-"Bonaire, Sint Eustatius and Saba",Netherlands,12.1784,-68.2385,36,1,17,18.0,"Bonaire, Sint Eustatius and Saba, Netherlands",137.29,2.78
-Curacao,Netherlands,12.1696,-68.99,247,1,88,158.0,"Curacao, Netherlands",150.52,0.4
-Drenthe,Netherlands,52.862485,6.6184350000000025,722,41,0,681.0,"Drenthe, Netherlands",146.25,5.68
-Flevoland,Netherlands,52.550383,5.515162,1762,97,0,1665.0,"Flevoland, Netherlands",416.53,5.51
-Friesland,Netherlands,53.087337,5.7925,1011,69,0,942.0,"Friesland, Netherlands",155.55,6.82
-Gelderland,Netherlands,52.061738,5.939114,9126,692,0,8434.0,"Gelderland, Netherlands",437.5,7.58
-Groningen,Netherlands,53.217922,6.741514,1011,19,0,992.0,"Groningen, Netherlands",172.57,1.88
-Limburg,Netherlands,51.209227,5.93387,5990,760,0,5230.0,"Limburg, Netherlands",536.16,12.69
-Noord-Brabant,Netherlands,51.561174,5.184942,14278,1552,0,12726.0,"Noord-Brabant, Netherlands",557.09,10.87
-Noord-Holland,Netherlands,52.60090600000001,4.918688,18087,840,0,17247.0,"Noord-Holland, Netherlands",628.12,4.64
-Overijssel,Netherlands,52.444558,6.441722,4041,314,0,3727.0,"Overijssel, Netherlands",347.64,7.77
-Sint Maarten,Netherlands,18.0425,-63.0548,584,20,488,76.0,"Sint Maarten, Netherlands",1361.88,3.42
-Unknown,Netherlands,,,792,18,0,774.0,"Unknown, Netherlands",,2.27
-Utrecht,Netherlands,52.084251,5.163824,7260,437,0,6823.0,"Utrecht, Netherlands",535.86,6.02
-Zeeland,Netherlands,51.47936,3.861559,1210,72,0,1138.0,"Zeeland, Netherlands",315.52,5.95
-Zuid-Holland,Netherlands,51.937835,4.462114,26644,1364,0,25280.0,"Zuid-Holland, Netherlands",718.42,5.12
-,New Zealand,-40.9006,174.886,1815,25,1719,71.0,New Zealand,37.64,1.38
-,Nicaragua,12.865416,-85.207229,4961,147,2913,1901.0,Nicaragua,74.89,2.96
-,Niger,17.607789,8.081666,1183,69,1104,10.0,Niger,4.89,5.83
-,Nigeria,9.082,8.6753,57145,1095,48431,7619.0,Nigeria,27.72,1.92
-,North Macedonia,41.6086,21.7453,16557,689,13792,2076.0,North Macedonia,794.72,4.16
-,Norway,60.472,8.4689,12858,267,10371,2220.0,Norway,237.18,2.08
-,Oman,21.512583,55.92325500000001,91753,818,84648,6287.0,Oman,1796.75,0.89
-Azad Jammu and Kashmir,Pakistan,34.027401,73.947253,2517,67,2257,193.0,"Azad Jammu and Kashmir, Pakistan",62.22,2.66
-Balochistan,Pakistan,28.328492,65.898403,14269,145,12969,1155.0,"Balochistan, Pakistan",115.59,1.02
-Gilgit-Baltistan,Pakistan,35.792146,74.982138,3450,81,3036,333.0,"Gilgit-Baltistan, Pakistan",340.38,2.35
-Islamabad,Pakistan,33.665087,73.121219,16124,180,15529,415.0,"Islamabad, Pakistan",803.56,1.12
-Khyber Pakhtunkhwa,Pakistan,34.485332,72.09169,37317,1258,35500,559.0,"Khyber Pakhtunkhwa, Pakistan",122.26,3.37
-Punjab,Pakistan,30.811346,72.13913199999998,98368,2226,94773,1369.0,"Punjab, Pakistan",89.42,2.26
-Sindh,Pakistan,26.009446,68.77680699999999,133626,2459,128239,2928.0,"Sindh, Pakistan",279.05,1.84
-,Panama,8.538,-80.7821,105601,2247,80190,23164.0,Panama,2447.43,2.13
-,Papua New Guinea,-6.314993,143.95555,516,6,232,278.0,Papua New Guinea,5.77,1.16
-,Paraguay,-23.4425,-58.4438,33015,636,17535,14844.0,Paraguay,462.88,1.93
-Amazonas,Peru,-5.077253,-78.050172,12987,204,0,12783.0,"Amazonas, Peru",3042.88,1.57
-Ancash,Peru,-9.407125,-77.67179499999997,21235,1248,0,19987.0,"Ancash, Peru",1798.66,5.88
-Apurimac,Peru,-14.027713,-72.975378,4200,79,0,4121.0,"Apurimac, Peru",975.16,1.88
-Arequipa,Peru,-15.843524,-72.475539,39046,1297,0,37749.0,"Arequipa, Peru",2607.59,3.32
-Ayacucho,Peru,-14.091648,-74.08344,10410,286,0,10124.0,"Ayacucho, Peru",1557.92,2.75
-Cajamarca,Peru,-6.430284,-78.74559599999998,18433,441,0,17992.0,"Cajamarca, Peru",1268.01,2.39
-Callao,Peru,-11.954609,-77.136042,30730,1687,0,29043.0,"Callao, Peru",2719.71,5.49
-Cusco,Peru,-13.191068,-72.153609,19135,387,0,18748.0,"Cusco, Peru",1409.99,2.02
-Huancavelica,Peru,-13.023888,-75.00277,5997,102,0,5895.0,"Huancavelica, Peru",1641.66,1.7
-Huanuco,Peru,-9.421676,-76.040642,14919,366,0,14553.0,"Huanuco, Peru",1962.25,2.45
-Ica,Peru,-14.235097,-75.574821,25278,1546,0,23732.0,"Ica, Peru",2592.08,6.12
-Junin,Peru,-11.541783,-74.876968,17991,723,0,17268.0,"Junin, Peru",1321.41,4.02
-La Libertad,Peru,-7.92139,-78.370238,26715,2158,0,24557.0,"La Libertad, Peru",1324.62,8.08
-Lambayeque,Peru,-6.353049,-79.824113,24711,1650,0,23061.0,"Lambayeque, Peru",1885.18,6.68
-Lima,Peru,-11.766533,-76.60449799999998,349167,14009,0,335158.0,"Lima, Peru",3285.2,4.01
-Loreto,Peru,-4.124847,-74.424115,17506,940,0,16566.0,"Loreto, Peru",1703.58,5.37
-Madre de Dios,Peru,-11.972699,-70.53171999999998,7366,136,0,7230.0,"Madre de Dios, Peru",4238.2,1.85
-Moquegua,Peru,-16.860271,-70.839046,11703,253,0,11450.0,"Moquegua, Peru",6073.17,2.16
-Pasco,Peru,-10.39655,-75.307635,4657,100,0,4557.0,"Pasco, Peru",1712.76,2.15
-Piura,Peru,-5.133361,-80.335861,33299,1911,0,31388.0,"Piura, Peru",1625.93,5.74
-Puno,Peru,-14.995826999999998,-69.922726,11588,278,0,11310.0,"Puno, Peru",936.03,2.4
-San Martin,Peru,-7.039531,-76.729127,16297,686,0,15611.0,"San Martin, Peru",1811.58,4.21
-Tacna,Peru,-17.644160999999997,-70.27756,11012,194,0,10818.0,"Tacna, Peru",2968.19,1.76
-Tumbes,Peru,-3.857496,-80.54525500000003,6735,293,0,6442.0,"Tumbes, Peru",2677.93,4.35
-Ucayali,Peru,-9.621718,-73.444929,15295,309,0,14986.0,"Ucayali, Peru",2596.33,2.02
+Wakayama,Japan,33.911879,135.505446,236,5,227,4.0,"Wakayama, Japan",25.515362,2.118644
+Yamagata,Japan,38.448396,140.102154,78,1,76,1.0,"Yamagata, Japan",7.237864,1.282051
+Yamaguchi,Japan,34.201190000000004,131.573293,195,1,171,23.0,"Yamaguchi, Japan",14.3558,0.512821
+Yamanashi,Japan,35.612364,138.61148899999998,181,6,168,7.0,"Yamanashi, Japan",22.319337,3.314917
+,Jordan,31.24,36.51,4540,30,2672,1838.0,Jordan,44.496106,0.660793
+,Kazakhstan,48.0196,66.9237,107262,1671,101877,3714.0,Kazakhstan,571.250326,1.557868
+,Kenya,-0.0236,37.9062,36829,646,23777,12406.0,Kenya,68.491928,1.754053
+,"Korea, South",35.90775700000001,127.766922,22975,383,20158,2434.0,"Korea, South",44.812495,1.667029
+,Kosovo,42.602636,20.902977,12683,488,8788,3407.0,Kosovo,700.576568,3.84767
+,Kuwait,29.31166,47.481766,99049,581,89498,8970.0,Kuwait,2319.342906,0.586578
+,Kyrgyzstan,41.20438,74.766098,45335,1063,41484,2788.0,Kyrgyzstan,694.875426,2.344767
+,Laos,19.85627,102.495496,23,0,22,1.0,Laos,0.316127,0.0
+,Latvia,56.8796,24.6032,1515,36,1248,231.0,Latvia,80.320135,2.376238
+,Lebanon,33.8547,35.8623,28297,286,11440,16571.0,Lebanon,414.58121,1.010708
+,Lesotho,-29.61,28.2336,1390,33,754,603.0,Lesotho,64.88499,2.374101
+,Liberia,6.4280550000000005,-9.429499,1335,82,1216,37.0,Liberia,26.395517,6.142322
+,Libya,26.3351,17.228331,27234,436,14679,12119.0,Libya,396.344964,1.60094
+,Liechtenstein,47.14,9.55,113,1,109,3.0,Liechtenstein,296.300181,0.884956
+,Lithuania,55.1694,23.8813,3664,87,2197,1380.0,Lithuania,134.592518,2.374454
+,Luxembourg,49.8153,6.1296,7718,124,6703,891.0,Luxembourg,1232.954618,1.606634
+,MS Zaandam,,,9,2,0,7.0,MS Zaandam,,22.222222
+,Madagascar,-18.766947,46.869107,16020,219,14630,1171.0,Madagascar,57.852692,1.367041
+,Malawi,-13.2543,34.3015,5718,179,4030,1509.0,Malawi,29.890295,3.130465
+,Malaysia,4.210483999999999,101.975766,10167,130,9315,722.0,Malaysia,31.412595,1.278647
+,Maldives,3.2028,73.2207,9649,33,8188,1428.0,Maldives,1785.06018,0.342004
+,Mali,17.570692,-3.996166000000001,3006,128,2349,529.0,Mali,14.843833,4.25815
+,Malta,35.9375,14.3754,2699,19,2017,663.0,Malta,611.271032,0.703964
+,Mauritania,21.0079,-10.9408,7365,161,6927,277.0,Mauritania,158.398679,2.186015
+,Mauritius,-20.348404,57.552152,366,10,338,18.0,Mauritius,28.778857,2.73224
+Aguascalientes,Mexico,21.8853,-102.2916,6581,555,5783,243.0,"Aguascalientes, Mexico",458.72295,8.433369
+Baja California,Mexico,30.8406,-115.2838,18501,3367,14561,573.0,"Baja California, Mexico",508.986846,18.199016
+Baja California Sur,Mexico,26.0444,-111.6661,9374,428,8112,834.0,"Baja California Sur, Mexico",1164.894595,4.56582
+Campeche,Mexico,19.8301,-90.5349,5851,800,4981,70.0,"Campeche, Mexico",584.739216,13.672876
+Chiapas,Mexico,16.7569,-93.1292,6427,1016,5354,57.0,"Chiapas, Mexico",112.156865,15.808309
+Chihuahua,Mexico,28.63300000000001,-106.0691,9464,1276,7553,635.0,"Chihuahua, Mexico",248.955211,13.482671
+Ciudad de Mexico,Mexico,19.4326,-99.1332,116943,11545,98840,6558.0,"Ciudad de Mexico, Mexico",1296.680377,9.872331
+Coahuila,Mexico,27.0587,-101.7068,24766,1723,22020,1023.0,"Coahuila, Mexico",769.436298,6.957119
+Colima,Mexico,19.1223,-104.0072,4380,518,3567,295.0,"Colima, Mexico",557.853055,11.826484
+Durango,Mexico,24.5593,-104.6588,8098,559,6859,680.0,"Durango, Mexico",433.280756,6.902939
+Guanajuato,Mexico,21.019,-101.2574,38340,2709,33126,2505.0,"Guanajuato, Mexico",615.589639,7.065728
+Guerrero,Mexico,17.4392,-99.5451,17335,1811,14318,1206.0,"Guerrero, Mexico",474.016201,10.447072
+Hidalgo,Mexico,20.0911,-98.7624,11930,1853,9478,599.0,"Hidalgo, Mexico",386.53272,15.532272
+Jalisco,Mexico,20.6595,-103.3494,24400,2974,19623,1803.0,"Jalisco, Mexico",290.141388,12.188525
+Mexico,Mexico,19.4969,-99.7233,76784,8936,64292,3556.0,"Mexico, Mexico",440.583688,11.637841
+Michoacan,Mexico,19.5665,-101.7068,18684,1480,15891,1313.0,"Michoacan, Mexico",387.200981,7.921216
+Morelos,Mexico,18.6813,-99.1013,5699,1054,4449,196.0,"Morelos, Mexico",278.808136,18.494473
+Nayarit,Mexico,21.7514,-104.8455,5642,695,4662,285.0,"Nayarit, Mexico",437.84937,12.318327
+Nuevo Leon,Mexico,25.5922,-99.9962,35910,2820,30263,2827.0,"Nuevo Leon, Mexico",640.089495,7.852966
+Oaxaca,Mexico,17.0732,-96.7266,15374,1356,13292,726.0,"Oaxaca, Mexico",371.030649,8.820086
+Puebla,Mexico,19.0414,-98.2063,29938,3916,25066,956.0,"Puebla, Mexico",453.300358,13.080366
+Queretaro,Mexico,20.5888,-100.3899,8152,917,6702,533.0,"Queretaro, Mexico",357.600793,11.248773
+Quintana Roo,Mexico,19.1817,-88.4791,11290,1573,9361,356.0,"Quintana Roo, Mexico",655.153984,13.932684
+San Luis Potosi,Mexico,22.1565,-100.9855,21524,1531,19097,896.0,"San Luis Potosi, Mexico",750.974655,7.11299
+Sinaloa,Mexico,25.1721,-107.4795,17772,3031,14186,555.0,"Sinaloa, Mexico",562.997636,17.054918
+Sonora,Mexico,29.2972,-110.3309,23749,2827,20240,682.0,"Sonora, Mexico",772.389255,11.903659
+Tabasco,Mexico,17.8409,-92.6189,30753,2745,27115,893.0,"Tabasco, Mexico",1195.550885,8.925958
+Tamaulipas,Mexico,24.2669,-98.8363,27645,2059,24678,908.0,"Tamaulipas, Mexico",757.272362,7.448001
+Tlaxcala,Mexico,19.3139,-98.2404,7165,1002,5994,169.0,"Tlaxcala, Mexico",519.19876,13.984648
+Veracruz,Mexico,19.1738,-96.1342,31680,4046,26543,1091.0,"Veracruz, Mexico",370.966182,12.771465
+Yucatan,Mexico,20.7099,-89.0943,17222,1506,14630,1086.0,"Yucatan, Mexico",762.339659,8.744629
+Zacatecas,Mexico,22.7709,-102.5832,6748,630,5518,600.0,"Zacatecas, Mexico",404.938473,9.3361
+,Moldova,47.4116,28.3699,46336,1201,34236,10899.0,Moldova,1148.647124,2.591937
+,Monaco,43.7333,7.4167,192,1,152,39.0,Monaco,489.246764,0.520833
+,Mongolia,46.8625,103.8467,312,0,302,10.0,Mongolia,9.517151,0.0
+,Montenegro,42.708678000000006,19.37439,7898,134,5129,2635.0,Montenegro,1257.519162,1.696632
+,Morocco,31.7917,-7.0926,99816,1795,79008,19013.0,Morocco,270.426689,1.798309
+,Mozambique,-18.665695,35.529562,6537,41,3620,2876.0,Mozambique,20.914763,0.627199
+,Namibia,-22.9576,18.4904,10292,111,7969,2212.0,Namibia,405.050777,1.078508
+,Nepal,28.1667,84.25,62797,401,45267,17129.0,Nepal,215.524638,0.638566
+Aruba,Netherlands,12.5211,-69.9683,3460,23,2128,1309.0,"Aruba, Netherlands",3240.732068,0.66474
+"Bonaire, Sint Eustatius and Saba",Netherlands,12.1784,-68.2385,36,1,17,18.0,"Bonaire, Sint Eustatius and Saba, Netherlands",137.294535,2.777778
+Curacao,Netherlands,12.1696,-68.99,247,1,88,158.0,"Curacao, Netherlands",150.517977,0.404858
+Drenthe,Netherlands,52.862485,6.6184350000000025,722,41,0,681.0,"Drenthe, Netherlands",146.24799,5.67867
+Flevoland,Netherlands,52.550383,5.515162,1762,97,0,1665.0,"Flevoland, Netherlands",416.527785,5.505108
+Friesland,Netherlands,53.087337,5.7925,1011,69,0,942.0,"Friesland, Netherlands",155.548752,6.824926
+Gelderland,Netherlands,52.061738,5.939114,9126,692,0,8434.0,"Gelderland, Netherlands",437.498082,7.582731
+Groningen,Netherlands,53.217922,6.741514,1011,19,0,992.0,"Groningen, Netherlands",172.565058,1.879327
+Limburg,Netherlands,51.209227,5.93387,5990,760,0,5230.0,"Limburg, Netherlands",536.161353,12.687813
+Noord-Brabant,Netherlands,51.561174,5.184942,14278,1552,0,12726.0,"Noord-Brabant, Netherlands",557.091326,10.86987
+Noord-Holland,Netherlands,52.60090600000001,4.918688,18087,840,0,17247.0,"Noord-Holland, Netherlands",628.123994,4.64422
+Overijssel,Netherlands,52.444558,6.441722,4041,314,0,3727.0,"Overijssel, Netherlands",347.641014,7.770354
+Sint Maarten,Netherlands,18.0425,-63.0548,584,20,488,76.0,"Sint Maarten, Netherlands",1361.876778,3.424658
+Unknown,Netherlands,,,792,18,0,774.0,"Unknown, Netherlands",,2.272727
+Utrecht,Netherlands,52.084251,5.163824,7260,437,0,6823.0,"Utrecht, Netherlands",535.859006,6.019284
+Zeeland,Netherlands,51.47936,3.861559,1210,72,0,1138.0,"Zeeland, Netherlands",315.524866,5.950413
+Zuid-Holland,Netherlands,51.937835,4.462114,26644,1364,0,25280.0,"Zuid-Holland, Netherlands",718.419628,5.119351
+,New Zealand,-40.9006,174.886,1815,25,1719,71.0,New Zealand,37.638165,1.37741
+,Nicaragua,12.865416,-85.207229,4961,147,2913,1901.0,Nicaragua,74.88806,2.963112
+,Niger,17.607789,8.081666,1183,69,1104,10.0,Niger,4.88709,5.832629
+,Nigeria,9.082,8.6753,57145,1095,48431,7619.0,Nigeria,27.721507,1.916178
+,North Macedonia,41.6086,21.7453,16557,689,13792,2076.0,North Macedonia,794.718198,4.161382
+,Norway,60.472,8.4689,12858,267,10371,2220.0,Norway,237.178123,2.076528
+,Oman,21.512583,55.92325500000001,91753,818,84648,6287.0,Oman,1796.745481,0.891524
+Azad Jammu and Kashmir,Pakistan,34.027401,73.947253,2517,67,2257,193.0,"Azad Jammu and Kashmir, Pakistan",62.219339,2.661899
+Balochistan,Pakistan,28.328492,65.898403,14269,145,12969,1155.0,"Balochistan, Pakistan",115.5908,1.016189
+Gilgit-Baltistan,Pakistan,35.792146,74.982138,3450,81,3036,333.0,"Gilgit-Baltistan, Pakistan",340.376328,2.347826
+Islamabad,Pakistan,33.665087,73.121219,16124,180,15529,415.0,"Islamabad, Pakistan",803.559503,1.116348
+Khyber Pakhtunkhwa,Pakistan,34.485332,72.09169,37317,1258,35500,559.0,"Khyber Pakhtunkhwa, Pakistan",122.257139,3.371118
+Punjab,Pakistan,30.811346,72.13913199999998,98368,2226,94773,1369.0,"Punjab, Pakistan",89.415341,2.262931
+Sindh,Pakistan,26.009446,68.77680699999999,133626,2459,128239,2928.0,"Sindh, Pakistan",279.049947,1.840211
+,Panama,8.538,-80.7821,105601,2247,80190,23164.0,Panama,2447.431704,2.127821
+,Papua New Guinea,-6.314993,143.95555,516,6,232,278.0,Papua New Guinea,5.767279,1.162791
+,Paraguay,-23.4425,-58.4438,33015,636,17535,14844.0,Paraguay,462.879231,1.926397
+Amazonas,Peru,-5.077253,-78.050172,12987,204,0,12783.0,"Amazonas, Peru",3042.877226,1.570802
+Ancash,Peru,-9.407125,-77.67179499999997,21235,1248,0,19987.0,"Ancash, Peru",1798.661697,5.87709
+Apurimac,Peru,-14.027713,-72.975378,4200,79,0,4121.0,"Apurimac, Peru",975.156722,1.880952
+Arequipa,Peru,-15.843524,-72.475539,39046,1297,0,37749.0,"Arequipa, Peru",2607.586483,3.321723
+Ayacucho,Peru,-14.091648,-74.08344,10410,286,0,10124.0,"Ayacucho, Peru",1557.916791,2.747358
+Cajamarca,Peru,-6.430284,-78.74559599999998,18433,441,0,17992.0,"Cajamarca, Peru",1268.005778,2.392448
+Callao,Peru,-11.954609,-77.136042,30730,1687,0,29043.0,"Callao, Peru",2719.709709,5.489749
+Cusco,Peru,-13.191068,-72.153609,19135,387,0,18748.0,"Cusco, Peru",1409.991894,2.022472
+Huancavelica,Peru,-13.023888,-75.00277,5997,102,0,5895.0,"Huancavelica, Peru",1641.664385,1.70085
+Huanuco,Peru,-9.421676,-76.040642,14919,366,0,14553.0,"Huanuco, Peru",1962.251743,2.453248
+Ica,Peru,-14.235097,-75.574821,25278,1546,0,23732.0,"Ica, Peru",2592.083675,6.11599
+Junin,Peru,-11.541783,-74.876968,17991,723,0,17268.0,"Junin, Peru",1321.410209,4.018676
+La Libertad,Peru,-7.92139,-78.370238,26715,2158,0,24557.0,"La Libertad, Peru",1324.623165,8.077859
+Lambayeque,Peru,-6.353049,-79.824113,24711,1650,0,23061.0,"Lambayeque, Peru",1885.18462,6.677188
+Lima,Peru,-11.766533,-76.60449799999998,349167,14009,0,335158.0,"Lima, Peru",3285.195465,4.01212
+Loreto,Peru,-4.124847,-74.424115,17506,940,0,16566.0,"Loreto, Peru",1703.58116,5.369588
+Madre de Dios,Peru,-11.972699,-70.53171999999998,7366,136,0,7230.0,"Madre de Dios, Peru",4238.204833,1.846321
+Moquegua,Peru,-16.860271,-70.839046,11703,253,0,11450.0,"Moquegua, Peru",6073.170732,2.161839
+Pasco,Peru,-10.39655,-75.307635,4657,100,0,4557.0,"Pasco, Peru",1712.762045,2.147305
+Piura,Peru,-5.133361,-80.335861,33299,1911,0,31388.0,"Piura, Peru",1625.927734,5.738911
+Puno,Peru,-14.995826999999998,-69.922726,11588,278,0,11310.0,"Puno, Peru",936.025848,2.399033
+San Martin,Peru,-7.039531,-76.729127,16297,686,0,15611.0,"San Martin, Peru",1811.582926,4.209364
+Tacna,Peru,-17.644160999999997,-70.27756,11012,194,0,10818.0,"Tacna, Peru",2968.19407,1.761714
+Tumbes,Peru,-3.857496,-80.54525500000003,6735,293,0,6442.0,"Tumbes, Peru",2677.932406,4.350408
+Ucayali,Peru,-9.621718,-73.444929,15295,309,0,14986.0,"Ucayali, Peru",2596.33339,2.020268
 Unknown,Peru,,,0,0,594513,-594513.0,"Unknown, Peru",,
-,Philippines,12.879721,121.774017,283460,4930,209885,68645.0,Philippines,258.68,1.74
-,Poland,51.9194,19.1451,78330,2282,63861,12187.0,Poland,206.97,2.91
-,Portugal,39.3999,-8.2245,68025,1899,45404,20722.0,Portugal,667.13,2.79
-,Qatar,25.3548,51.1839,123146,209,120089,2848.0,Qatar,4274.33,0.17
-,Romania,45.9432,24.9668,111550,4402,89119,18029.0,Romania,579.85,3.95
-Adygea Republic,Russia,44.6939006,40.1520421,3775,31,3253,491.0,"Adygea Republic, Russia",832.64,0.82
-Altai Krai,Russia,52.6932243,82.69314240000001,12914,164,11648,1102.0,"Altai Krai, Russia",549.51,1.27
-Altai Republic,Russia,50.7114101,86.8572186,2798,12,2235,551.0,"Altai Republic, Russia",1283.12,0.43
-Amur Oblast,Russia,52.8032368,128.437295,3959,50,3514,395.0,"Amur Oblast, Russia",495.85,1.26
-Arkhangelsk Oblast,Russia,63.5589686,43.1221646,12290,257,9799,2234.0,"Arkhangelsk Oblast, Russia",1064.04,2.09
-Astrakhan Oblast,Russia,47.1878186,47.608851,6550,94,6144,312.0,"Astrakhan Oblast, Russia",643.73,1.44
-Bashkortostan Republic,Russia,54.8573563,57.1439682,8384,33,8158,193.0,"Bashkortostan Republic, Russia",206.34,0.39
-Belgorod Oblast,Russia,50.7080119,37.5837615,8208,57,7521,630.0,"Belgorod Oblast, Russia",529.59,0.69
-Bryansk Oblast,Russia,52.8873315,33.41585300000001,8927,37,7288,1602.0,"Bryansk Oblast, Russia",737.17,0.41
-Buryatia Republic,Russia,52.7182426,109.492143,6152,62,5223,867.0,"Buryatia Republic, Russia",624.88,1.01
-Chechen Republic,Russia,43.39761470000001,45.6985005,2374,40,1811,523.0,"Chechen Republic, Russia",165.21,1.68
-Chelyabinsk Oblast,Russia,54.4223954,61.1865846,14928,122,10969,3837.0,"Chelyabinsk Oblast, Russia",427.36,0.82
-Chukotka Autonomous Okrug,Russia,66.0006475,169.4900869,182,2,172,8.0,"Chukotka Autonomous Okrug, Russia",368.81,1.1
-Chuvashia Republic,Russia,55.4259922,47.0849429,8301,85,7047,1169.0,"Chuvashia Republic, Russia",674.27,1.02
-Dagestan Republic,Russia,43.05749160000001,47.1332224,12514,543,10744,1227.0,"Dagestan Republic, Russia",408.44,4.34
-Ingushetia Republic,Russia,43.11542075,45.01713552,5136,78,4408,650.0,"Ingushetia Republic, Russia",1052.37,1.52
-Irkutsk Oblast,Russia,56.6370122,104.719221,18211,274,14815,3122.0,"Irkutsk Oblast, Russia",757.47,1.5
-Ivanovo Oblast,Russia,56.9167446,41.43521370000001,8184,130,6708,1346.0,"Ivanovo Oblast, Russia",806.59,1.59
-Jewish Autonomous Okrug,Russia,48.57527615,132.66307460000002,772,10,642,120.0,"Jewish Autonomous Okrug, Russia",476.5,1.3
-Kabardino-Balkarian Republic,Russia,43.4806048,43.5978976,7191,86,6344,761.0,"Kabardino-Balkarian Republic, Russia",830.53,1.2
-Kaliningrad Oblast,Russia,54.7293041,21.1489473,3941,67,3118,756.0,"Kaliningrad Oblast, Russia",396.24,1.7
-Kalmykia Republic,Russia,46.2313018,45.3275745,5681,65,3332,2284.0,"Kalmykia Republic, Russia",2062.72,1.14
-Kaluga Oblast,Russia,54.4382773,35.5272854,8672,72,7367,1233.0,"Kaluga Oblast, Russia",856.87,0.83
-Kamchatka Krai,Russia,57.1914882,160.03838190000005,4224,67,3250,907.0,"Kamchatka Krai, Russia",1338.59,1.59
-Karachay-Cherkess Republic,Russia,43.7368326,41.7267991,6285,28,4703,1554.0,"Karachay-Cherkess Republic, Russia",1347.83,0.45
-Karelia Republic,Russia,62.61940309999999,33.4920267,3610,16,2635,959.0,"Karelia Republic, Russia",579.93,0.44
-Kemerovo Oblast,Russia,54.53357809999999,87.342861,8323,67,6281,1975.0,"Kemerovo Oblast, Russia",308.85,0.8
-Khabarovsk Krai,Russia,51.6312684,136.121524,11325,101,9144,2080.0,"Khabarovsk Krai, Russia",852.59,0.89
-Khakassia Republic,Russia,53.72258845,91.44293627,3963,47,3366,550.0,"Khakassia Republic, Russia",737.28,1.19
-Khanty-Mansi Autonomous Okrug,Russia,61.0259025,69.0982628,21077,179,20289,609.0,"Khanty-Mansi Autonomous Okrug, Russia",1375.57,0.85
-Kirov Oblast,Russia,57.9665589,49.4074599,7769,120,5512,2137.0,"Kirov Oblast, Russia",605.42,1.54
-Komi Republic,Russia,63.9881421,54.3326073,7432,97,6376,959.0,"Komi Republic, Russia",883.84,1.31
-Kostroma Oblast,Russia,58.424756,44.2533273,4277,58,3148,1071.0,"Kostroma Oblast, Russia",664.83,1.36
-Krasnodar Krai,Russia,45.7684014,39.0261044,12937,241,10164,2532.0,"Krasnodar Krai, Russia",230.88,1.86
-Krasnoyarsk Krai,Russia,63.3233807,97.0979974,18852,530,14706,3616.0,"Krasnoyarsk Krai, Russia",655.38,2.81
-Kurgan Oblast,Russia,55.7655302,64.5632681,3472,26,2973,473.0,"Kurgan Oblast, Russia",410.63,0.75
-Kursk Oblast,Russia,51.6568453,36.4852695,7682,56,6483,1143.0,"Kursk Oblast, Russia",688.82,0.73
-Leningrad Oblast,Russia,60.1853296,32.3925325,7519,91,5358,2070.0,"Leningrad Oblast, Russia",414.54,1.21
-Lipetsk Oblast,Russia,52.6935178,39.1122664,5715,37,5113,565.0,"Lipetsk Oblast, Russia",496.87,0.65
-Magadan Oblast,Russia,62.48858785,153.9903764,2522,23,1971,528.0,"Magadan Oblast, Russia",1750.28,0.91
-Mari El Republic,Russia,56.5767504,47.8817512,4612,47,4075,490.0,"Mari El Republic, Russia",675.92,1.02
-Mordovia Republic,Russia,54.4419829,44.4661144,6057,40,5025,992.0,"Mordovia Republic, Russia",752.37,0.66
-Moscow,Russia,55.7504461,37.6174943,275633,5044,236055,34534.0,"Moscow, Russia",2203.92,1.83
-Moscow Oblast,Russia,55.50431579999999,38.0353929,71348,1278,54355,15715.0,"Moscow Oblast, Russia",950.88,1.79
-Murmansk Oblast,Russia,68.00004179999999,33.9999151,14138,194,11694,2250.0,"Murmansk Oblast, Russia",1876.17,1.37
-Nenets Autonomous Okrug,Russia,68.27557185,57.1686375,324,0,114,210.0,"Nenets Autonomous Okrug, Russia",736.41,0.0
-Nizhny Novgorod Oblast,Russia,55.47180329999999,44.0911594,30599,543,27156,2900.0,"Nizhny Novgorod Oblast, Russia",945.95,1.77
-North Ossetia - Alania Republic,Russia,42.79336110000001,44.6324493,5440,68,4607,765.0,"North Ossetia - Alania Republic, Russia",775.19,1.25
-Novgorod Oblast,Russia,58.2843833,32.5169757,4832,86,3539,1207.0,"Novgorod Oblast, Russia",796.73,1.78
-Novosibirsk Oblast,Russia,54.9720169,79.48139240000002,12410,410,11289,711.0,"Novosibirsk Oblast, Russia",444.99,3.3
-Omsk Oblast,Russia,56.09352629999999,73.5099936,10190,261,8917,1012.0,"Omsk Oblast, Russia",519.88,2.56
-Orel Oblast,Russia,52.96854329999999,36.0692477,7975,122,6365,1488.0,"Orel Oblast, Russia",1067.25,1.53
-Orenburg Oblast,Russia,52.02692620000001,54.7276647,11729,82,10667,980.0,"Orenburg Oblast, Russia",593.06,0.7
-Penza Oblast,Russia,53.1655415,44.78791810000001,9875,122,8479,1274.0,"Penza Oblast, Russia",741.56,1.24
-Perm Krai,Russia,58.5951603,56.3159546,9012,248,6244,2520.0,"Perm Krai, Russia",343.56,2.75
-Primorsky Krai,Russia,45.0819456,134.726645,10985,113,9419,1453.0,"Primorsky Krai, Russia",574.22,1.03
-Pskov Oblast,Russia,57.5358729,28.8586826,5091,65,3887,1139.0,"Pskov Oblast, Russia",799.79,1.28
-Rostov Oblast,Russia,47.6222451,40.7957942,19885,436,16054,3395.0,"Rostov Oblast, Russia",471.16,2.19
-Ryazan Oblast,Russia,54.42267320000001,40.57052460000001,7747,47,6565,1135.0,"Ryazan Oblast, Russia",690.79,0.61
-Saint Petersburg,Russia,59.9606739,30.158655100000004,40517,2762,27717,10038.0,"Saint Petersburg, Russia",757.05,6.82
-Sakha (Yakutiya) Republic,Russia,66.941626,129.642371,8536,93,6632,1811.0,"Sakha (Yakutiya) Republic, Russia",885.17,1.09
-Sakhalin Oblast,Russia,49.7219665,143.448533,5206,0,3679,1527.0,"Sakhalin Oblast, Russia",1062.06,0.0
-Samara Oblast,Russia,53.2128813,50.8914633,10550,172,8210,2168.0,"Samara Oblast, Russia",330.36,1.63
-Saratov Oblast,Russia,51.6520555,46.86319520000001,14332,93,9477,4762.0,"Saratov Oblast, Russia",581.9,0.65
-Smolensk Oblast,Russia,55.03434960000001,33.0192065,6408,137,5627,644.0,"Smolensk Oblast, Russia",674.99,2.14
-Stavropol Krai,Russia,44.86325770000001,43.4406913,14487,287,10225,3975.0,"Stavropol Krai, Russia",517.27,1.98
-Sverdlovsk Oblast,Russia,58.6414755,61.8021546,27679,567,21087,6025.0,"Sverdlovsk Oblast, Russia",639.94,2.05
-Tambov Oblast,Russia,52.9019574,41.3578918,7288,46,6392,850.0,"Tambov Oblast, Russia",705.14,0.63
-Tatarstan Republic,Russia,55.7648572,52.43104273,6974,45,5898,1031.0,"Tatarstan Republic, Russia",179.08,0.65
-Tomsk Oblast,Russia,58.6124279,82.04753149999998,6713,78,5462,1173.0,"Tomsk Oblast, Russia",622.57,1.16
-Tula Oblast,Russia,53.9570701,37.3690909,9808,356,8801,651.0,"Tula Oblast, Russia",657.44,3.63
-Tver Oblast,Russia,57.1134475,35.174442799999994,5862,227,4416,1219.0,"Tver Oblast, Russia",456.59,3.87
-Tyumen Oblast,Russia,58.8206488,70.36588370000001,8754,36,7402,1316.0,"Tyumen Oblast, Russia",237.08,0.41
-Tyva Republic,Russia,51.4017149,93.8582593,7321,71,6609,641.0,"Tyva Republic, Russia",2275.57,0.97
-Udmurt Republic,Russia,57.1961165,52.69598320000001,4245,62,3261,922.0,"Udmurt Republic, Russia",280.56,1.46
-Ulyanovsk Oblast,Russia,54.1463177,47.2324921,14154,140,12136,1878.0,"Ulyanovsk Oblast, Russia",1135.39,0.99
-Vladimir Oblast,Russia,56.0503336,40.6561633,6906,201,5774,931.0,"Vladimir Oblast, Russia",501.04,2.91
-Volgograd Oblast,Russia,49.6048339,44.29035820000001,13965,130,12334,1501.0,"Volgograd Oblast, Russia",553.89,0.93
-Vologda Oblast,Russia,60.0391461,43.1215213,4124,45,3523,556.0,"Vologda Oblast, Russia",350.47,1.09
-Voronezh Oblast,Russia,50.9800393,40.15065070000001,16256,153,15125,978.0,"Voronezh Oblast, Russia",696.56,0.94
-Yamalo-Nenets Autonomous Okrug,Russia,67.1471631,74.3415488,14398,98,13259,1041.0,"Yamalo-Nenets Autonomous Okrug, Russia",2673.49,0.68
-Yaroslavl Oblast,Russia,57.77819760000001,39.0021095,8041,45,7659,337.0,"Yaroslavl Oblast, Russia",635.31,0.56
-Zabaykalsky Krai,Russia,52.248521,115.956325,5481,65,4602,814.0,"Zabaykalsky Krai, Russia",510.9,1.19
-,Rwanda,-1.9403,29.8739,4689,26,2910,1753.0,Rwanda,36.2,0.55
-,Saint Kitts and Nevis,17.357822,-62.782998,17,0,17,0.0,Saint Kitts and Nevis,31.96,0.0
-,Saint Lucia,13.9094,-60.9789,27,0,26,1.0,Saint Lucia,14.7,0.0
-,Saint Vincent and the Grenadines,12.9843,-61.2872,64,0,64,0.0,Saint Vincent and the Grenadines,57.69,0.0
-,San Marino,43.9424,12.4578,723,42,669,12.0,San Marino,2130.36,5.81
-,Sao Tome and Principe,0.1864,6.6131,908,15,876,17.0,Sao Tome and Principe,414.31,1.65
-,Saudi Arabia,23.885942,45.079162,329271,4458,309430,15383.0,Saudi Arabia,945.8,1.35
-,Senegal,14.4974,-14.4524,14688,302,11153,3233.0,Senegal,87.72,2.06
-,Serbia,44.0165,21.0059,32840,740,0,32100.0,Serbia,375.86,2.25
-,Seychelles,-4.6796,55.492,141,0,136,5.0,Seychelles,143.38,0.0
-,Sierra Leone,8.460555000000001,-11.779889,2159,72,1650,437.0,Sierra Leone,27.07,3.33
-,Singapore,1.2833,103.8333,57558,27,57142,389.0,Singapore,983.84,0.05
-,Slovakia,48.669,19.699,6546,39,3519,2988.0,Slovakia,119.9,0.6
-,Slovenia,46.1512,14.9955,4309,141,2981,1187.0,Slovenia,207.27,3.27
-,Somalia,5.152149,46.199616,3401,98,2812,491.0,Somalia,21.4,2.88
-,South Africa,-30.5595,22.9375,659656,15940,589434,54282.0,South Africa,1112.24,2.42
-,South Sudan,6.877000000000002,31.307,2642,49,1290,1303.0,South Sudan,23.6,1.85
-Andalusia,Spain,37.5443,-4.7278,47612,1662,10671,35279.0,"Andalusia, Spain",564.97,3.49
-Aragon,Spain,41.5976,-0.9057,32266,1302,3772,27192.0,"Aragon, Spain",2443.31,4.04
-Asturias,Spain,43.3614,-5.8593,4340,341,1063,2936.0,"Asturias, Spain",424.57,7.86
-Baleares,Spain,39.710358,2.995148,12059,270,1533,10256.0,"Baleares, Spain",1014.88,2.24
-C. Valenciana,Spain,39.484,-0.7533,34370,1541,9970,22859.0,"C. Valenciana, Spain",690.86,4.48
-Canarias,Spain,28.2916,-16.6291,11479,209,1537,9733.0,"Canarias, Spain",520.14,1.82
-Cantabria,Spain,43.1828,-3.9878,6058,231,2287,3540.0,"Cantabria, Spain",1041.54,3.81
-Castilla - La Mancha,Spain,39.2796,-3.0977,34835,3065,6392,25378.0,"Castilla - La Mancha, Spain",1711.9,8.8
-Castilla y Leon,Spain,41.8357,-4.3976,38872,2931,8716,27225.0,"Castilla y Leon, Spain",1614.46,7.54
-Catalonia,Spain,41.5912,1.5209,128901,5797,26203,96901.0,"Catalonia, Spain",1703.59,4.5
-Ceuta,Spain,35.8894,-5.3213,441,9,163,269.0,"Ceuta, Spain",519.87,2.04
-Extremadura,Spain,39.4937,-6.0679,8166,544,2652,4970.0,"Extremadura, Spain",766.46,6.66
-Galicia,Spain,42.5751,-8.1339,18593,702,9204,8687.0,"Galicia, Spain",688.52,3.78
-La Rioja,Spain,42.2871,-2.5396,7333,393,3107,3833.0,"La Rioja, Spain",2338.55,5.36
-Madrid,Spain,40.4168,-3.7038,187045,8999,40736,137310.0,"Madrid, Spain",2816.24,4.81
-Melilla,Spain,35.2923,-2.9381,664,4,125,535.0,"Melilla, Spain",784.05,0.6
-Murcia,Spain,37.9922,-1.1307,13371,193,2180,10998.0,"Murcia, Spain",898.79,1.44
-Navarra,Spain,42.6954,-1.6761,14205,553,3905,9747.0,"Navarra, Spain",2185.57,3.89
-Pais Vasco,Spain,42.9896,-2.6189,39430,1749,16160,21521.0,"Pais Vasco, Spain",1810.48,4.44
+,Philippines,12.879721,121.774017,283460,4930,209885,68645.0,Philippines,258.67603,1.739222
+,Poland,51.9194,19.1451,78330,2282,63861,12187.0,Poland,206.967045,2.913315
+,Portugal,39.3999,-8.2245,68025,1899,45404,20722.0,Portugal,667.127142,2.791621
+,Qatar,25.3548,51.1839,123146,209,120089,2848.0,Qatar,4274.329587,0.169717
+,Romania,45.9432,24.9668,111550,4402,89119,18029.0,Romania,579.851564,3.946212
+Adygea Republic,Russia,44.6939006,40.1520421,3775,31,3253,491.0,"Adygea Republic, Russia",832.642222,0.821192
+Altai Krai,Russia,52.6932243,82.69314240000001,12914,164,11648,1102.0,"Altai Krai, Russia",549.513208,1.26994
+Altai Republic,Russia,50.7114101,86.8572186,2798,12,2235,551.0,"Altai Republic, Russia",1283.11543,0.428878
+Amur Oblast,Russia,52.8032368,128.437295,3959,50,3514,395.0,"Amur Oblast, Russia",495.851828,1.262945
+Arkhangelsk Oblast,Russia,63.5589686,43.1221646,12290,257,9799,2234.0,"Arkhangelsk Oblast, Russia",1064.043469,2.091131
+Astrakhan Oblast,Russia,47.1878186,47.608851,6550,94,6144,312.0,"Astrakhan Oblast, Russia",643.725787,1.435115
+Bashkortostan Republic,Russia,54.8573563,57.1439682,8384,33,8158,193.0,"Bashkortostan Republic, Russia",206.335108,0.393607
+Belgorod Oblast,Russia,50.7080119,37.5837615,8208,57,7521,630.0,"Belgorod Oblast, Russia",529.590754,0.694444
+Bryansk Oblast,Russia,52.8873315,33.41585300000001,8927,37,7288,1602.0,"Bryansk Oblast, Russia",737.17033,0.414473
+Buryatia Republic,Russia,52.7182426,109.492143,6152,62,5223,867.0,"Buryatia Republic, Russia",624.878747,1.007802
+Chechen Republic,Russia,43.39761470000001,45.6985005,2374,40,1811,523.0,"Chechen Republic, Russia",165.207473,1.68492
+Chelyabinsk Oblast,Russia,54.4223954,61.1865846,14928,122,10969,3837.0,"Chelyabinsk Oblast, Russia",427.364619,0.817256
+Chukotka Autonomous Okrug,Russia,66.0006475,169.4900869,182,2,172,8.0,"Chukotka Autonomous Okrug, Russia",368.809273,1.098901
+Chuvashia Republic,Russia,55.4259922,47.0849429,8301,85,7047,1169.0,"Chuvashia Republic, Russia",674.265728,1.023973
+Dagestan Republic,Russia,43.05749160000001,47.1332224,12514,543,10744,1227.0,"Dagestan Republic, Russia",408.435695,4.33914
+Ingushetia Republic,Russia,43.11542075,45.01713552,5136,78,4408,650.0,"Ingushetia Republic, Russia",1052.366287,1.518692
+Irkutsk Oblast,Russia,56.6370122,104.719221,18211,274,14815,3122.0,"Irkutsk Oblast, Russia",757.467676,1.504585
+Ivanovo Oblast,Russia,56.9167446,41.43521370000001,8184,130,6708,1346.0,"Ivanovo Oblast, Russia",806.586731,1.588465
+Jewish Autonomous Okrug,Russia,48.57527615,132.66307460000002,772,10,642,120.0,"Jewish Autonomous Okrug, Russia",476.502031,1.295337
+Kabardino-Balkarian Republic,Russia,43.4806048,43.5978976,7191,86,6344,761.0,"Kabardino-Balkarian Republic, Russia",830.534471,1.195939
+Kaliningrad Oblast,Russia,54.7293041,21.1489473,3941,67,3118,756.0,"Kaliningrad Oblast, Russia",396.240093,1.700076
+Kalmykia Republic,Russia,46.2313018,45.3275745,5681,65,3332,2284.0,"Kalmykia Republic, Russia",2062.720351,1.144165
+Kaluga Oblast,Russia,54.4382773,35.5272854,8672,72,7367,1233.0,"Kaluga Oblast, Russia",856.86958,0.830258
+Kamchatka Krai,Russia,57.1914882,160.03838190000005,4224,67,3250,907.0,"Kamchatka Krai, Russia",1338.585422,1.586174
+Karachay-Cherkess Republic,Russia,43.7368326,41.7267991,6285,28,4703,1554.0,"Karachay-Cherkess Republic, Russia",1347.830283,0.445505
+Karelia Republic,Russia,62.61940309999999,33.4920267,3610,16,2635,959.0,"Karelia Republic, Russia",579.934585,0.443213
+Kemerovo Oblast,Russia,54.53357809999999,87.342861,8323,67,6281,1975.0,"Kemerovo Oblast, Russia",308.845265,0.804998
+Khabarovsk Krai,Russia,51.6312684,136.121524,11325,101,9144,2080.0,"Khabarovsk Krai, Russia",852.592257,0.891832
+Khakassia Republic,Russia,53.72258845,91.44293627,3963,47,3366,550.0,"Khakassia Republic, Russia",737.284494,1.18597
+Khanty-Mansi Autonomous Okrug,Russia,61.0259025,69.0982628,21077,179,20289,609.0,"Khanty-Mansi Autonomous Okrug, Russia",1375.565103,0.849267
+Kirov Oblast,Russia,57.9665589,49.4074599,7769,120,5512,2137.0,"Kirov Oblast, Russia",605.421598,1.5446
+Komi Republic,Russia,63.9881421,54.3326073,7432,97,6376,959.0,"Komi Republic, Russia",883.843339,1.305167
+Kostroma Oblast,Russia,58.424756,44.2533273,4277,58,3148,1071.0,"Kostroma Oblast, Russia",664.828298,1.356091
+Krasnodar Krai,Russia,45.7684014,39.0261044,12937,241,10164,2532.0,"Krasnodar Krai, Russia",230.876857,1.862874
+Krasnoyarsk Krai,Russia,63.3233807,97.0979974,18852,530,14706,3616.0,"Krasnoyarsk Krai, Russia",655.380485,2.811373
+Kurgan Oblast,Russia,55.7655302,64.5632681,3472,26,2973,473.0,"Kurgan Oblast, Russia",410.62662,0.748848
+Kursk Oblast,Russia,51.6568453,36.4852695,7682,56,6483,1143.0,"Kursk Oblast, Russia",688.822197,0.728977
+Leningrad Oblast,Russia,60.1853296,32.3925325,7519,91,5358,2070.0,"Leningrad Oblast, Russia",414.540394,1.210267
+Lipetsk Oblast,Russia,52.6935178,39.1122664,5715,37,5113,565.0,"Lipetsk Oblast, Russia",496.869678,0.647419
+Magadan Oblast,Russia,62.48858785,153.9903764,2522,23,1971,528.0,"Magadan Oblast, Russia",1750.282807,0.911975
+Mari El Republic,Russia,56.5767504,47.8817512,4612,47,4075,490.0,"Mari El Republic, Russia",675.916305,1.019081
+Mordovia Republic,Russia,54.4419829,44.4661144,6057,40,5025,992.0,"Mordovia Republic, Russia",752.370021,0.660393
+Moscow,Russia,55.7504461,37.6174943,275633,5044,236055,34534.0,"Moscow, Russia",2203.923602,1.82997
+Moscow Oblast,Russia,55.50431579999999,38.0353929,71348,1278,54355,15715.0,"Moscow Oblast, Russia",950.877504,1.79122
+Murmansk Oblast,Russia,68.00004179999999,33.9999151,14138,194,11694,2250.0,"Murmansk Oblast, Russia",1876.168624,1.372188
+Nenets Autonomous Okrug,Russia,68.27557185,57.1686375,324,0,114,210.0,"Nenets Autonomous Okrug, Russia",736.413846,0.0
+Nizhny Novgorod Oblast,Russia,55.47180329999999,44.0911594,30599,543,27156,2900.0,"Nizhny Novgorod Oblast, Russia",945.945779,1.774568
+North Ossetia - Alania Republic,Russia,42.79336110000001,44.6324493,5440,68,4607,765.0,"North Ossetia - Alania Republic, Russia",775.188275,1.25
+Novgorod Oblast,Russia,58.2843833,32.5169757,4832,86,3539,1207.0,"Novgorod Oblast, Russia",796.733919,1.779801
+Novosibirsk Oblast,Russia,54.9720169,79.48139240000002,12410,410,11289,711.0,"Novosibirsk Oblast, Russia",444.986444,3.303787
+Omsk Oblast,Russia,56.09352629999999,73.5099936,10190,261,8917,1012.0,"Omsk Oblast, Russia",519.876474,2.561335
+Orel Oblast,Russia,52.96854329999999,36.0692477,7975,122,6365,1488.0,"Orel Oblast, Russia",1067.250855,1.529781
+Orenburg Oblast,Russia,52.02692620000001,54.7276647,11729,82,10667,980.0,"Orenburg Oblast, Russia",593.056651,0.699122
+Penza Oblast,Russia,53.1655415,44.78791810000001,9875,122,8479,1274.0,"Penza Oblast, Russia",741.558437,1.235443
+Perm Krai,Russia,58.5951603,56.3159546,9012,248,6244,2520.0,"Perm Krai, Russia",343.560078,2.751886
+Primorsky Krai,Russia,45.0819456,134.726645,10985,113,9419,1453.0,"Primorsky Krai, Russia",574.217854,1.028675
+Pskov Oblast,Russia,57.5358729,28.8586826,5091,65,3887,1139.0,"Pskov Oblast, Russia",799.78509,1.276763
+Rostov Oblast,Russia,47.6222451,40.7957942,19885,436,16054,3395.0,"Rostov Oblast, Russia",471.158066,2.192607
+Ryazan Oblast,Russia,54.42267320000001,40.57052460000001,7747,47,6565,1135.0,"Ryazan Oblast, Russia",690.787303,0.606686
+Saint Petersburg,Russia,59.9606739,30.158655100000004,40517,2762,27717,10038.0,"Saint Petersburg, Russia",757.05329,6.816892
+Sakha (Yakutiya) Republic,Russia,66.941626,129.642371,8536,93,6632,1811.0,"Sakha (Yakutiya) Republic, Russia",885.174162,1.089503
+Sakhalin Oblast,Russia,49.7219665,143.448533,5206,0,3679,1527.0,"Sakhalin Oblast, Russia",1062.056669,0.0
+Samara Oblast,Russia,53.2128813,50.8914633,10550,172,8210,2168.0,"Samara Oblast, Russia",330.357093,1.630332
+Saratov Oblast,Russia,51.6520555,46.86319520000001,14332,93,9477,4762.0,"Saratov Oblast, Russia",581.903815,0.648898
+Smolensk Oblast,Russia,55.03434960000001,33.0192065,6408,137,5627,644.0,"Smolensk Oblast, Russia",674.989572,2.137953
+Stavropol Krai,Russia,44.86325770000001,43.4406913,14487,287,10225,3975.0,"Stavropol Krai, Russia",517.268343,1.981086
+Sverdlovsk Oblast,Russia,58.6414755,61.8021546,27679,567,21087,6025.0,"Sverdlovsk Oblast, Russia",639.939,2.048484
+Tambov Oblast,Russia,52.9019574,41.3578918,7288,46,6392,850.0,"Tambov Oblast, Russia",705.141106,0.631175
+Tatarstan Republic,Russia,55.7648572,52.43104273,6974,45,5898,1031.0,"Tatarstan Republic, Russia",179.082984,0.645254
+Tomsk Oblast,Russia,58.6124279,82.04753149999998,6713,78,5462,1173.0,"Tomsk Oblast, Russia",622.565567,1.161925
+Tula Oblast,Russia,53.9570701,37.3690909,9808,356,8801,651.0,"Tula Oblast, Russia",657.436547,3.62969
+Tver Oblast,Russia,57.1134475,35.174442799999994,5862,227,4416,1219.0,"Tver Oblast, Russia",456.587217,3.872398
+Tyumen Oblast,Russia,58.8206488,70.36588370000001,8754,36,7402,1316.0,"Tyumen Oblast, Russia",237.081573,0.411241
+Tyva Republic,Russia,51.4017149,93.8582593,7321,71,6609,641.0,"Tyva Republic, Russia",2275.567105,0.969813
+Udmurt Republic,Russia,57.1961165,52.69598320000001,4245,62,3261,922.0,"Udmurt Republic, Russia",280.560248,1.460542
+Ulyanovsk Oblast,Russia,54.1463177,47.2324921,14154,140,12136,1878.0,"Ulyanovsk Oblast, Russia",1135.391916,0.98912
+Vladimir Oblast,Russia,56.0503336,40.6561633,6906,201,5774,931.0,"Vladimir Oblast, Russia",501.03857,2.910513
+Volgograd Oblast,Russia,49.6048339,44.29035820000001,13965,130,12334,1501.0,"Volgograd Oblast, Russia",553.886207,0.930899
+Vologda Oblast,Russia,60.0391461,43.1215213,4124,45,3523,556.0,"Vologda Oblast, Russia",350.474934,1.091174
+Voronezh Oblast,Russia,50.9800393,40.15065070000001,16256,153,15125,978.0,"Voronezh Oblast, Russia",696.555956,0.941191
+Yamalo-Nenets Autonomous Okrug,Russia,67.1471631,74.3415488,14398,98,13259,1041.0,"Yamalo-Nenets Autonomous Okrug, Russia",2673.489965,0.68065
+Yaroslavl Oblast,Russia,57.77819760000001,39.0021095,8041,45,7659,337.0,"Yaroslavl Oblast, Russia",635.308655,0.559632
+Zabaykalsky Krai,Russia,52.248521,115.956325,5481,65,4602,814.0,"Zabaykalsky Krai, Russia",510.903183,1.185915
+,Rwanda,-1.9403,29.8739,4689,26,2910,1753.0,Rwanda,36.202319,0.554489
+,Saint Kitts and Nevis,17.357822,-62.782998,17,0,17,0.0,Saint Kitts and Nevis,31.959693,0.0
+,Saint Lucia,13.9094,-60.9789,27,0,26,1.0,Saint Lucia,14.70356,0.0
+,Saint Vincent and the Grenadines,12.9843,-61.2872,64,0,64,0.0,Saint Vincent and the Grenadines,57.685201,0.0
+,San Marino,43.9424,12.4578,723,42,669,12.0,San Marino,2130.355354,5.809129
+,Sao Tome and Principe,0.1864,6.6131,908,15,876,17.0,Sao Tome and Principe,414.30729,1.651982
+,Saudi Arabia,23.885942,45.079162,329271,4458,309430,15383.0,Saudi Arabia,945.804153,1.3539
+,Senegal,14.4974,-14.4524,14688,302,11153,3233.0,Senegal,87.721341,2.0561
+,Serbia,44.0165,21.0059,32840,740,0,32100.0,Serbia,375.856808,2.25335
+,Seychelles,-4.6796,55.492,141,0,136,5.0,Seychelles,143.38011,0.0
+,Sierra Leone,8.460555000000001,-11.779889,2159,72,1650,437.0,Sierra Leone,27.065364,3.334877
+,Singapore,1.2833,103.8333,57558,27,57142,389.0,Singapore,983.839751,0.046909
+,Slovakia,48.669,19.699,6546,39,3519,2988.0,Slovakia,119.897949,0.595784
+,Slovenia,46.1512,14.9955,4309,141,2981,1187.0,Slovenia,207.269887,3.272221
+,Somalia,5.152149,46.199616,3401,98,2812,491.0,Somalia,21.399063,2.881505
+,South Africa,-30.5595,22.9375,659656,15940,589434,54282.0,South Africa,1112.241731,2.416411
+,South Sudan,6.877000000000002,31.307,2642,49,1290,1303.0,South Sudan,23.602501,1.854656
+Andalusia,Spain,37.5443,-4.7278,47612,1662,10671,35279.0,"Andalusia, Spain",564.966321,3.490717
+Aragon,Spain,41.5976,-0.9057,32266,1302,3772,27192.0,"Aragon, Spain",2443.309258,4.035207
+Asturias,Spain,43.3614,-5.8593,4340,341,1063,2936.0,"Asturias, Spain",424.572371,7.857143
+Baleares,Spain,39.710358,2.995148,12059,270,1533,10256.0,"Baleares, Spain",1014.879399,2.238992
+C. Valenciana,Spain,39.484,-0.7533,34370,1541,9970,22859.0,"C. Valenciana, Spain",690.858576,4.483561
+Canarias,Spain,28.2916,-16.6291,11479,209,1537,9733.0,"Canarias, Spain",520.141139,1.820716
+Cantabria,Spain,43.1828,-3.9878,6058,231,2287,3540.0,"Cantabria, Spain",1041.53593,3.81314
+Castilla - La Mancha,Spain,39.2796,-3.0977,34835,3065,6392,25378.0,"Castilla - La Mancha, Spain",1711.897083,8.798622
+Castilla y Leon,Spain,41.8357,-4.3976,38872,2931,8716,27225.0,"Castilla y Leon, Spain",1614.464727,7.540132
+Catalonia,Spain,41.5912,1.5209,128901,5797,26203,96901.0,"Catalonia, Spain",1703.590504,4.49725
+Ceuta,Spain,35.8894,-5.3213,441,9,163,269.0,"Ceuta, Spain",519.869384,2.040816
+Extremadura,Spain,39.4937,-6.0679,8166,544,2652,4970.0,"Extremadura, Spain",766.455421,6.661768
+Galicia,Spain,42.5751,-8.1339,18593,702,9204,8687.0,"Galicia, Spain",688.517172,3.775614
+La Rioja,Spain,42.2871,-2.5396,7333,393,3107,3833.0,"La Rioja, Spain",2338.545337,5.359335
+Madrid,Spain,40.4168,-3.7038,187045,8999,40736,137310.0,"Madrid, Spain",2816.243376,4.811142
+Melilla,Spain,35.2923,-2.9381,664,4,125,535.0,"Melilla, Spain",784.045153,0.60241
+Murcia,Spain,37.9922,-1.1307,13371,193,2180,10998.0,"Murcia, Spain",898.792267,1.443422
+Navarra,Spain,42.6954,-1.6761,14205,553,3905,9747.0,"Navarra, Spain",2185.566185,3.892995
+Pais Vasco,Spain,42.9896,-2.6189,39430,1749,16160,21521.0,"Pais Vasco, Spain",1810.476243,4.435709
 Unknown,Spain,,,0,0,0,0.0,"Unknown, Spain",,
-,Sri Lanka,7.873054,80.77179699999998,3283,13,3070,200.0,Sri Lanka,15.33,0.4
-,Sudan,12.8628,30.2176,13535,836,6759,5940.0,Sudan,30.87,6.18
-,Suriname,3.9193,-56.0278,4709,97,4383,229.0,Suriname,802.72,2.06
-Blekinge,Sweden,56.2784,15.018,624,17,0,607.0,"Blekinge, Sweden",390.96,2.72
-Dalarna,Sweden,61.0917,14.6664,2365,174,0,2191.0,"Dalarna, Sweden",821.28,7.36
-Gavleborg,Sweden,61.3012,16.1534,3285,167,0,3118.0,"Gavleborg, Sweden",1143.08,5.08
-Gotland,Sweden,57.4684,18.4867,324,6,0,318.0,"Gotland, Sweden",542.84,1.85
-Halland,Sweden,56.8967,12.8034,2356,83,0,2273.0,"Halland, Sweden",705.71,3.52
-Jamtland Harjedalen,Sweden,63.1712,14.9592,1222,64,0,1158.0,"Jamtland Harjedalen, Sweden",934.18,5.24
-Jonkoping,Sweden,57.3708,14.3439,5224,181,0,5043.0,"Jonkoping, Sweden",1436.75,3.46
-Kalmar,Sweden,57.235,16.1849,911,64,0,847.0,"Kalmar, Sweden",371.16,7.03
-Kronoberg,Sweden,56.7183,14.4115,1548,116,0,1432.0,"Kronoberg, Sweden",768.36,7.49
-Norrbotten,Sweden,66.8309,20.3992,1685,88,0,1597.0,"Norrbotten, Sweden",673.75,5.22
-Orebro,Sweden,59.535,15.0066,2860,172,0,2688.0,"Orebro, Sweden",938.3,6.01
-Ostergotland,Sweden,58.3454,15.5198,3954,277,0,3677.0,"Ostergotland, Sweden",849.42,7.01
-Skane,Sweden,55.9903,13.5958,5366,276,0,5090.0,"Skane, Sweden",389.45,5.14
-Sormland,Sweden,59.0336,16.7519,2460,254,0,2206.0,"Sormland, Sweden",826.78,10.33
-Stockholm,Sweden,59.6025,18.1384,23739,2400,0,21339.0,"Stockholm, Sweden",998.66,10.11
-Uppsala,Sweden,60.0092,17.2715,3919,243,0,3676.0,"Uppsala, Sweden",1021.34,6.2
-Varmland,Sweden,59.7294,13.2354,1241,73,0,1168.0,"Varmland, Sweden",439.43,5.88
-Vasterbotten,Sweden,65.3337,16.5162,905,31,0,874.0,"Vasterbotten, Sweden",333.04,3.43
-Vasternorrland,Sweden,63.4276,17.7292,1881,136,0,1745.0,"Vasternorrland, Sweden",766.67,7.23
-Vastmanland,Sweden,59.6714,16.2159,2854,183,0,2671.0,"Vastmanland, Sweden",1034.64,6.41
-Vastra Gotaland,Sweden,58.2528,13.0596,19514,860,0,18654.0,"Vastra Gotaland, Sweden",1130.67,4.41
-,Switzerland,46.8182,8.2275,49283,2045,40500,6738.0,Switzerland,569.44,4.15
-,Syria,34.802075,38.99681500000001,3765,170,932,2663.0,Syria,21.51,4.52
-,Taiwan*,23.7,121.0,506,7,479,20.0,Taiwan*,2.12,1.38
-,Tajikistan,38.861,71.2761,9303,73,8066,1164.0,Tajikistan,97.54,0.78
-,Tanzania,-6.369028,34.888822,509,21,183,305.0,Tanzania,0.85,4.13
-,Thailand,15.870032,100.992541,3506,59,3340,107.0,Thailand,5.02,1.68
-,Timor-Leste,-8.874217,125.727539,27,0,26,1.0,Timor-Leste,2.05,0.0
-,Togo,8.6195,0.8248,1659,41,1259,359.0,Togo,20.04,2.47
-,Trinidad and Tobago,10.6918,-61.2225,3853,61,1695,2097.0,Trinidad and Tobago,275.31,1.58
-,Tunisia,33.886917,9.537499,9110,138,2366,6606.0,Tunisia,77.08,1.51
-,Turkey,38.9637,35.2433,301348,7445,266117,27786.0,Turkey,357.31,2.47
-,Uganda,1.373333,32.290275,6017,63,2581,3373.0,Uganda,13.15,1.05
-Cherkasy Oblast,Ukraine,49.4444,32.0598,2983,48,1345,1590.0,"Cherkasy Oblast, Ukraine",247.27,1.61
-Chernihiv Oblast,Ukraine,51.4982,31.2893,3188,46,738,2404.0,"Chernihiv Oblast, Ukraine",316.98,1.44
-Chernivtsi Oblast,Ukraine,48.2917,25.9352,12917,329,7514,5074.0,"Chernivtsi Oblast, Ukraine",1428.28,2.55
-Crimea Republic*,Ukraine,45.2835,34.2008,3573,47,2400,1126.0,"Crimea Republic*, Ukraine",186.7,1.32
-Dnipropetrovsk Oblast,Ukraine,48.4647,35.0462,3878,89,1830,1959.0,"Dnipropetrovsk Oblast, Ukraine",120.94,2.29
-Donetsk Oblast,Ukraine,48.0159,37.8028,2371,35,982,1354.0,"Donetsk Oblast, Ukraine",56.91,1.48
-Ivano-Frankivsk Oblast,Ukraine,48.9226,24.7111,12212,277,5354,6581.0,"Ivano-Frankivsk Oblast, Ukraine",889.28,2.27
-Kharkiv Oblast,Ukraine,49.9935,36.2304,14464,295,4102,10067.0,"Kharkiv Oblast, Ukraine",540.59,2.04
-Kherson Oblast,Ukraine,46.6354,32.6169,790,20,436,334.0,"Kherson Oblast, Ukraine",76.13,2.53
-Khmelnytskyi Oblast,Ukraine,49.423,26.9871,4481,90,2044,2347.0,"Khmelnytskyi Oblast, Ukraine",354.31,2.01
-Kiev,Ukraine,50.4501,30.5234,19140,312,5828,13000.0,"Kiev, Ukraine",648.64,1.63
-Kiev Oblast,Ukraine,50.053,30.7667,7611,156,4929,2526.0,"Kiev Oblast, Ukraine",430.5,2.05
-Kirovohrad Oblast,Ukraine,48.5079,32.2623,973,52,777,144.0,"Kirovohrad Oblast, Ukraine",102.9,5.34
-Luhansk Oblast,Ukraine,48.574,39.3078,735,5,399,331.0,"Luhansk Oblast, Ukraine",34.16,0.68
-Lviv Oblast,Ukraine,49.8397,24.0297,18129,515,6040,11574.0,"Lviv Oblast, Ukraine",718.83,2.84
-Mykolaiv Oblast,Ukraine,46.975,31.9946,2374,57,815,1502.0,"Mykolaiv Oblast, Ukraine",94.13,2.4
-Odessa Oblast,Ukraine,46.4846,30.7326,11205,160,2424,8621.0,"Odessa Oblast, Ukraine",470.74,1.43
-Poltava Oblast,Ukraine,49.5883,34.5514,1461,33,714,714.0,"Poltava Oblast, Ukraine",104.32,2.26
-Rivne Oblast,Ukraine,50.6199,26.2516,11015,151,8576,2288.0,"Rivne Oblast, Ukraine",951.78,1.37
-Sevastopol*,Ukraine,44.6054,33.522,763,22,517,224.0,"Sevastopol*, Ukraine",172.15,2.88
-Sumy Oblast,Ukraine,50.9077,34.7981,2916,50,1302,1564.0,"Sumy Oblast, Ukraine",269.65,1.71
-Ternopil Oblast,Ukraine,49.5535,25.5948,11016,133,4862,6021.0,"Ternopil Oblast, Ukraine",1053.28,1.21
-Vinnytsia Oblast,Ukraine,49.2331,28.4682,5200,98,3461,1641.0,"Vinnytsia Oblast, Ukraine",333.25,1.88
-Volyn Oblast,Ukraine,50.7472,25.3254,6783,143,4774,1866.0,"Volyn Oblast, Ukraine",655.15,2.11
-Zakarpattia Oblast,Ukraine,48.6208,22.2879,9110,290,4054,4766.0,"Zakarpattia Oblast, Ukraine",724.86,3.18
-Zaporizhia Oblast,Ukraine,47.8388,35.1396,2829,42,1075,1712.0,"Zaporizhia Oblast, Ukraine",165.84,1.48
-Zhytomyr Oblast,Ukraine,50.2547,28.6587,4931,90,2379,2462.0,"Zhytomyr Oblast, Ukraine",404.12,1.83
-,United Arab Emirates,23.424076,53.847818,84242,404,73512,10326.0,United Arab Emirates,851.76,0.48
-Anguilla,United Kingdom,18.2206,-63.0686,3,0,3,0.0,"Anguilla, United Kingdom",20.0,0.0
-Bermuda,United Kingdom,32.3078,-64.7505,180,9,166,5.0,"Bermuda, United Kingdom",289.05,5.0
-British Virgin Islands,United Kingdom,18.4207,-64.64,69,1,48,20.0,"British Virgin Islands, United Kingdom",228.2,1.45
-Cayman Islands,United Kingdom,19.3133,-81.2546,208,1,204,3.0,"Cayman Islands, United Kingdom",316.49,0.48
-Channel Islands,United Kingdom,49.3723,-2.3644,644,48,575,21.0,"Channel Islands, United Kingdom",377.71,7.45
-England,United Kingdom,52.3555,-1.1743,336622,37076,0,299546.0,"England, United Kingdom",601.36,11.01
-Falkland Islands (Malvinas),United Kingdom,-51.7963,-59.5236,13,0,13,0.0,"Falkland Islands (Malvinas), United Kingdom",373.24,0.0
-Gibraltar,United Kingdom,36.1408,-5.3536,350,0,322,28.0,"Gibraltar, United Kingdom",1038.85,0.0
-Isle of Man,United Kingdom,54.2361,-4.5481,339,24,312,3.0,"Isle of Man, United Kingdom",398.67,7.08
-Montserrat,United Kingdom,16.742498,-62.187366,13,1,12,0.0,"Montserrat, United Kingdom",260.05,7.69
-Northern Ireland,United Kingdom,54.7877,-6.4923,9165,575,0,8590.0,"Northern Ireland, United Kingdom",487.09,6.27
-Scotland,United Kingdom,56.4907,-4.2026,24126,2505,0,21621.0,"Scotland, United Kingdom",441.6,10.38
-Turks and Caicos Islands,United Kingdom,21.69400000000001,-71.7979,668,5,572,91.0,"Turks and Caicos Islands, United Kingdom",1725.3,0.75
+,Sri Lanka,7.873054,80.77179699999998,3283,13,3070,200.0,Sri Lanka,15.331629,0.395979
+,Sudan,12.8628,30.2176,13535,836,6759,5940.0,Sudan,30.867105,6.176579
+,Suriname,3.9193,-56.0278,4709,97,4383,229.0,Suriname,802.715151,2.059885
+Blekinge,Sweden,56.2784,15.018,624,17,0,607.0,"Blekinge, Sweden",390.962746,2.724359
+Dalarna,Sweden,61.0917,14.6664,2365,174,0,2191.0,"Dalarna, Sweden",821.277512,7.357294
+Gavleborg,Sweden,61.3012,16.1534,3285,167,0,3118.0,"Gavleborg, Sweden",1143.077855,5.083714
+Gotland,Sweden,57.4684,18.4867,324,6,0,318.0,"Gotland, Sweden",542.840867,1.851852
+Halland,Sweden,56.8967,12.8034,2356,83,0,2273.0,"Halland, Sweden",705.710383,3.52292
+Jamtland Harjedalen,Sweden,63.1712,14.9592,1222,64,0,1158.0,"Jamtland Harjedalen, Sweden",934.179344,5.237316
+Jonkoping,Sweden,57.3708,14.3439,5224,181,0,5043.0,"Jonkoping, Sweden",1436.747626,3.464778
+Kalmar,Sweden,57.235,16.1849,911,64,0,847.0,"Kalmar, Sweden",371.16107,7.025247
+Kronoberg,Sweden,56.7183,14.4115,1548,116,0,1432.0,"Kronoberg, Sweden",768.356422,7.49354
+Norrbotten,Sweden,66.8309,20.3992,1685,88,0,1597.0,"Norrbotten, Sweden",673.749365,5.222552
+Orebro,Sweden,59.535,15.0066,2860,172,0,2688.0,"Orebro, Sweden",938.304818,6.013986
+Ostergotland,Sweden,58.3454,15.5198,3954,277,0,3677.0,"Ostergotland, Sweden",849.418361,7.005564
+Skane,Sweden,55.9903,13.5958,5366,276,0,5090.0,"Skane, Sweden",389.453828,5.143496
+Sormland,Sweden,59.0336,16.7519,2460,254,0,2206.0,"Sormland, Sweden",826.779593,10.325203
+Stockholm,Sweden,59.6025,18.1384,23739,2400,0,21339.0,"Stockholm, Sweden",998.661804,10.109946
+Uppsala,Sweden,60.0092,17.2715,3919,243,0,3676.0,"Uppsala, Sweden",1021.336259,6.200561
+Varmland,Sweden,59.7294,13.2354,1241,73,0,1168.0,"Varmland, Sweden",439.425808,5.882353
+Vasterbotten,Sweden,65.3337,16.5162,905,31,0,874.0,"Vasterbotten, Sweden",333.043837,3.425414
+Vasternorrland,Sweden,63.4276,17.7292,1881,136,0,1745.0,"Vasternorrland, Sweden",766.669248,7.230197
+Vastmanland,Sweden,59.6714,16.2159,2854,183,0,2671.0,"Vastmanland, Sweden",1034.639018,6.412053
+Vastra Gotaland,Sweden,58.2528,13.0596,19514,860,0,18654.0,"Vastra Gotaland, Sweden",1130.668916,4.407092
+,Switzerland,46.8182,8.2275,49283,2045,40500,6738.0,Switzerland,569.441655,4.149504
+,Syria,34.802075,38.99681500000001,3765,170,932,2663.0,Syria,21.513478,4.515272
+,Taiwan*,23.7,121.0,506,7,479,20.0,Taiwan*,2.124553,1.383399
+,Tajikistan,38.861,71.2761,9303,73,8066,1164.0,Tajikistan,97.539832,0.784693
+,Tanzania,-6.369028,34.888822,509,21,183,305.0,Tanzania,0.852108,4.125737
+,Thailand,15.870032,100.992541,3506,59,3340,107.0,Thailand,5.022924,1.682829
+,Timor-Leste,-8.874217,125.727539,27,0,26,1.0,Timor-Leste,2.047872,0.0
+,Togo,8.6195,0.8248,1659,41,1259,359.0,Togo,20.039289,2.471368
+,Trinidad and Tobago,10.6918,-61.2225,3853,61,1695,2097.0,Trinidad and Tobago,275.314382,1.583182
+,Tunisia,33.886917,9.537499,9110,138,2366,6606.0,Tunisia,77.08177,1.514819
+,Turkey,38.9637,35.2433,301348,7445,266117,27786.0,Turkey,357.305352,2.470566
+,Uganda,1.373333,32.290275,6017,63,2581,3373.0,Uganda,13.1545,1.047033
+Cherkasy Oblast,Ukraine,49.4444,32.0598,2983,48,1345,1590.0,"Cherkasy Oblast, Ukraine",247.274632,1.609118
+Chernihiv Oblast,Ukraine,51.4982,31.2893,3188,46,738,2404.0,"Chernihiv Oblast, Ukraine",316.978956,1.442911
+Chernivtsi Oblast,Ukraine,48.2917,25.9352,12917,329,7514,5074.0,"Chernivtsi Oblast, Ukraine",1428.280778,2.547031
+Crimea Republic*,Ukraine,45.2835,34.2008,3573,47,2400,1126.0,"Crimea Republic*, Ukraine",186.703356,1.315421
+Dnipropetrovsk Oblast,Ukraine,48.4647,35.0462,3878,89,1830,1959.0,"Dnipropetrovsk Oblast, Ukraine",120.942704,2.294997
+Donetsk Oblast,Ukraine,48.0159,37.8028,2371,35,982,1354.0,"Donetsk Oblast, Ukraine",56.914459,1.47617
+Ivano-Frankivsk Oblast,Ukraine,48.9226,24.7111,12212,277,5354,6581.0,"Ivano-Frankivsk Oblast, Ukraine",889.275967,2.268261
+Kharkiv Oblast,Ukraine,49.9935,36.2304,14464,295,4102,10067.0,"Kharkiv Oblast, Ukraine",540.589431,2.039546
+Kherson Oblast,Ukraine,46.6354,32.6169,790,20,436,334.0,"Kherson Oblast, Ukraine",76.134305,2.531646
+Khmelnytskyi Oblast,Ukraine,49.423,26.9871,4481,90,2044,2347.0,"Khmelnytskyi Oblast, Ukraine",354.311875,2.00848
+Kiev,Ukraine,50.4501,30.5234,19140,312,5828,13000.0,"Kiev, Ukraine",648.637658,1.630094
+Kiev Oblast,Ukraine,50.053,30.7667,7611,156,4929,2526.0,"Kiev Oblast, Ukraine",430.501035,2.049665
+Kirovohrad Oblast,Ukraine,48.5079,32.2623,973,52,777,144.0,"Kirovohrad Oblast, Ukraine",102.903181,5.344296
+Luhansk Oblast,Ukraine,48.574,39.3078,735,5,399,331.0,"Luhansk Oblast, Ukraine",34.156926,0.680272
+Lviv Oblast,Ukraine,49.8397,24.0297,18129,515,6040,11574.0,"Lviv Oblast, Ukraine",718.828273,2.840752
+Mykolaiv Oblast,Ukraine,46.975,31.9946,2374,57,815,1502.0,"Mykolaiv Oblast, Ukraine",94.130858,2.401011
+Odessa Oblast,Ukraine,46.4846,30.7326,11205,160,2424,8621.0,"Odessa Oblast, Ukraine",470.7374,1.427934
+Poltava Oblast,Ukraine,49.5883,34.5514,1461,33,714,714.0,"Poltava Oblast, Ukraine",104.32443,2.258727
+Rivne Oblast,Ukraine,50.6199,26.2516,11015,151,8576,2288.0,"Rivne Oblast, Ukraine",951.783503,1.370858
+Sevastopol*,Ukraine,44.6054,33.522,763,22,517,224.0,"Sevastopol*, Ukraine",172.152767,2.883355
+Sumy Oblast,Ukraine,50.9077,34.7981,2916,50,1302,1564.0,"Sumy Oblast, Ukraine",269.645965,1.714678
+Ternopil Oblast,Ukraine,49.5535,25.5948,11016,133,4862,6021.0,"Ternopil Oblast, Ukraine",1053.276717,1.207335
+Vinnytsia Oblast,Ukraine,49.2331,28.4682,5200,98,3461,1641.0,"Vinnytsia Oblast, Ukraine",333.249167,1.884615
+Volyn Oblast,Ukraine,50.7472,25.3254,6783,143,4774,1866.0,"Volyn Oblast, Ukraine",655.153429,2.108212
+Zakarpattia Oblast,Ukraine,48.6208,22.2879,9110,290,4054,4766.0,"Zakarpattia Oblast, Ukraine",724.855626,3.183315
+Zaporizhia Oblast,Ukraine,47.8388,35.1396,2829,42,1075,1712.0,"Zaporizhia Oblast, Ukraine",165.842437,1.484624
+Zhytomyr Oblast,Ukraine,50.2547,28.6587,4931,90,2379,2462.0,"Zhytomyr Oblast, Ukraine",404.116398,1.825188
+,United Arab Emirates,23.424076,53.847818,84242,404,73512,10326.0,United Arab Emirates,851.755237,0.479571
+Anguilla,United Kingdom,18.2206,-63.0686,3,0,3,0.0,"Anguilla, United Kingdom",19.997334,0.0
+Bermuda,United Kingdom,32.3078,-64.7505,180,9,166,5.0,"Bermuda, United Kingdom",289.049829,5.0
+British Virgin Islands,United Kingdom,18.4207,-64.64,69,1,48,20.0,"British Virgin Islands, United Kingdom",228.197242,1.449275
+Cayman Islands,United Kingdom,19.3133,-81.2546,208,1,204,3.0,"Cayman Islands, United Kingdom",316.494218,0.480769
+Channel Islands,United Kingdom,49.3723,-2.3644,644,48,575,21.0,"Channel Islands, United Kingdom",377.714825,7.453416
+England,United Kingdom,52.3555,-1.1743,336622,37076,0,299546.0,"England, United Kingdom",601.355552,11.014135
+Falkland Islands (Malvinas),United Kingdom,-51.7963,-59.5236,13,0,13,0.0,"Falkland Islands (Malvinas), United Kingdom",373.241459,0.0
+Gibraltar,United Kingdom,36.1408,-5.3536,350,0,322,28.0,"Gibraltar, United Kingdom",1038.853106,0.0
+Isle of Man,United Kingdom,54.2361,-4.5481,339,24,312,3.0,"Isle of Man, United Kingdom",398.673441,7.079646
+Montserrat,United Kingdom,16.742498,-62.187366,13,1,12,0.0,"Montserrat, United Kingdom",260.05201,7.692308
+Northern Ireland,United Kingdom,54.7877,-6.4923,9165,575,0,8590.0,"Northern Ireland, United Kingdom",487.085459,6.273868
+Scotland,United Kingdom,56.4907,-4.2026,24126,2505,0,21621.0,"Scotland, United Kingdom",441.60123,10.382989
+Turks and Caicos Islands,United Kingdom,21.69400000000001,-71.7979,668,5,572,91.0,"Turks and Caicos Islands, United Kingdom",1725.295728,0.748503
 Unknown,United Kingdom,,,0,0,0,0.0,"Unknown, United Kingdom",,
-Wales,United Kingdom,52.1307,-3.7837,20445,1603,0,18842.0,"Wales, United Kingdom",651.41,7.84
-,Uruguay,-32.5228,-55.7658,1904,46,1612,246.0,Uruguay,54.81,2.42
-,Uzbekistan,41.377491,64.585262,50992,427,47271,3294.0,Uzbekistan,152.36,0.84
-,Venezuela,6.4238,-66.5897,65949,539,55155,10255.0,Venezuela,231.92,0.82
-,Vietnam,14.058324,108.277199,1068,35,942,91.0,Vietnam,1.1,3.28
-,West Bank and Gaza,31.9522,35.2332,35003,253,23446,11304.0,West Bank and Gaza,686.14,0.72
-,Western Sahara,24.2155,-12.8858,10,1,8,1.0,Western Sahara,1.67,10.0
-,Yemen,15.552727,48.516388,2026,585,1221,220.0,Yemen,6.79,28.87
-,Zambia,-13.133897,27.849332,14070,330,13365,375.0,Zambia,76.53,2.35
-,Zimbabwe,-19.015438,29.154857,7672,225,5914,1533.0,Zimbabwe,51.62,2.93
-Alabama,US,32.88428035358209,-86.71012237686571,144164,2437,0,141727.0,"Alabama, US",3239.93,1.69
-Alaska,US,60.41150609269231,-148.68769288076925,6729,45,0,6684.0,"Alaska, US",681.81,0.67
-Arizona,US,33.675903642,-111.46323212666667,212942,5451,0,207491.0,"Arizona, US",2927.25,2.56
-Arkansas,US,34.911889390266666,-92.43397826839998,75160,1181,0,73979.0,"Arkansas, US",2564.97,1.57
-California,US,37.84396164603449,-120.72859416379308,783313,15018,0,768295.0,"California, US",1544.86,1.92
-Colorado,US,38.935474467656235,-105.48623995937497,64336,2013,0,62323.0,"Colorado, US",881.21,3.13
-Connecticut,US,41.61368014,-72.65682967875,55527,4492,0,51035.0,"Connecticut, US",1197.53,8.09
-Delaware,US,39.10927682333334,-75.53323745666665,19449,621,0,18828.0,"Delaware, US",2033.11,3.19
+Wales,United Kingdom,52.1307,-3.7837,20445,1603,0,18842.0,"Wales, United Kingdom",651.405085,7.840548
+,Uruguay,-32.5228,-55.7658,1904,46,1612,246.0,Uruguay,54.811446,2.415966
+,Uzbekistan,41.377491,64.585262,50992,427,47271,3294.0,Uzbekistan,152.355006,0.837386
+,Venezuela,6.4238,-66.5897,65949,539,55155,10255.0,Venezuela,231.92127,0.817298
+,Vietnam,14.058324,108.277199,1068,35,942,91.0,Vietnam,1.097201,3.277154
+,West Bank and Gaza,31.9522,35.2332,35003,253,23446,11304.0,West Bank and Gaza,686.142828,0.722795
+,Western Sahara,24.2155,-12.8858,10,1,8,1.0,Western Sahara,1.674116,10.0
+,Yemen,15.552727,48.516388,2026,585,1221,220.0,Yemen,6.792738,28.87463
+,Zambia,-13.133897,27.849332,14070,330,13365,375.0,Zambia,76.534126,2.345416
+,Zimbabwe,-19.015438,29.154857,7672,225,5914,1533.0,Zimbabwe,51.618366,2.932742
+Alabama,US,32.88428035358209,-86.71012237686571,144164,2437,0,141727.0,"Alabama, US",3239.932554,1.690436
+Alaska,US,60.41150609269231,-148.68769288076925,6729,45,0,6684.0,"Alaska, US",681.806753,0.668747
+Arizona,US,33.675903642,-111.46323212666667,212942,5451,0,207491.0,"Arizona, US",2927.250679,2.559852
+Arkansas,US,34.911889390266666,-92.43397826839998,75160,1181,0,73979.0,"Arkansas, US",2564.972414,1.571315
+California,US,37.84396164603449,-120.72859416379308,783313,15018,0,768295.0,"California, US",1544.85842,1.917241
+Colorado,US,38.935474467656235,-105.48623995937497,64336,2013,0,62323.0,"Colorado, US",881.209708,3.128886
+Connecticut,US,41.61368014,-72.65682967875,55527,4492,0,51035.0,"Connecticut, US",1197.530911,8.089758
+Delaware,US,39.10927682333334,-75.53323745666665,19449,621,0,18828.0,"Delaware, US",2033.110711,3.192966
 Diamond Princess,US,,,49,0,0,49.0,"Diamond Princess, US",,0.0
-District of Columbia,US,38.90417773,-77.01655992,14902,619,0,14283.0,"District of Columbia, US",2111.52,4.15
-Florida,US,28.94075487910448,-82.70074390925375,681233,13287,0,667946.0,"Florida, US",3523.98,1.95
-Georgia,US,32.80853214484278,-83.57742992610066,305021,6599,0,298422.0,"Georgia, US",3019.37,2.16
-Grand Princess,US,,,103,3,0,100.0,"Grand Princess, US",,2.91
-Guam,US,13.4443,144.7937,2074,31,0,2043.0,"Guam, US",1262.87,1.49
-Hawaii,US,20.99064747,-157.41445579999998,11326,120,0,11206.0,"Hawaii, US",418.45,1.06
-Idaho,US,44.2634012584091,-114.46012491818179,37247,441,0,36806.0,"Idaho, US",1579.96,1.18
-Illinois,US,39.84361770127451,-89.17833006960784,275041,8672,0,266369.0,"Illinois, US",1441.0,3.15
-Indiana,US,39.83735316565217,-86.21856844913039,110759,3503,0,107256.0,"Indiana, US",1346.47,3.16
-Iowa,US,42.02991002353537,-93.46551942343434,79804,1265,0,78520.0,"Iowa, US",2100.45,1.59
-Kansas,US,38.485378896857135,-98.08455153209523,52486,594,0,51892.0,"Kansas, US",1383.12,1.13
-Kentucky,US,37.62214385000001,-85.19989061799998,61106,1108,0,59998.0,"Kentucky, US",1120.72,1.81
-Louisiana,US,31.092427383437492,-91.82418665609377,160283,5342,0,154941.0,"Louisiana, US",3733.9,3.33
-Maine,US,44.68768840625,-69.523768628125,5034,139,0,4895.0,"Maine, US",225.15,2.76
-Maryland,US,39.014920690416666,-76.67546760874998,119744,3876,0,115868.0,"Maryland, US",1498.36,3.24
-Massachusetts,US,42.17639998153847,-71.57704993461539,127181,9295,0,117886.0,"Massachusetts, US",1429.43,7.31
-Michigan,US,44.04362008975902,-85.18169553542172,128087,6969,0,121118.0,"Michigan, US",685.16,5.44
-Minnesota,US,45.55201297954022,-94.43095302689653,88721,2015,0,86706.0,"Minnesota, US",1261.09,2.27
-Mississippi,US,32.792726566585365,-89.64572580048781,93087,2809,0,90278.0,"Mississippi, US",3625.54,3.02
-Missouri,US,38.456764881637945,-92.4994868846552,112864,1825,0,111039.0,"Missouri, US",1432.34,1.62
-Montana,US,46.97469113196428,-109.70039488214286,10163,156,0,10007.0,"Montana, US",874.91,1.53
-Nebraska,US,41.321794947204275,-99.03901222387097,40797,442,0,40355.0,"Nebraska, US",1279.16,1.08
-Nevada,US,39.25599674470589,-117.5639935352941,75419,1528,0,73891.0,"Nevada, US",830.81,2.03
-New Hampshire,US,43.478972876,-71.57765670500001,7920,438,0,7482.0,"New Hampshire, US",340.25,5.53
-New Jersey,US,40.286440910952386,-74.62244971476191,199309,16064,0,183245.0,"New Jersey, US",1989.39,8.06
-New Mexico,US,34.54935897878787,-105.88710740909092,27512,847,0,26665.0,"New Mexico, US",1051.62,3.08
-New York,US,42.5441513332258,-75.47418330774194,449038,33081,0,415957.0,"New York, US",1019.67,7.37
-North Carolina,US,35.62420971000002,-79.50109873960002,192247,3235,0,189012.0,"North Carolina, US",1780.94,1.68
-North Dakota,US,47.39350672792453,-100.2493934356604,17607,192,0,17415.0,"North Dakota, US",1678.14,1.09
-Northern Mariana Islands,US,15.0979,145.6739,68,2,0,66.0,"Northern Mariana Islands, US",123.31,2.94
-Ohio,US,40.310669812954565,-82.83540800659091,143547,4612,0,138935.0,"Ohio, US",979.09,3.21
-Oklahoma,US,35.50191442597403,-97.2513995677922,75804,943,0,74861.0,"Oklahoma, US",1607.76,1.24
-Oregon,US,44.49240067472221,-121.47691959722222,30342,521,0,29821.0,"Oregon, US",850.06,1.72
-Pennsylvania,US,40.81807835477611,-77.61531783850747,154236,7940,0,146296.0,"Pennsylvania, US",744.38,5.15
-Puerto Rico,US,18.240118884615384,-66.40498556410255,40993,605,0,40388.0,"Puerto Rico, US",959.8,1.48
+District of Columbia,US,38.90417773,-77.01655992,14902,619,0,14283.0,"District of Columbia, US",2111.515567,4.153805
+Florida,US,28.94075487910448,-82.70074390925375,681233,13287,0,667946.0,"Florida, US",3523.976717,1.950434
+Georgia,US,32.80853214484278,-83.57742992610066,305021,6599,0,298422.0,"Georgia, US",3019.372118,2.163458
+Grand Princess,US,,,103,3,0,100.0,"Grand Princess, US",,2.912621
+Guam,US,13.4443,144.7937,2074,31,0,2043.0,"Guam, US",1262.870748,1.494696
+Hawaii,US,20.99064747,-157.41445579999998,11326,120,0,11206.0,"Hawaii, US",418.446064,1.059509
+Idaho,US,44.2634012584091,-114.46012491818179,37247,441,0,36806.0,"Idaho, US",1579.96329,1.183988
+Illinois,US,39.84361770127451,-89.17833006960784,275041,8672,0,266369.0,"Illinois, US",1441.003581,3.152984
+Indiana,US,39.83735316565217,-86.21856844913039,110759,3503,0,107256.0,"Indiana, US",1346.471783,3.162723
+Iowa,US,42.02991002353537,-93.46551942343434,79804,1265,0,78520.0,"Iowa, US",2100.445798,1.585134
+Kansas,US,38.485378896857135,-98.08455153209523,52486,594,0,51892.0,"Kansas, US",1383.117107,1.13173
+Kentucky,US,37.62214385000001,-85.19989061799998,61106,1108,0,59998.0,"Kentucky, US",1120.724105,1.813243
+Louisiana,US,31.092427383437492,-91.82418665609377,160283,5342,0,154941.0,"Louisiana, US",3733.903132,3.332855
+Maine,US,44.68768840625,-69.523768628125,5034,139,0,4895.0,"Maine, US",225.154147,2.761224
+Maryland,US,39.014920690416666,-76.67546760874998,119744,3876,0,115868.0,"Maryland, US",1498.364317,3.236905
+Massachusetts,US,42.17639998153847,-71.57704993461539,127181,9295,0,117886.0,"Massachusetts, US",1429.43075,7.308482
+Michigan,US,44.04362008975902,-85.18169553542172,128087,6969,0,121118.0,"Michigan, US",685.15873,5.440833
+Minnesota,US,45.55201297954022,-94.43095302689653,88721,2015,0,86706.0,"Minnesota, US",1261.090529,2.271165
+Mississippi,US,32.792726566585365,-89.64572580048781,93087,2809,0,90278.0,"Mississippi, US",3625.542448,3.017607
+Missouri,US,38.456764881637945,-92.4994868846552,112864,1825,0,111039.0,"Missouri, US",1432.336152,1.61699
+Montana,US,46.97469113196428,-109.70039488214286,10163,156,0,10007.0,"Montana, US",874.908131,1.53498
+Nebraska,US,41.321794947204275,-99.03901222387097,40797,442,0,40355.0,"Nebraska, US",1279.159628,1.083413
+Nevada,US,39.25599674470589,-117.5639935352941,75419,1528,0,73891.0,"Nevada, US",830.808648,2.026015
+New Hampshire,US,43.478972876,-71.57765670500001,7920,438,0,7482.0,"New Hampshire, US",340.254754,5.530303
+New Jersey,US,40.286440910952386,-74.62244971476191,199309,16064,0,183245.0,"New Jersey, US",1989.386941,8.059847
+New Mexico,US,34.54935897878787,-105.88710740909092,27512,847,0,26665.0,"New Mexico, US",1051.624045,3.078657
+New York,US,42.5441513332258,-75.47418330774194,449038,33081,0,415957.0,"New York, US",1019.670358,7.367083
+North Carolina,US,35.62420971000002,-79.50109873960002,192247,3235,0,189012.0,"North Carolina, US",1780.936122,1.682731
+North Dakota,US,47.39350672792453,-100.2493934356604,17607,192,0,17415.0,"North Dakota, US",1678.142061,1.090475
+Northern Mariana Islands,US,15.0979,145.6739,68,2,0,66.0,"Northern Mariana Islands, US",123.313506,2.941176
+Ohio,US,40.310669812954565,-82.83540800659091,143547,4612,0,138935.0,"Ohio, US",979.085183,3.212885
+Oklahoma,US,35.50191442597403,-97.2513995677922,75804,943,0,74861.0,"Oklahoma, US",1607.759976,1.243998
+Oregon,US,44.49240067472221,-121.47691959722222,30342,521,0,29821.0,"Oregon, US",850.064628,1.717092
+Pennsylvania,US,40.81807835477611,-77.61531783850747,154236,7940,0,146296.0,"Pennsylvania, US",744.383817,5.147955
+Puerto Rico,US,18.240118884615384,-66.40498556410255,40993,605,0,40388.0,"Puerto Rico, US",959.804868,1.475862
 Recovered,US,,,0,0,2577446,-2577446.0,"Recovered, US",,
-Rhode Island,US,41.655142106,-71.464105098,23620,1088,0,22532.0,"Rhode Island, US",1180.07,4.61
-South Carolina,US,33.957472131086966,-80.9833996921739,137240,3188,0,134052.0,"South Carolina, US",2792.09,2.32
-South Dakota,US,44.27269492727272,-99.31063618348485,18444,200,0,18244.0,"South Dakota, US",1617.14,1.08
-Tennessee,US,35.88510221221052,-86.10872298863156,181439,2216,0,179223.0,"Tennessee, US",2709.57,1.22
-Texas,US,31.660643442283458,-98.65306860334638,707940,15051,0,692889.0,"Texas, US",1996.52,2.13
-Utah,US,40.014400114615384,-111.46087804615384,62852,440,0,62412.0,"Utah, US",1710.1,0.7
-Vermont,US,44.159495798571434,-72.68438070571429,1710,58,0,1652.0,"Vermont, US",203.13,3.39
-Virgin Islands,US,18.3358,-64.8963,1257,19,0,1238.0,"Virgin Islands, US",1171.83,1.51
-Virginia,US,37.56615032526316,-78.51371173503755,139546,2988,0,136558.0,"Virginia, US",1552.54,2.14
-Washington,US,47.23378642,-120.71922041538463,82199,2037,0,80162.0,"Washington, US",1135.26,2.48
-West Virginia,US,38.81425370672727,-80.6174545132727,13889,311,0,13578.0,"West Virginia, US",599.24,2.24
-Wisconsin,US,44.395143494861124,-89.79797998097222,97279,1238,0,96041.0,"Wisconsin, US",1172.41,1.27
-Wyoming,US,43.086885505217396,-107.15324220434782,4781,49,0,4731.0,"Wyoming, US",801.66,1.02
+Rhode Island,US,41.655142106,-71.464105098,23620,1088,0,22532.0,"Rhode Island, US",1180.066538,4.606266
+South Carolina,US,33.957472131086966,-80.9833996921739,137240,3188,0,134052.0,"South Carolina, US",2792.093174,2.322938
+South Dakota,US,44.27269492727272,-99.31063618348485,18444,200,0,18244.0,"South Dakota, US",1617.141081,1.084363
+Tennessee,US,35.88510221221052,-86.10872298863156,181439,2216,0,179223.0,"Tennessee, US",2709.573838,1.221347
+Texas,US,31.660643442283458,-98.65306860334638,707940,15051,0,692889.0,"Texas, US",1996.520644,2.126028
+Utah,US,40.014400114615384,-111.46087804615384,62852,440,0,62412.0,"Utah, US",1710.098827,0.700057
+Vermont,US,44.159495798571434,-72.68438070571429,1710,58,0,1652.0,"Vermont, US",203.133446,3.391813
+Virgin Islands,US,18.3358,-64.8963,1257,19,0,1238.0,"Virgin Islands, US",1171.831301,1.511535
+Virginia,US,37.56615032526316,-78.51371173503755,139546,2988,0,136558.0,"Virginia, US",1552.538985,2.141229
+Washington,US,47.23378642,-120.71922041538463,82199,2037,0,80162.0,"Washington, US",1135.256154,2.478132
+West Virginia,US,38.81425370672727,-80.6174545132727,13889,311,0,13578.0,"West Virginia, US",599.240468,2.239182
+Wisconsin,US,44.395143494861124,-89.79797998097222,97279,1238,0,96041.0,"Wisconsin, US",1172.414045,1.272628
+Wyoming,US,43.086885505217396,-107.15324220434782,4781,49,0,4731.0,"Wyoming, US",801.660985,1.02489

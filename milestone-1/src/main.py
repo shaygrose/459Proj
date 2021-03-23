@@ -45,10 +45,10 @@ train['age'] = train['age'].apply(
 test['age'] = test['age'].apply(
     lambda x: convert_age_range(x) if isinstance(x, str) else x)
 
-age_means = round(train.groupby(['outcome'])['age'].mean())
+age_means = round(train.groupby(['outcome'])['age'].mean(), 6)
 train['age'] = train.apply(impute_age, age_means=age_means, axis=1)
 
-test_mean = round(test['age'].mean())
+test_mean = round(test['age'].mean(), 6)
 test['age'] = test.apply(impute_age_test, mean=test_mean, axis=1)
 
 # convert date ranges to single date
@@ -138,8 +138,8 @@ grouped['fatality_ratio'] = (grouped['deaths'] / grouped['confirmed']) * 100
 locations = locations.append(grouped)
 
 # round long numbers
-locations['fatality_ratio'] = round(locations['fatality_ratio'], 2)
-locations['incidence_rate'] = round(locations['incidence_rate'], 2)
+locations['fatality_ratio'] = round(locations['fatality_ratio'], 6)
+locations['incidence_rate'] = round(locations['incidence_rate'], 6)
 
 locations.to_csv("../results/location_transformed.csv", index=False)
 
@@ -181,11 +181,11 @@ cols = ['confirmed', 'deaths', 'active',
 # impute values for countries which didnt have a match in the merge
 for i in cols:
 
-    train_means = round(merged_train.groupby(['country'])[i].mean())
+    train_means = round(merged_train.groupby(['country'])[i].mean(), 6)
     merged_train[i] = merged_train.apply(
         impute_columns_from_location, mean=train_means, attr=i, axis=1)
 
-    test_means = round(merged_test.groupby(['country'])[i].mean())
+    test_means = round(merged_test.groupby(['country'])[i].mean(), 6)
     merged_test[i] = merged_test.apply(
         impute_columns_from_location, mean=test_means, attr=i, axis=1)
 
@@ -197,9 +197,12 @@ for i in cols:
 # merged_train[merged_train["country"] == "Democratic Republic of the Congo"]["country"] = "Congo (Brazzaville)"
 # merged_test[merged_test["country"] == "Democratic Republic of the Congo"]["country"] = "Congo (Brazzaville)"
 
-merged_train["country"].replace("Democratic Republic of the Congo", "Congo (Brazzaville)", inplace=True)
-merged_train["country"].replace("Republic of Congo", "Congo (Brazzaville)", inplace=True)
-merged_test["country"].replace("Democratic Republic of the Congo", "Congo (Brazzaville)", inplace=True)
+merged_train["country"].replace(
+    "Democratic Republic of the Congo", "Congo (Brazzaville)", inplace=True)
+merged_train["country"].replace(
+    "Republic of Congo", "Congo (Brazzaville)", inplace=True)
+merged_test["country"].replace(
+    "Democratic Republic of the Congo", "Congo (Brazzaville)", inplace=True)
 
 
 def fill(row, province_means, country_means, attr):
@@ -211,9 +214,9 @@ def fill(row, province_means, country_means, attr):
         return province_means[row['country']]
     elif row['country'] in country_means.keys():
         return country_means[row['country']]
-    else: 
+    else:
         return row[attr]
-    
+
 
 # Austria Bahamas Russia Ecuador Paraguay Algeria Bolivia Zimbabwe Taiwan* Siberia Iran
 for i in cols:
@@ -221,21 +224,22 @@ for i in cols:
     # puerto_rico_means = round(puerto.groupby(["province"])[i].mean())
     # merged_train[i] = merged_train.apply(
     #     impute_columns_from_province, mean=puerto_rico_means, attr=i, axis=1)
-    country_means = round(locations.groupby(['country'])[i].mean())
-    province_means = round(locations.groupby(['province'])[i].mean())
+    country_means = round(locations.groupby(['country'])[i].mean(), 6)
+    province_means = round(locations.groupby(['province'])[i].mean(), 6)
 
     merged_train[i] = merged_train.apply(
         fill, province_means=province_means, country_means=country_means, attr=i, axis=1)
 
-    test_means = round(locations.groupby(['country'])[i].mean())
+    test_means = round(locations.groupby(['country'])[i].mean(), 6)
     merged_test[i] = merged_test.apply(
         fill, province_means=province_means, country_means=country_means, attr=i, axis=1)
 
-print(merged_train[pd.isna(merged_train["deaths"])]["country"].count())
-print(merged_test[pd.isna(merged_test["deaths"])]["country"].count())
+# print(merged_train[pd.isna(merged_train["deaths"])]["country"].count())
+# print(merged_test[pd.isna(merged_test["deaths"])]["country"].count())
 
 
-merged_train.drop(columns=["reverse_country_iso", "reverse_country", "combined_key"], inplace=True)
+merged_train.drop(columns=["reverse_country_iso",
+                           "reverse_country", "combined_key"], inplace=True)
 # merged_test.drop(columns=["reverse_country_iso", "reverse_country", "combined_key"], inplace=True)
 
 

@@ -19,11 +19,6 @@ data = pd.read_csv("data/cases_train_processed.csv")
 # we will only be using the country for classifying
 data.drop(columns=["latitude", "longitude", "province"], inplace=True)
 
-# need to convert categorical data to numerical....
-# categorical columns are : sex, country, outcome
-# data["body_style"] = data["body_style"].astype('category')
-# data["body_style_cat"] = data["body_style"].cat.codes
-
 data['date_confirmation'] = pd.to_datetime(
     data['date_confirmation'], format='%Y-%m-%d')
 
@@ -36,15 +31,12 @@ data['country'] = data['country'].astype('category')
 cat_columns = data.select_dtypes(['category']).columns
 data[cat_columns] = data[cat_columns].apply(lambda x: x.cat.codes)
 
-X = data[["age", "sex", "country", "date_confirmation",
-          "confirmed", "deaths", "recovered", "active", "incidence_rate", "fatality_ratio"]]
+X = data.loc[:, data.columns != "outcome"]
 
-# print(X)
 y = data.outcome
 # 0:deceased, 1:hospitalized, 2:nonhospitalized, 3:recovered
 y = y.astype('category')
 y = y.cat.codes
-# print(y)
 
 # 80% train, 20% test
 X_train, X_valid, y_train, y_valid = train_test_split(
@@ -147,11 +139,6 @@ print(classification_report(y_valid, xg_valid_pred,
                             target_names=target_names, digits=6))
 
 
-# print('--------------------------------------------------------------')
-# print(multilabel_confusion_matrix(y_valid, rf_valid_pred, labels=target_names))
-# print(multilabel_confusion_matrix(y_valid, knn_valid_pred, labels=target_names))
-# print(multilabel_confusion_matrix(y_valid, xg_valid_pred, labels=target_names))
-
 plot_confusion_matrix(knn, X_valid, y_valid,
                       display_labels=target_names,
                       cmap=plt.cm.Blues)
@@ -180,9 +167,3 @@ print("XGBoost Train Confusion Matrix")
 print(confusion_matrix(y_train, xg_train_pred))
 print("XGBoost Validation Confusion Matrix")
 print(confusion_matrix(y_valid, xg_valid_pred))
-
-# plot_confusion_matrix(xg_reg, X_valid, y_valid,
-#                       display_labels=target_names,
-#                       cmap=plt.cm.Blues)
-# plt.title('XGBoost Confusion Matrix')
-# plt.savefig("plots/xgb_confusion.png")
