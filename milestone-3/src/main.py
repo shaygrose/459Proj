@@ -21,8 +21,6 @@ data.drop(columns=["latitude", "longitude", "province"], inplace=True)
 
 # need to convert categorical data to numerical....
 # categorical columns are : sex, country, outcome
-# data["body_style"] = data["body_style"].astype('category')
-# data["body_style_cat"] = data["body_style"].cat.codes
 
 data['date_confirmation'] = pd.to_datetime(
     data['date_confirmation'], format='%Y-%m-%d')
@@ -58,14 +56,6 @@ if not path.exists('models/rf_classifier.pkl'):
     rf_model.fit(X_train, y_train)
     pickle.dump(rf_model, open('models/rf_classifier.pkl', 'wb'))
 
-
-''' ADA BOOST '''
-# ada = AdaBoostClassifier(n_estimators=100, random_state=69)
-# ada.fit(X_train, y_train)
-# ada_score = ada.score(X_valid, y_valid)
-
-# print("AdaBoost score on validation: ", ada_score)
-
 ''' XG BOOST '''
 if not path.exists('models/xgb_classifier.pkl'):
     data_dmatrix = xgb.DMatrix(data=X_train, label=y_train)
@@ -84,6 +74,43 @@ if not path.exists('models/knn_classifier.pkl'):
     knn = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')
     knn.fit(X_train, y_train)
     pickle.dump(knn, open('models/knn_classifier.pkl', 'wb'))
+
+
+
+''' TUNING HYPERPARAMS '''
+
+# model training
+# create the parameter grid based on the results of random search
+
+# RF
+n_estimators = [.0001, .001, .01, .1]
+max_depth = [3, 4, 5]
+min_samples_leaf = [1, 10, 100]
+
+param_grid = [
+    {'n_estimators': n_estimators, 'max_depth': max_depth, 'min_samples_leaf':min_samples_leaf},
+]
+
+# base model
+rf_model = RandomForestClassifier()
+
+# instantiate the grid search model
+# Exhaustive search over specified parameter values for an estimator
+# https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+grid_search = GridSearchCV(
+    estimator=rf_model,
+    param_grid=param_grid,
+    # not sure what scoring should be set to ??? need to research more
+    scoring='accuracy',
+    verbose=1
+)
+
+# fit the grid search to the data
+grid_search.fit(X_train, y_train)
+
+best_rf = grid_search.best_estimator_
+best_rf.fit(X_train, X_train)
+pickle.dump(best_rf, open('models/rf_classifier.pkl', 'wb'))
 
 
 ''' EVALUATION '''
@@ -148,11 +175,6 @@ print(classification_report(y_valid, xg_valid_pred,
                             target_names=target_names, digits=6))
 
 
-# print('--------------------------------------------------------------')
-# print(multilabel_confusion_matrix(y_valid, rf_valid_pred, labels=target_names))
-# print(multilabel_confusion_matrix(y_valid, knn_valid_pred, labels=target_names))
-# print(multilabel_confusion_matrix(y_valid, xg_valid_pred, labels=target_names))
-
 plot_confusion_matrix(knn, X_valid, y_valid,
                       display_labels=target_names,
                       cmap=plt.cm.Blues)
@@ -182,8 +204,13 @@ print(confusion_matrix(y_train, xg_train_pred))
 print("XGBoost Validation Confusion Matrix")
 print(confusion_matrix(y_valid, xg_valid_pred))
 
-# plot_confusion_matrix(xg_reg, X_valid, y_valid,
-#                       display_labels=target_names,
-#                       cmap=plt.cm.Blues)
-# plt.title('XGBoost Confusion Matrix')
-# plt.savefig("plots/xgb_confusion.png")
+
+def check_if_file_valid(filename):
+    assert filename.endswith('predictions.txt'), 'Incorrect filename'
+    f = open(filename).read()
+    l = f.split('\n')
+    assert len(l) == 46500, 'Incorrect number of items'
+    assert (len(set(l)) == 4), 'Wrong class labels'
+    return 'Thepredictionsfile is valid'
+
+check_if_file_valid('predictions.txt')
