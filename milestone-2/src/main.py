@@ -36,15 +36,16 @@ data['country'] = data['country'].astype('category')
 cat_columns = data.select_dtypes(['category']).columns
 data[cat_columns] = data[cat_columns].apply(lambda x: x.cat.codes)
 
+
 X = data[["age", "sex", "country", "date_confirmation",
           "confirmed", "deaths", "recovered", "active", "incidence_rate", "fatality_ratio"]]
 
-# print(X)
 y = data.outcome
 # 0:deceased, 1:hospitalized, 2:nonhospitalized, 3:recovered
 y = y.astype('category')
 y = y.cat.codes
-# print(y)
+
+print(X.nunique)
 
 # 80% train, 20% test
 X_train, X_valid, y_train, y_valid = train_test_split(
@@ -67,7 +68,7 @@ if not path.exists('models/rf_classifier.pkl'):
 
 ''' XG BOOST '''
 if not path.exists('models/xgb_classifier.pkl'):
-    data_dmatrix = xgb.DMatrix(data=X, label=y)
+    data_dmatrix = xgb.DMatrix(data=X_train, label=y_train)
     xg_reg = xgb.XGBRegressor(objective='multi:softmax', colsample_bytree=0.3, learning_rate=0.1,
                               max_depth=10, alpha=10, n_estimators=20, num_class=4, verbosity=0)
     xg_reg.fit(X_train, y_train)
