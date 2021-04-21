@@ -180,25 +180,29 @@ X_train, X_valid, y_train, y_valid = train_test_split(
 
 ''' TUNING HYPERPARAMS '''
 
-dead_recalls = []
-dead_f1s = []
-overall_recalls = []
-overall_f1s = []
-
 
 def dead_recall_score(model, X, y):
     y_pred = model.predict(X)
-    dead_recall = recall_score(y, y_pred, average=None, zero_division=0)[0]
-    dead_f1 = f1_score(y, y_pred, average=None, zero_division=0)[0]
-    dead_recalls.append(dead_recall)
-    dead_f1s.append(dead_f1)
 
-    overall_recalls.append(recall_score(
-        y, y_pred, average='weighted', zero_division=0))
-    overall_f1s.append(recall_score(
-        y, y_pred, average='weighted', zero_division=0))
+    return recall_score(y, y_pred, average=None, zero_division=0)[0]
 
-    return dead_recall
+
+def dead_f1_score(model, X, y):
+    y_pred = model.predict(X)
+
+    return f1_score(y, y_pred, average=None, zero_division=0)[0]
+
+
+def total_recall_score(model, X, y):
+    y_pred = model.predict(X)
+
+    return recall_score(y, y_pred, average='weighted', zero_division=0)
+
+
+def total_f1_score(model, X, y):
+    y_pred = model.predict(X)
+
+    return f1_score(y, y_pred, average='weighted', zero_division=0)
 
 # model training
 # create the parameter grid based on the results of random search
@@ -212,31 +216,42 @@ min_samples_leaf = [5, 10, 15]
 param_grid = [
     {'n_estimators': n_estimators, 'max_depth': max_depth,
         'min_samples_leaf': min_samples_leaf},
+
+
 ]
 
 # base model
 rf_model = RandomForestClassifier()
 
+scoring = {"deceased recall": dead_recall_score,
+           "deceased f1": dead_f1_score, "total recall": total_recall_score, "total f1": total_f1_score}
 # instantiate the grid search model
 # Exhaustive search over specified parameter values for an estimator
 # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
 grid_search = GridSearchCV(
     estimator=rf_model,
     param_grid=param_grid,
+    refit="deceased recall",
     # not sure what scoring should be set to ??? need to research more
-    scoring=dead_recall_score,
+    scoring=scoring,
     verbose=1,
 )
 
 # fit the grid search to the data
 grid_search.fit(X_train, y_train)
+res = pd.DataFrame(grid_search.cv_results_)[['mean_test_deceased recall', 'mean_test_deceased f1', 'mean_test_total recall', 'mean_test_total f1',
+                                             'param_min_samples_leaf',
+                                             'param_n_estimators', 'param_max_depth']]
 
+print(res)
+res.to_csv("results/rf_hyperparams.csv", index=False)
 best_rf = grid_search.best_estimator_
-best_rf.fit(X_train, X_train)
-print(dead_f1s)
-print(dead_recalls)
-print(overall_f1s)
-print(overall_recalls)
-with open('results/rf_CVresults', 'w') as textfile:
-    print(grid_search.best_params_, file=textfile)
+best_rf.fit(X_train, y_train)
+print(grid_search.best_params_)
+# with open('results/rf_CVresults', 'w') as textfile:
+#     print(grid_search.best_params_, file=textfile)
+target_names = ['0', '1', '2', '3']
+best_rf_pred = best_rf.predict(X_valid)
+print(classification_report(y_valid, best_rf_pred,
+      target_names=target_names, digits=6))
 pickle.dump(best_rf, open('models/best_rf_classifier.pkl', 'wb'))
