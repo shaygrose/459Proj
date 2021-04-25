@@ -213,11 +213,9 @@ n_estimators = [5, 10, 20]
 max_depth = [5, 10, 15]
 min_samples_leaf = [5, 10, 15]
 
-param_grid = [
+param_grid_rf = [
     {'n_estimators': n_estimators, 'max_depth': max_depth,
         'min_samples_leaf': min_samples_leaf},
-
-
 ]
 
 # base model
@@ -228,30 +226,70 @@ scoring = {"deceased recall": dead_recall_score,
 # instantiate the grid search model
 # Exhaustive search over specified parameter values for an estimator
 # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
-grid_search = GridSearchCV(
+grid_search_rf = GridSearchCV(
     estimator=rf_model,
-    param_grid=param_grid,
+    param_grid=param_grid_rf,
     refit="deceased recall",
-    # not sure what scoring should be set to ??? need to research more
     scoring=scoring,
     verbose=1,
 )
 
 # fit the grid search to the data
-grid_search.fit(X_train, y_train)
-res = pd.DataFrame(grid_search.cv_results_)[['mean_test_deceased recall', 'mean_test_deceased f1', 'mean_test_total recall', 'mean_test_total f1',
-                                             'param_min_samples_leaf',
+# grid_search_rf.fit(X_train, y_train)
+# res = pd.DataFrame(grid_search_rf.cv_results_)[['mean_test_deceased recall', 'mean_test_deceased f1', 'mean_test_total recall', 'mean_test_total f1',
+                                            #  'param_min_samples_leaf',
+                                            #  'param_n_estimators', 'param_max_depth']]
+
+# print(res)
+# res.to_csv("results/rf_hyperparams.csv", index=False)
+# best_rf = grid_search_rf.best_estimator_
+# best_rf.fit(X_train, y_train)
+# print(grid_search_rf.best_params_)
+# # with open('results/rf_CVresults', 'w') as textfile:
+# #     print(grid_search_rf.best_params_, file=textfile)
+# target_names = ['0', '1', '2', '3']
+# best_rf_pred = best_rf.predict(X_valid)
+# print(classification_report(y_valid, best_rf_pred,
+#       target_names=target_names, digits=6))
+# pickle.dump(best_rf, open('models/best_rf_classifier.pkl', 'wb'))
+
+
+data_dmatrix = xgb.DMatrix(data=X_train, label=y_train)
+xg_model = xgb.XGBRegressor(objective='multi:softmax', colsample_bytree=0.3,
+                               alpha=10, num_class=4, verbosity=0)
+
+n_estimators = [5, 10, 20]
+max_depth = [5, 10, 15]
+learning_rate = [0.1, 0.05, 0.3]
+
+param_grid_xgb = [
+    {'n_estimators': n_estimators, 'max_depth': max_depth,
+        'learning_rate': learning_rate},
+]
+
+grid_search_xgb = GridSearchCV(
+    estimator=xg_model,
+    param_grid=param_grid_xgb,
+    refit="deceased recall",
+    scoring=scoring,
+    verbose=1,
+)
+
+# fit the grid search to the data
+grid_search_xgb.fit(X_train, y_train)
+xgb_res = pd.DataFrame(grid_search_xgb.cv_results_)[['mean_test_deceased recall', 'mean_test_deceased f1', 'mean_test_total recall', 'mean_test_total f1',
+                                             'param_learning_rate',
                                              'param_n_estimators', 'param_max_depth']]
 
-print(res)
-res.to_csv("results/rf_hyperparams.csv", index=False)
-best_rf = grid_search.best_estimator_
-best_rf.fit(X_train, y_train)
-print(grid_search.best_params_)
+print(xgb_res)
+xgb_res.to_csv("results/xgb_hyperparams.csv", index=False)
+best_xgb = grid_search_xgb.best_estimator_
+best_xgb.fit(X_train, y_train)
+print(grid_search_xgb.best_params_)
 # with open('results/rf_CVresults', 'w') as textfile:
-#     print(grid_search.best_params_, file=textfile)
+#     print(grid_search_rf.best_params_, file=textfile)
 target_names = ['0', '1', '2', '3']
-best_rf_pred = best_rf.predict(X_valid)
-print(classification_report(y_valid, best_rf_pred,
+best_xgb_pred = best_xgb.predict(X_valid)
+print(classification_report(y_valid, best_xgb_pred,
       target_names=target_names, digits=6))
-pickle.dump(best_rf, open('models/best_rf_classifier.pkl', 'wb'))
+pickle.dump(best_xgb, open('models/best_rxgb_classifier.pkl', 'wb'))
