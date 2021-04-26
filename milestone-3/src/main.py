@@ -245,12 +245,11 @@ res.to_csv("results/rf_hyperparams.csv", index=False)
 best_rf = grid_search_rf.best_estimator_
 best_rf.fit(X_train, y_train)
 print(grid_search_rf.best_params_)
-# with open('results/rf_CVresults', 'w') as textfile:
-#     print(grid_search_rf.best_params_, file=textfile)
 target_names = ['0', '1', '2', '3']
 best_rf_pred = best_rf.predict(X_valid)
-print(classification_report(y_valid, best_rf_pred,
-                            target_names=target_names, digits=6))
+with open('results/rf_classification_report.txt', 'w') as textfile:
+    print(classification_report(y_valid, best_rf_pred,
+                            target_names=target_names, digits=6), file=textfile)
 pickle.dump(best_rf, open('models/best_rf_classifier.pkl', 'wb'))
 
 param_grid_rf = [
@@ -289,11 +288,10 @@ res.to_csv("results/knn_hyperparams.csv", index=False)
 best_knn = grid_search_knn.best_estimator_
 best_knn.fit(X_train, y_train)
 print(grid_search_knn.best_params_)
-# with open('results/rf_CVresults', 'w') as textfile:
-#     print(grid_search_rf.best_params_, file=textfile)
 best_knn_pred = best_knn.predict(X_valid)
-print(classification_report(y_valid, best_knn_pred,
-                            target_names=target_names, digits=6))
+with open('results/knn_classification_report.txt', 'w') as textfile:
+    print(classification_report(y_valid, best_knn_pred,
+                            target_names=target_names, digits=6), file=textfile)
 pickle.dump(best_knn, open('models/best_knn_classifier.pkl', 'wb'))
 
 
@@ -330,9 +328,9 @@ xgb_res.to_csv("results/xgb_hyperparams.csv", index=False)
 best_xgb = grid_search_xgb.best_estimator_
 best_xgb.fit(X_train, y_train)
 print(grid_search_xgb.best_params_)
-# with open('results/rf_CVresults', 'w') as textfile:
-#     print(grid_search_rf.best_params_, file=textfile)
+
 best_xgb_pred = best_xgb.predict(X_valid)
-print(classification_report(y_valid, best_xgb_pred,
-                            target_names=target_names, digits=6))
+with open('results/xgb_classification_report.txt', 'w') as textfile:
+    print(classification_report(y_valid, best_xgb_pred,
+                            target_names=target_names, digits=6), file=textfile)
 pickle.dump(best_xgb, open('models/best_rxgb_classifier.pkl', 'wb'))
