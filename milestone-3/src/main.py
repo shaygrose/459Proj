@@ -143,7 +143,7 @@ best_rf_pred = best_rf.predict(X_valid)
 with open('results/rf_classification_report.txt', 'w') as textfile:
     print(classification_report(y_valid, best_rf_pred,
                             target_names=target_names, digits=6), file=textfile)
-pickle.dump(best_rf, open('models/best_rf_classifier.pkl', 'wb'))
+# pickle.dump(best_rf, open('models/best_rf_classifier.pkl', 'wb'))
 
 param_grid_rf = [
     {'n_estimators': n_estimators, 'max_depth': max_depth,
@@ -185,7 +185,7 @@ best_knn_pred = best_knn.predict(X_valid)
 with open('results/knn_classification_report.txt', 'w') as textfile:
     print(classification_report(y_valid, best_knn_pred,
                             target_names=target_names, digits=6), file=textfile)
-pickle.dump(best_knn, open('models/best_knn_classifier.pkl', 'wb'))
+# pickle.dump(best_knn, open('models/best_knn_classifier.pkl', 'wb'))
 
 
 # XGBoost
@@ -226,7 +226,7 @@ best_xgb_pred = best_xgb.predict(X_valid)
 with open('results/xgb_classification_report.txt', 'w') as textfile:
     print(classification_report(y_valid, best_xgb_pred,
                             target_names=target_names, digits=6), file=textfile)
-pickle.dump(best_xgb, open('models/best_rxgb_classifier.pkl', 'wb'))
+# pickle.dump(best_xgb, open('models/best_rxgb_classifier.pkl', 'wb'))
 
 
 ''' PREDICTING ON TEST '''
@@ -235,23 +235,28 @@ pickle.dump(best_xgb, open('models/best_rxgb_classifier.pkl', 'wb'))
 rf_test_pred = best_rf.predict(test)
 
 
-with open('results/predictions.txt', 'w') as textfile:
+with open('results/pre-predictions.txt', 'w') as textfile:
     textfile.write("\n".join(map(str, rf_test_pred)))
 
 
-pred = pd.read_csv('results/predictions.txt', header=None, delimiter = "\n")
+pred = pd.read_csv('results/pre-predictions.txt', header=None, delimiter = "\n")
 
-print(pred)
 
 pred[pred == 0] = "deceased"
 pred[pred == 1] = "hospitalized"
 pred[pred == 2] = "nonhospitalized"
 pred[pred == 3] = "recovered"
 
-print(pred)
-print(len(pred))
+print(pred[0].value_counts())
 
-pred.to_csv("results/predictions.txt", header=None, index=None)
+
+pred.to_csv("results/pre-predictions.txt", header=None, index=None)
+
+with open('results/pre-predictions.txt', 'r') as f:
+    data = f.read()
+    with open("results/predictions.txt", 'w') as w:
+        w.write(data[:-1])
+
 
 def check_if_file_valid(filename):
     assert filename.endswith('predictions.txt'), 'Incorrect filename'
