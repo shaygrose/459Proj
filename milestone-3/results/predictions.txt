@@ -1,0 +1,14 @@
+                     0
+0            recovered
+1      nonhospitalized
+2            recovered
+3            recovered
+4      nonhospitalized
+...                ...
+46495  nonhospitalized
+46496  nonhospitalized
+46497     hospitalized
+46498  nonhospitalized
+46499     hospitalized
+
+[46500 rows x 1 columns]

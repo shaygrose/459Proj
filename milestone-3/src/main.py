@@ -14,13 +14,14 @@ from os import path
 from sklearn.metrics import f1_score, recall_score, classification_report, plot_confusion_matrix, multilabel_confusion_matrix, confusion_matrix, make_scorer
 
 
+
+
+''' TRAINING DATA '''
+
 data = pd.read_csv("data/cases_train_processed.csv")
 
 # we will only be using the country for classifying
 data.drop(columns=["latitude", "longitude", "province"], inplace=True)
-
-# need to convert categorical data to numerical....
-# categorical columns are : sex, country, outcome
 
 data['date_confirmation'] = pd.to_datetime(
     data['date_confirmation'], format='%Y-%m-%d')
@@ -47,139 +48,31 @@ y = y.cat.codes
 X_train, X_valid, y_train, y_valid = train_test_split(
     X, y, test_size=0.2, random_state=69)
 
-# ''' RANDOM FOREST '''
-# if not path.exists('models/rf_classifier.pkl'):
-#     rf_model = RandomForestClassifier(
-#         n_estimators=100, max_depth=10, min_samples_leaf=10)
-#     rf_model.fit(X_train, y_train)
-#     pickle.dump(rf_model, open('models/rf_classifier.pkl', 'wb'))
+''' TEST DATA '''
+test_data = pd.read_csv("data/cases_test_processed.csv")
 
-# ''' XG BOOST '''
-# if not path.exists('models/xgb_classifier.pkl'):
-#     data_dmatrix = xgb.DMatrix(data=X_train, label=y_train)
-#     xg_reg = xgb.XGBRegressor(objective='multi:softmax', colsample_bytree=0.3, learning_rate=0.1,
-#                               max_depth=10, alpha=10, n_estimators=20, num_class=4, verbosity=0)
-#     xg_reg.fit(X_train, y_train)
-#     # write model to pkl file
-#     pickle.dump(xg_reg, open('models/xgb_classifier.pkl', 'wb'))
+# we will only be using the country for classifying
+test_data.drop(columns=["latitude", "longitude", "province"], inplace=True)
 
+test_data['date_confirmation'] = pd.to_datetime(
+    test_data['date_confirmation'], format='%Y-%m-%d')
 
-# ''' KNN '''
-# # normalized = ((data - data.mean())/data.std())
-# if not path.exists('models/knn_classifier.pkl'):
-#     # weights can be distance or uniform
-#     n_neighbors = 11
-#     knn = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')
-#     knn.fit(X_train, y_train)
-#     pickle.dump(knn, open('models/knn_classifier.pkl', 'wb'))
+test_data['date_confirmation'] = test_data['date_confirmation'].map(
+    dt.datetime.toordinal)
+
+test_data['sex'] = test_data['sex'].astype('category')
+test_data['country'] = test_data['country'].astype('category')
+
+cat_columns = test_data.select_dtypes(['category']).columns
+test_data[cat_columns] = test_data[cat_columns].apply(lambda x: x.cat.codes)
 
 
-# ''' EVALUATION '''
+test = test_data[["age", "sex", "country", "date_confirmation",
+          "confirmed", "deaths", "recovered", "active", "incidence_rate", "fatality_ratio"]]
 
-
-# ''' Accuracy Score '''
-
-# # RF
-# rf_model = pickle.load(open('models/rf_classifier.pkl', 'rb'))
-# rf_score = rf_model.score(X_valid, y_valid)
-# print("Random Forest accuracy score on validation: ", rf_score)
-# rf_train_score = rf_model.score(X_train, y_train)
-# print("Random Forest accuracy score on train: ", rf_train_score)
-
-# # XG
-# xg_reg = pickle.load(open('models/xgb_classifier.pkl', 'rb'))
-# xg_score = xg_reg.score(X_valid, y_valid)
-# print("XGBoost accuracy score on validation: ", xg_score)
-# xg_train_score = xg_reg.score(X_train, y_train)
-# print("XGBoost accuracy score on train: ", xg_train_score)
-
-# # KNN
-# knn = pickle.load(open('models/knn_classifier.pkl', 'rb'))
-# knn_score = knn.score(X_valid, y_valid)
-# print("KNN accuracy score on validation: ", knn_score)
-# knn_train_score = knn.score(X_train, y_train)
-# print("KNN accuracy score on train: ", knn_train_score)
-
-
-# ''' F1 Score '''
-# rf_train_pred = rf_model.predict(X_train)
-# knn_train_pred = knn.predict(X_train)
-# xg_train_pred = xg_reg.predict(X_train)
-# rf_valid_pred = rf_model.predict(X_valid)
-# knn_valid_pred = knn.predict(X_valid)
-# xg_valid_pred = xg_reg.predict(X_valid)
-
-
-# target_names = ['0', '1', '2', '3']
-# print('--------------------RF Metrics----------------------------------')
-# print('- Train -')
-# print(classification_report(y_train, rf_train_pred,
-#                             target_names=target_names, digits=6))
-# print('- Validation -')
-# print(classification_report(y_valid, rf_valid_pred,
-#                             target_names=target_names, digits=6))
-
-# print('-------------------KNN Metrics----------------------------------')
-# print('- Train -')
-# print(classification_report(y_train, knn_train_pred,
-#                             target_names=target_names, digits=6))
-# print('- Validation -')
-# print(classification_report(y_valid, knn_valid_pred,
-#                             target_names=target_names, digits=6))
-
-# print('-------------------XGBoost Metrics------------------------------')
-# print('- Train -')
-# print(classification_report(y_train, xg_train_pred,
-#                             target_names=target_names, digits=6))
-# print('- Validation -')
-# print(classification_report(y_valid, xg_valid_pred,
-#                             target_names=target_names, digits=6))
-
-
-# plot_confusion_matrix(knn, X_valid, y_valid,
-#                       display_labels=target_names,
-#                       cmap=plt.cm.Blues)
-# plt.title('KNN Validation Confusion Matrix')
-# plt.savefig("plots/knn_valid_confusion.png")
-
-# plot_confusion_matrix(knn, X_train, y_train,
-#                       display_labels=target_names,
-#                       cmap=plt.cm.Blues)
-# plt.title('KNN Train Confusion Matrix')
-# plt.savefig("plots/knn_train_confusion.png")
-
-# plot_confusion_matrix(rf_model, X_valid, y_valid,
-#                       display_labels=target_names,
-#                       cmap=plt.cm.Blues)
-# plt.title('RF Validation Confusion Matrix')
-# plt.savefig("plots/rf_valid_confusion.png")
-
-# plot_confusion_matrix(rf_model, X_train, y_train,
-#                       display_labels=target_names,
-#                       cmap=plt.cm.Blues)
-# plt.title('RF Train Confusion Matrix')
-# plt.savefig("plots/rf_train_confusion.png")
-
-# print("XGBoost Train Confusion Matrix")
-# print(confusion_matrix(y_train, xg_train_pred))
-# print("XGBoost Validation Confusion Matrix")
-# print(confusion_matrix(y_valid, xg_valid_pred))
-
-
-# def check_if_file_valid(filename):
-#     assert filename.endswith('predictions.txt'), 'Incorrect filename'
-#     f = open(filename).read()
-#     l = f.split('\n')
-#     assert len(l) == 46500, 'Incorrect number of items'
-#     assert (len(set(l)) == 4), 'Wrong class labels'
-#     return 'Thepredictionsfile is valid'
-
-
-# check_if_file_valid('predictions.txt')
 
 
 ''' TUNING HYPERPARAMS '''
-
 
 def dead_recall_score(model, X, y):
     y_pred = model.predict(X)
@@ -300,9 +193,9 @@ data_dmatrix = xgb.DMatrix(data=X_train, label=y_train)
 xg_model = xgb.XGBRegressor(objective='multi:softmax', colsample_bytree=0.3,
                             alpha=10, num_class=4, verbosity=0)
 
-n_estimators = [5, 10, 20]
-max_depth = [5, 10, 15]
-learning_rate = [0.1, 0.05, 0.3]
+n_estimators = [20, 30, 50]
+max_depth = [10, 12, 15]
+learning_rate = [0.3, 0.5, 0.7]
 
 param_grid_xgb = [
     {'n_estimators': n_estimators, 'max_depth': max_depth,
@@ -334,3 +227,38 @@ with open('results/xgb_classification_report.txt', 'w') as textfile:
     print(classification_report(y_valid, best_xgb_pred,
                             target_names=target_names, digits=6), file=textfile)
 pickle.dump(best_xgb, open('models/best_rxgb_classifier.pkl', 'wb'))
+
+
+''' PREDICTING ON TEST '''
+
+# xgb_test_pred = best_xgb.predict(test)
+rf_test_pred = best_rf.predict(test)
+
+
+with open('results/predictions.txt', 'w') as textfile:
+    textfile.write("\n".join(map(str, rf_test_pred)))
+
+
+pred = pd.read_csv('results/predictions.txt', header=None, delimiter = "\n")
+
+print(pred)
+
+pred[pred == 0] = "deceased"
+pred[pred == 1] = "hospitalized"
+pred[pred == 2] = "nonhospitalized"
+pred[pred == 3] = "recovered"
+
+print(pred)
+print(len(pred))
+
+pred.to_csv("results/predictions.txt", header=None, index=None)
+
+def check_if_file_valid(filename):
+    assert filename.endswith('predictions.txt'), 'Incorrect filename'
+    f = open(filename).read()
+    l = f.split('\n')
+    assert len(l) == 46500, 'Incorrect number of items'
+    assert (len(set(l)) == 4), 'Wrong class labels'
+    return 'Thepredictionsfile is valid'
+
+check_if_file_valid('results/predictions.txt')
